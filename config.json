@@ -1,0 +1,99 @@
+{
+  "start_urls": [
+    "https://www.bracu.ac.bd/",
+    "https://cse.bracu.ac.bd/"
+  ],
+  "allowed_domains": [
+    "www.bracu.ac.bd",
+    "bracu.ac.bd",
+    "cse.bracu.ac.bd"
+  ],
+  "categories": {
+    "general": [
+      "about",
+      "brac university",
+      "campus",
+      "location",
+      "contact"
+    ],
+    "admissions": [
+      "admission",
+      "undergraduate admission",
+      "postgraduate admission",
+      "eligibility",
+      "requirements",
+      "application",
+      "tuition",
+      "fees",
+      "scholarship",
+      "financial aid"
+    ],
+    "programs": [
+      "program",
+      "degree",
+      "undergraduate",
+      "postgraduate",
+      "cse",
+      "computer science",
+      "curriculum",
+      "course",
+      "course outline",
+      "prerequisite",
+      "credits"
+    ],
+    "academics": [
+      "academic",
+      "policy",
+      "policies",
+      "grading",
+      "grade",
+      "calendar",
+      "academic dates",
+      "registration",
+      "semester",
+      "examination",
+      "credit transfer"
+    ],
+    "student_services": [
+      "student",
+      "student life",
+      "registrar",
+      "career",
+      "ocsar",
+      "counselling",
+      "counseling",
+      "club",
+      "residential semester",
+      "facility",
+      "facilities",
+      "helpdesk"
+    ],
+    "library": [
+      "library",
+      "borrowing",
+      "research support",
+      "database",
+      "repository",
+      "ebook",
+      "journal"
+    ]
+  },
+  "safe_click_text": [
+    "read more",
+    "view details",
+    "show more",
+    "load more",
+    "see more",
+    "details",
+    "expand",
+    "next"
+  ],
+  "max_pages": 3000,
+  "max_clicks_per_page": 40,
+  "request_delay_seconds": 0.8,
+  "navigation_timeout_ms": 30000,
+  "post_click_wait_ms": 500,
+  "save_html": false,
+  "download_pdfs": true,
+  "output_dir": "output"
+}

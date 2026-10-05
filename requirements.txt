@@ -1,0 +1,6 @@
+playwright==1.55.0
+beautifulsoup4==4.14.2
+trafilatura==2.0.0
+markdownify==1.2.0
+pypdf==6.1.1
+requests==2.32.5

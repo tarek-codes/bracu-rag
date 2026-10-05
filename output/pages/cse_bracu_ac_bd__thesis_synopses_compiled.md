@@ -1,0 +1,1974 @@
+---
+title: "BRACU CSE Thesis Synopses"
+source_urls:
+  - "https://cse.bracu.ac.bd/thesis/synopsis/12/prediction-of-traffic-status-in-near-future"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/13/self-sovereign-identity-(ssi)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/14/ai-assisted-code-generation-tools-a-new-frontier-in-software-development"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/16/an-explainable-machine-learning-system-for-accurate-and-reliable-detection-of-crop-pests-and-diseases"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/17/enhancing-real-time-video-classification-accuracy-using-deep-learning-and-improved-preprocessing-techniques"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/18/affective-anthropomorphic-intelligent-system-for-artificial-general-intelligence"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/19/intelligence-assisted-learning"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/20/emotion-ai-emotionomics-neuromarketing-and-mining-mind"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/21/mutation-testing-of-deep-learning-model"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/22/systematic-security-testing-and-evaluation-frameworks-for-agentic-ai"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/23/deep-learning-based-medical-image-segmentation-and-classification-"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/24/bangla-sign-language-detection-using-deep-learning-techniques"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/25/leveraging-deep-learning-and-object-detection-techniques-to-produce-feasible-search-and-rescue-process-solutions-after-natural-calamities-in-bangladesh-"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/26/leaf-disease-detection-using-convolution-neural-network-and-other-deep-learning-techniques"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/27/natural-language-processing---usage-and-scope-in-modern-day-data"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/28/robot-learning"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/29/exploring-the-application-of-generative-adversarial-networks-(gans)-in-medical-imaging-enhancing-medical-diagnosis-accuracy-through-deep-learning"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/30/applications-of-natural-language-processing-(nlp)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/31/applications-of-data-science-(ds)-and-pattern-recognition-(pr)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/32/applications-of-parallel-distributed-and-high-performance-computing-(hpc)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/33/solving-the-contextual-bandit-problem-in-stochastic-adversarial-setting-using-an-online-classification-oracle-or-an-offline-regression-oracle"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/34/automated-repair-of-asymmetric-web-pages-during-resolution-of-mobile-friendly-problems"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/35/impact-of-label-noise-and-efficacy-of-noise-filters-in-software-defect-prediction"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/36/on-the-evolutionary-properties-of-fix-inducing-changes"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/37/a-machine-learning-based-inference-and-analysis-of-crop-production-based-on-climate-parameters-in-bangladesh"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/38/human-centric-explainable-ai-framework-for-enhanced-diagnostic-accuracy-in-healthcare"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/39/application-of-tinyml"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/42/application-of-u-net-architecture-in-medical-domain"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/43/develop-a-large-language-model-capable-of-generating-bangla-government-papers"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/44/investigate-the-use-of-transformers-in-generating-dockers-or-docker-compose-yaml-which-could-be-used-in-cicd"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/45/building-automated-testing-tools-for-inspecting-the-vulnerabilities-of-a-website-using-a-neural-network"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/48/application-of-machine-leraning-in-network-bandwidth-slicing"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/49/utilizing-computer-vision-for-detecting-human-behavior-emotions-and-cognitive-responses-an-application-in-enhancing-student-engagement"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/51/ai-enhanced-security-analytics"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/52/cryptographic-protocols-for-secure-multi-party-computation"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/56/trust-management"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/57/movement-detection-in-indoor-positioning-systems-of-production-halls"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/58/augmented-intelligence-of-things-for-vehicle-road-cooperation-systems"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/59/enhancing-the-performance-of-machine-learning-algorithm-in-classifying-iot-botnet-attacks-"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/60/role-of-generative-ai-in-cybersecurity"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/61/augmented-reality-navigation-for-the-visually-impaired"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/62/preserving-digital-integrity-advancements-in-deepfake-detection"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/63/applications-of-computer-modeling-simulation-(m-s)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/64/cybersecurity-and-ethical-hacking"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/65/vision-(computer-vision-and-machine-vision)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/72/ai-for-health-and-life-science"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/73/spiking-neural-network-(snn)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/74/quantum-neural-network-(qnn)"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/75/large-language-model-(llm)-based-software-engineering-enhancing-development-efficiency-and-innovation"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/76/some-of-the-recent-publications"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/84/human-robot-interaction"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/86/ai-based-accessibility-for-people-with-disabilities-specially-blindness"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/88/3d-mri-segmentation-for-brain-tumor-detection"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/89/pancreas-segmentation-in-ct-images-for-cancer-detection"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/90/breast-cancer-detection-from-mammography-histopathology-ultrasound-images"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/92/epilepsyseizure-detection-from-eeg-signals"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/93/predicting-antibiotic-resistance-in-bacterial-strains-from-genomic-data"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/94/probiotic-discovery-and-functional-prediction-from-bacterial-genomes"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/95/predicting-viral-host-range-from-genomic-sequences"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/96/disease-classification-and-progression-prediction-using-multi-omics-data-integration-with-deep-learning"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/98/balancing-user-privacy-and-business-needs-in-digital-identity-systems"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/112/3d-visualization-of-2d360-image-and-navigation-in-virtual-reality-through-motion-processing-via-smartphone-sensors"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/118/financial-document-analysis-and-data-extraction-using-llm"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/124/understanding-user-perceptions-and-gender-based-preferences-in-ride-sharing-platforms-a-comparative-study-of-uber-pathao-and-indrive-in-bangladesh"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/125/artificial-intelligence-agents-for-biology"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/126/physics-informed-variational-autoencoders-for-cosmological-field-reconstruction-and-parameter-inference"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/127/quantum-aware-image-encoding-and-adversarial-perturbation"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/128/a-comparative-study-of-classical-quantum-and-hybrid-machine-learning-for-anti-money-laundering-detection"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/129/vision-language-action-models-open-challenges-in-embodied-ai"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/130/offline-reinforcement-learning-addressing-out-of-distribution-actions"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/137/artificial-intelligence-and-deep-learning"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/138/risk-aware-cryptographic-agility-for-post-quantum-migration"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/139/risk-adaptive-three-factor-authentication-for-secure-digital-identity"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/140/behavior-aware-adaptive-multi-factor-authentication"
+  - "https://cse.bracu.ac.bd/thesis/synopsis/141/verifiable-agentic-search-and-generative-process-supervision-for-automated-reasoning"
+category: "library"
+relevance_score: 4
+synopsis_count: 75
+fetched_at: "2026-09-17T10:50:32.007725+00:00"
+content_sha256: "ca267bd492f49b086c2b45e38b90caefb03dbc4ddfb24a0990d274e3a9b3b8a5"
+source_type: "compiled_webpage"
+---
+
+# BRACU CSE Thesis Synopses
+
+## Prediction of traffic status in near future
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/12/prediction-of-traffic-status-in-near-future
+
+Synopsis
+Problem: Maps show real-time traffic status only. Although it may require 5 hours to reach a certain destination, it shows me the current status of the whole path instead of what it will be like after ~5 hours as we make progress towards the destination.
+Relevance of the Topic
+-
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Self-sovereign Identity (SSI)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/13/self-sovereign-identity-(ssi)
+
+Synopsis
+SSI is a cutting edge emerging research domain.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+There are many avenues for research in this particular domain. The simplest domain would be in researching how existing application domains could be improved with SSI. However, there are many other fundamental research topics available in this emerging domain.
+Skills Learned
+Students will work on a cutting domain and learn a number of new technical skills. It is a challenging domain to start and will challenge the technical acumen of the students.
+Relevant courses to the topic
+Any of these two courses.
+Reading List
+
+---
+
+## AI-Assisted Code Generation Tools: A New Frontier in Software Development
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/14/ai-assisted-code-generation-tools-a-new-frontier-in-software-development
+
+The primary objective of this research is to explore the potential of Artificial Intelligence (AI) in assisting and automating the process of code generation. The study aims to understand the current state of AI-assisted code generation tools such as GitHub Copilot, Amazon CodeWhsiperer, Codeium, CodeGeeks, etc, their efficiency, and their impact on software development practices.
+As the field of software development continues to evolve, the demand for efficient and automated solutions is ever-increasing. AI-assisted code generation tools have emerged as a promising solution, offering the potential to automate the tedious and time-consuming task of writing code. These tools leverage AI algorithms to generate code based on user inputs, significantly reducing the time and effort required in software development. This research will delve into the intricacies of these tools, their capabilities, and their implications for the future of software development.
+The research will employ a mixed-methods approach, combining both qualitative and quantitative research methods. The qualitative aspect will involve a comprehensive literature review of existing studies and articles on AI-assisted code-generation tools. The quantitative aspect will involve the use of surveys and interviews with software developers and industry experts to gather first-hand information about their experiences and perceptions of these tools. The research may also involve a comparative analysis of different AI-assisted code-generation tools in terms of their efficiency, accuracy, and ease of use.
+- Performance Optimization: Future research could focus on how to optimize the performance of AI-assisted code generation tools, including improving the speed of code generation and the efficiency of the generated code.
+- Customization and Personalization: Research could explore how these tools can be customized or personalized to better meet the needs of individual developers or teams.
+- Integration with Other Tools: Another potential area of research is how AI-assisted code generation tools can be integrated with other software development tools, such as integrated development environments (IDEs) or version control systems.
+- Advanced AI Understanding: Developing a deep understanding of AI algorithms used in code generation tools, including machine learning and natural language processing techniques.
+- Code Evaluation: Gaining the ability to critically evaluate the quality and efficiency of code generated by AI, including its readability, maintainability, and performance.
+- Quantitative Research: Enhancing skills in conducting quantitative research, including designing surveys, conducting structured interviews, and performing statistical analysis.
+- Technical Writing: Improving the ability to communicate complex technical concepts in a clear and concise manner, particularly in writing the thesis and any subsequent publications.
+- Artificial Intelligence: This course provides a fundamental understanding of AI concepts, which is crucial for understanding how AI-assisted code-generation tools work.
+- Software Engineering: This course provides knowledge about software development practices, which will be useful in understanding the context in which these tools are used.
+- Data Structures and Algorithms: Understanding data structures and algorithms is essential for evaluating the efficiency of the code generated by these tools.
+- Machine Learning: As many AI-assisted code generation tools leverage machine learning algorithms, knowledge from this course will be beneficial.
+- Programming Languages: Courses on various programming languages will provide the necessary background to understand and evaluate the code generated by these tools.
+- Nguyen, Nhan, and Sarah Nadi. "An empirical evaluation of GitHub copilot's code suggestions." Proceedings of the 19th International Conference on Mining Software Repositories. 2022.(
+[https://doi.org/10.1145/3524842.3528470](https://doi.org/10.1145/3524842.3528470)) - Yetistiren, Burak, Isik Ozsoy, and Eray Tuzun. "Assessing the quality of GitHub copilot’s code generation." Proceedings of the 18th International Conference on Predictive Models and Data Analytics in Software Engineering. 2022.(
+[https://doi.org/10.1145/3558489.3559072](https://doi.org/10.1145/3558489.3559072)) - Denny, Paul, Viraj Kumar, and Nasser Giacaman. "Conversing with Copilot: Exploring prompt engineering for solving CS1 problems using natural language." Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 1. 2023. (
+[https://doi.org/10.1145/3545945.3569823](https://doi.org/10.1145/3545945.3569823))
+
+---
+
+## An Explainable Machine Learning System for Accurate and Reliable Detection of Crop Pests and Diseases
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/16/an-explainable-machine-learning-system-for-accurate-and-reliable-detection-of-crop-pests-and-diseases
+
+The goal of the project is to create an interpretable ML/AI/DL system that can rapidly and precisely recognize pests and diseases that affect crops. This system examines cropped photos and outputs precise and transparent detection results by utilizing machine learning algorithms and computer vision techniques. The interpretability feature makes sure that the AI/ML/DL system delivers concise justifications for its predictions, enabling farmers and agronomists to comprehend the concerns found and decide on the best course of action for managing pests and diseases. Enhancing crop health management techniques and maximizing agricultural productivity are the goals of the research.
+Pests and diseases have an adverse effect on crop yield and food security, which presents difficulties for farmers all over the world. Effective pest management and disease control depend on the prompt and precise detection of these threats. Traditional detection techniques frequently require specialized knowledge and are subjective and time-consuming. This research tackles these constraints by offering clear insights into the detection process through the development of an interpretable AI system. By better understanding how the system makes decisions, farmers and agronomists can safeguard their crops, reduce losses, and increase agricultural sustainability.
+Several directions can be explored in future research on explainable AI systems for crop pest and disease detection. Future research may concentrate on improving the interpretability of the AI system through the incorporation of domain knowledge and expert guidelines. The accuracy and dependability of the system could also be increased by looking at the incorporation of multi-modal data sources, such as satellite imaging, weather data, and historical records. Exploring the interpretable AI system's scalability and deployment in other crop types and geographical regions can also result in a larger adoption and useful implementations in the agriculture sector.
+Some of the skills of this research topic include:
+- Expertise in computer vision techniques, machine learning algorithms, and image analysis.
+- Researchers also develop expertise in data preprocessing, feature extraction, and model training to achieve accurate and reliable detection results.
+- Additionally, they gain knowledge in designing and implementing explainability methods to provide clear explanations and justifications for AI predictions.
+- Critical thinking, problem-solving, and the capacity to bridge the gap between AI technology and useful applications in the agriculture sector are all fostered by this research.
+- CSE 221: Algorithms
+- CSE 422: Artificial Intelligence
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+[https://ieeexplore.ieee.org/abstract/document/9399342](https://ieeexplore.ieee.org/abstract/document/9399342)[https://link.springer.com/article/10.1186/s13007-019-0479-8](https://link.springer.com/article/10.1186/s13007-019-0479-8)[https://www.sciencedirect.com/science/article/pii/S2214317320300196](https://www.sciencedirect.com/science/article/pii/S2214317320300196)[https://ieeexplore.ieee.org/abstract/document/9002508](https://ieeexplore.ieee.org/abstract/document/9002508)[https://www.sciencedirect.com/science/article/pii/S1110016821001642](https://www.sciencedirect.com/science/article/pii/S1110016821001642)
+
+---
+
+## Enhancing Real-time Video Classification Accuracy using Deep Learning and Improved Preprocessing Techniques
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/17/enhancing-real-time-video-classification-accuracy-using-deep-learning-and-improved-preprocessing-techniques
+
+The topic focuses on utilizing deep learning algorithms and enhanced preprocessing approaches to increase the precision of real-time video classification. Convolutional neural networks (CNNs), for example, are deep learning models that may be used to evaluate video streams and perform more accurate and dependable categorization in real-time. The study also looks into the use of advanced preprocessing methods to improve the quality of video data and increase real-time video classification accuracy.
+Among the many fields that can benefit from accurate real-time video classification are surveillance, video analytics, and autonomous systems. Increased decision-making and response skills result from the ability to quickly and accurately identify objects, activities, or events through increased video classification accuracy. The accuracy and dependability of real-time video classification systems will be improved as a result of this research, which will also help with applications like personalized video content recommendations, real-time threat detection in surveillance, and the perception and comprehension of the environment by autonomous systems.
+Future research can concentrate on creating more complex deep learning architectures that include multimodal data and take into account temporal dependencies for better video categorization accuracy. Further improvements in classification performance may result from examining the efficacy of various preprocessing methods such denoising, contrast enhancement, or data augmentation. The models' capacity to generalize across many contexts and domains can also be strengthened by investigating the integration of transfer learning, domain adaptation, and self-supervised learning methodologies. The development of accurate video categorization systems on platforms with limited resources will also be facilitated by study into the optimization of computational resources and real-time implementation methodologies.
+Researchers can gain significant skills by working on projects that increase real-time video categorization accuracy using deep learning and improved preprocessing methods. Such as:
+- Researchers gain experience in creating and training CNN models for video classification tasks, as well as in deep learning frameworks like TensorFlow or PyTorch.
+- They also learn how to handle temporal information, preprocess video data, and use cutting-edge methods to improve video quality.
+- Additionally, researchers gain expertise in model optimization, performance evaluation, and choosing the best preprocessing methods for particular video classification tasks.
+- This study can also develop deep learning system optimization for real-time video analysis, critical thinking, and problem-solving skills.
+- CSE 221: Algorithms
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+[https://www.sciencedirect.com/science/article/abs/pii/S2213138822006531](https://www.sciencedirect.com/science/article/abs/pii/S2213138822006531)[https://ieeexplore.ieee.org/abstract/document/8911244](https://ieeexplore.ieee.org/abstract/document/8911244)[https://www.mdpi.com/2076-3417/11/9/4164](https://www.mdpi.com/2076-3417/11/9/4164)[https://www.sciencedirect.com/science/article/pii/S1877050917320860](https://www.sciencedirect.com/science/article/pii/S1877050917320860)
+
+---
+
+## Affective Anthropomorphic Intelligent System for Artificial General Intelligence
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/18/affective-anthropomorphic-intelligent-system-for-artificial-general-intelligence
+
+Synopsis
+Anthropomorphism is the attribution of human traits, emotions, or intentions to non-human entities. The traditional IVR agents are intelligent bots and have limitations in human-like conversation style, tone, and affection. The key objective of this research is to develop an affective anthropomorphic intelligent agent (AAIA) using generative deep learning and transformer-based NLP. The agent learns an invertible mapping of data to a latent space that can be manipulated and generates a Mel-spectrogram frame for voice synthesis and style transfer. The contextual affect of the conversion will be maintained through affective computing. You can train the AIA to be a digital clone of your loving idol or companion.
+Relevance of the Topic
+The topic is relevant to computer science, computer engineering, and data science students who are enthusiasts in generative deep learning, natural language processing, and audio signal processing.
+Future Research/Scope
+You can train the AAIA to be a digital clone of your loving idol or companion.
+Skills Learned
+After completion of this research, students will learn affective computing methods for sentences and human voices and will learn the utilization of generative deep learning methods in IVR design.
+Relevant courses to the topic
+- Artificial Intelligence, Neural Networks, Data Science, Machine Learning, HCI, and Natural Language Processing
+Reading List
+- J. Li, M. Galley, C. Brockett, G. P. Spithourakis, J. Gao, and B. Dolan, “A persona-based neural conversation model,” arXiv:1603.06155 [cs], 6 2016. arXiv: 1603.06155.
+- B. Schuller and A. Batliner, Computational paralinguistics: emotion, affect and personality in speech and language processing. Hoboken, N.J: Wiley, first edition ed., 2014.
+- M. El Ayadi, M. S. Kamel, and F. Karray, “Survey on speech emotion recognition: Features, classification schemes, and databases,” Pattern Recognition, vol. 44, pp. 572–587, 3 2011.
+- Y. Lee, A. Rabiee, and S.-Y. Lee, “Emotional end-to-end neural speech synthesizer,” arXiv:1711.05447 [cs, eess], 11 2017. arXiv: 1711.05447.
+- Y. Gao, R. Singh, and B. Raj, “Voice impersonation using generative adversarial networks,” arXiv:1802.06840 [cs, eess], 2 2018. arXiv: 1802.06840.
+
+---
+
+## Intelligence-assisted learning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/19/intelligence-assisted-learning
+
+Synopsis
+The application of artificial intelligence and learning theory in Education is one of the promising research domains. AI can be used in the following studies e.g., pedagogy selection, effective student engagement determination, stress measurement, attention measurement, personalized teaching, and factors of effective teaching in tertiary-level education. Smartphones and IoT devices can also be used in intelligence-assisted learning e.g., learning pronunciations of Bengali or Arabic Alphabets. Therefore, big data analysis and deep learning methods can be applied in selecting effective pedagogy, and interactivity, and analyzing the learning behaviors of students of different courses and levels.
+Relevance of the Topic
+The topic is relevant to computer science, computer engineering, and data science students who are enthusiasts in big-data-analysis, data science, and natural processing.
+Future Research/Scope
+The Global Market Insights Inc. predicts that the AI education market could have a market value of $20 billion by 2027.
+Skills Learned
+After completion of this research students will learn to use data science approaches in education research and projects.
+Relevant courses to the topic
+- Artificial Intelligence, Neural Networks and Deep Learning, Machine Learning, Data Science, and Big-data Analytics
+Reading List
+- Srinivasan V. AI & learning: A preferred future. Computers and Education: Artificial Intelligence. 2022 Mar 18:100062.
+- Chen X, Xie H, Zou D, Hwang GJ. Application and theory gaps during the rise of Artificial Intelligence in Education. Computers and Education: Artificial Intelligence. 2020 Jan 1;1:100002.
+- Medeiros RP, Ramalho GL, Falcão TP. A systematic literature review on teaching and learning introductory programming in higher education. IEEE Transactions on Education. 2018 Aug 27;62(2):77-90.
+- Lee J, Lee CH, Kim DW, Kang BY. Smartphone-assisted pronunciation learning technique for ambient intelligence. IEEE Access. 2016 Dec 19;5:312-25.
+- Kanagarajan S, Ramakrishnan S. Ubiquitous and ambient intelligence assisted learning environment infrastructures development-a review. Education and Information Technologies. 2018 Jan;23(1):569-98.
+- Hwang GJ, Sung HY, Chang SC, Huang XC. A fuzzy expert system-based adaptive learning approach to improving students’ learning performances by considering affective and cognitive factors. Computers and Education: Artificial Intelligence. 2020 Jan 1;1:100003.
+
+---
+
+## Emotion AI: Emotionomics, Neuromarketing and Mining Mind
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/20/emotion-ai-emotionomics-neuromarketing-and-mining-mind
+
+Emotion AI deals with the recognition, interpretation, process, and simulation of human feelings and emotions. A human affective state can be recognized through computer vision-based facial expression recognition or by analyzing autonomic nervous system activity collected through psychophysiological signals of biosensors (e.g., EEG, PPG, EMG). There are many success stories of businesses leveraging emotion AI in marketing, customer service, healthcare, education, and gaming. The new Emotion AI research direction could be the role of emotions in effective negotiations, the harmful effects of anxiety on performance, and how advertisers can effectively capture and keep viewers' attention by evoking certain emotional responses.
+The topic is relevant to computer science, computer engineering, and data science students who are enthusiasts in machine learning, deep learning, image processing, digital signal processing, and business intelligence.
+The global emotion detection and recognition market was valued at $18.8 billion in 2020 and is projected to reach $103.1 billion by 2030, growing at a CAGR of 18.7% from 2021 to 2030.
+After completion of this research, students will learn affective computing methods for business intelligence: Emotion Detection and Recognition Market by Software Tool (Facial Expression and Emotion Recognition, Gesture and Posture Recognition, Voice Recognition), by Application (Law Enforcement Surveillance and Monitoring, Entertainment and Consumer Electronics, Marketing and Advertising, Others), by Technology (Pattern Recognition Network, Machine Learning, Natural Language Processing, Others), by End User (Commercial, Entertainment, Retail, Others).
+- Artificial Intelligence, Neural Networks and Deep Learning, Machine Learning, Image Processing, HCI, Data Science, and Big-data Analytics
+- Izard CE. Emotion theory and research: Highlights, unanswered questions, and emerging issues. Annual review of psychology. 2009 Jan 10;60:1-25.
+- Padios JM. Mining the mind: emotional extraction, productivity, and predictability in the twenty-first century. Cultural studies. 2017 May 4;31(2-3):205-31.
+- Hill D. Emotionomics: Leveraging emotions for business success. Kogan Page Publishers; 2010 Oct 3.
+- Noroozi F, Corneanu CA, Kamińska D, Sapiński T, Escalera S, Anbarjafari G. Survey on emotional body gesture recognition. IEEE Transactions on affective computing. 2018 Oct 16;12(2):505-23.
+- Islam MR, Moni MA, Islam MM, Rashed-Al-Mahfuz M, Islam MS, Hasan MK, Hossain MS, Ahmad M, Uddin S, Azad A, Alyami SA. Emotion recognition from EEG signals focusing on deep learning and shallow learning techniques. IEEE Access. 2021 Jun 22;9:94601-24.
+- Emotion AI in 2022, https://research.aimultiple.com/what-is-affective-computing, https://research.aimultiple.com/emotional-ai-examples/
+
+---
+
+## Mutation Testing of Deep Learning Model
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/21/mutation-testing-of-deep-learning-model
+
+Synopsis
+Deep neural networks (DNNs) are increasingly finding use in a variety of real-world applications, including speech recognition, image processing, and natural language processing. However, in terms of test data quality and model robustness, there is currently a lack of tool support for DNN testing.
+Relevance of the Topic
+Currently most of the works are focused on DL models, how to increase accuracy etc. Now it is the time to test the quality of the DL model.
+Future Research/Scope
+Student will be learn the internals of DL models and mutation testing. It can be used for testing DL applications.
+Skills Learned
+Deep learning algorithm, Python, testing
+Relevant courses to the topic
+Neural Networks, Software Engineering
+Reading List
+1. DeepMutation: Mutation Testing of Deep Learning Systems
+2. DeepMutation++: A Mutation Testing Framework for Deep Learning Systems
+
+---
+
+## Systematic security testing and evaluation frameworks for Agentic AI
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/22/systematic-security-testing-and-evaluation-frameworks-for-agentic-ai
+
+Agentic AI systems are increasingly being used to perform autonomous tasks such as planning, reasoning, tool use, code execution, information retrieval, and decision-making. Unlike conventional AI models, agentic AI can interact with external tools, APIs, databases, files, and other agents, creating new security risks. These systems can be vulnerable to threats such as prompt injection, indirect prompt injection, excessive agency, tool misuse, data leakage, privilege escalation, and malicious manipulation of agent behavior. However, systematic security testing and evaluation frameworks for Agentic AI are still relatively limited.
+Currently, much of the AI research focuses on improving the accuracy, reasoning capability, and autonomy of AI agents. As Agentic AI moves toward real-world deployment, it is becoming equally important to determine whether these agents are secure and trustworthy.
+An agent may produce a correct answer but still perform an unsafe action—for example, calling an unauthorized API, exposing sensitive information, executing malicious code, or following instructions injected through an external document or website.
+Therefore, there is a strong need for research on security testing of Agentic AI, including identifying vulnerabilities, designing attack scenarios, evaluating agent behavior, and developing automated security testing methods.
+Students can investigate the security of Agentic AI systems by developing and evaluating different attack and testing scenarios.
+Possible research directions include:
+- Prompt injection and indirect prompt injection testing
+- Tool/API misuse and unauthorized tool invocation
+- Excessive agency and unsafe autonomous actions
+- Data leakage and sensitive-information disclosure
+- Privilege escalation in AI agents
+- Agent-to-agent communication attacks
+- Memory poisoning and context manipulation
+- Malicious document/web-content injection
+- Goal hijacking and instruction manipulation
+- Automated security testing/benchmarking of AI agents
+- Development of a security testing framework for Agentic AI
+- Using mutation/fuzz testing to generate adversarial agent scenarios
+- Agentic AI and LLM fundamentals
+- Python programming
+- Prompt engineering
+- AI/LLM security
+- Cybersecurity fundamentals
+- API and tool integration
+- Threat modeling
+- Security testing
+- Adversarial testing
+- Evaluation and benchmarking
+- LangChain/LangGraph or similar agent frameworks
+- Experiment design and statistical evaluation
+- Artificial Intelligence
+- Neural Networks / Deep Learning
+- Cybersecurity
+- Software Engineering
+- OWASP Top 10 for LLM Applications — particularly Prompt Injection, Excessive Agency, and Insecure Output Handling.
+- OWASP Top 10 for Agentic Applications — security risks specifically associated with autonomous AI agents.
+- NIST AI Risk Management Framework (AI RMF) — framework for managing AI security and trustworthiness risks.
+- AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents — useful for studying security evaluation of tool-using agents.
+- InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents — useful for studying indirect prompt injection and tool misuse.
+- Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents — useful for understanding systematic security evaluation of LLM agents.
+
+---
+
+## Deep Learning based Medical Image Segmentation and Classification
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/23/deep-learning-based-medical-image-segmentation-and-classification-
+
+Synopsis
+Deep learning can play a vital role in detecting many diseases and health conditions based upon different medical images. Currently, due to various socio-economic factors, diseases have been on a constant rise and it is becoming a matter of pressure for people working in the medical sector to handle all those patients. Manual checkups and diagnosis are usually time consuming and could be erroneous too. Deep learning can offer a significantly more suitable solution to such issues. It can minimize the time of diagnosis, workloads of the people and also ease the path for further investigation.
+Relevance of the Topic
+The topic is very closely connected to the real world. This topic has the capability to offer feasible solutions to real life problems, which can eventually play an important role in contributing towards the progress of the medical sector.
+Future Research/Scope
+- Build a workable deep learning model with superior accuracy.
+- Build a mobile application for easier access.
+- Comparison with other state of the art methods.
+Skills Learned
+- Basics of machine learning.
+- Deep learning techniques such as CNN.
+- Different CNN architectures such as AlexNet, VGGNet, ResNet, etc.
+- Usage of high level neural network APIs such as keras.
+- Usage of different libraries such as Numpy, Matplotlib, etc.
+- Usage of different model performance metrics such as precision, recall, f1 score, confusion matrix, etc.
+Relevant courses to the topic
+- Artificial Intelligence (CSE422)
+- Neural Networks (CSE425)
+- Machine Learning (CSE427)
+- Image Processing (CSE428)
+Reading List
+- Litjens, G., Kooi, T., Bejnordi, B.E., Setio, A.A.A., Ciompi, F., Ghafoorian, M., Van Der Laak, J.A., Van Ginneken, B. and Sánchez, C.I., 2017. A survey on deep learning in medical image analysis. Medical image analysis, 42, pp.60-88.
+- Hesamian, M.H., Jia, W., He, X. and Kennedy, P., 2019. Deep learning techniques for medical image segmentation: achievements and challenges. Journal of digital imaging, 32, pp.582-596.
+- Ker, J., Wang, L., Rao, J. and Lim, T., 2017. Deep learning applications in medical image analysis. Ieee Access, 6, pp.9375-9389.
+- Cai, L., Gao, J. and Zhao, D., 2020. A review of the application of deep learning in medical image classification and segmentation. Annals of translational medicine, 8(11).
+- Zhang, J., Xie, Y., Wu, Q. and Xia, Y., 2019. Medical image classification using synergic deep learning. Medical image analysis, 54, pp.10-19.
+
+---
+
+## Bangla Sign Language Detection using Deep Learning Techniques
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/24/bangla-sign-language-detection-using-deep-learning-techniques
+
+The amount of deaf and mute individuals on the earth is rising at an alarming rate. Bangladesh has about 2.6 million people who are unable to interact with the community using language. Hearing-impaired citizens in Bangladesh use Bangla sign language as a means of communication. However, these sign languages can be a bit difficult for typical people to understand. Hence, an intermediary step is needed for smooth communication between typical and hearing-impaired people. Hence, a deep learning based model can help in easing the process of identifying sign languages that can remove barrier between those two groups of people. This is can affect the society in a positive way and offer improvement to the day to day communication for those people in need.
+The topic is a very important as it directly correlates with the lifestyle improvement for the disabled people.
+- Build a deep learning model to identify sign languages.
+- Create an intermediary interface for communication between typical and hearing-impaired people.
+- Integration of the model into a workable hardware/software for easier interpretation.
+- Basics of machine learning.
+- Deep learning techniques such as CNN.
+- Different CNN architectures such as AlexNet, VGGNet, ResNet, etc.
+- Usage of high level neural network APIs such as keras.
+- Usage of different libraries such as Numpy, Matplotlib, etc.
+- Usage of different model performance metrics such as precision, recall, f1 score, confusion matrix, etc.
+- Artificial Intelligence (CSE422)
+- Neural Networks (CSE425)
+- Machine Learning (CSE427)
+- Image Processing (CSE428)
+- Huang, J., Zhou, W., Li, H. and Li, W., 2015, June. Sign language recognition using 3d convolutional neural networks. In 2015 IEEE international conference on multimedia and expo (ICME) (pp. 1-6). IEEE.
+- Pigou, L., Dieleman, S., Kindermans, P.J. and Schrauwen, B., 2015. Sign language recognition using convolutional neural networks. In Computer Vision-ECCV 2014 Workshops: Zurich, Switzerland, September 6-7 and 12, 2014, Proceedings, Part I 13 (pp. 572-578). Springer International Publishing.
+- Hossen, M.A., Govindaiah, A., Sultana, S. and Bhuiyan, A., 2018, June. Bengali sign language recognition using deep convolutional neural network. In 2018 joint 7th international conference on informatics, electronics & vision (iciev) and 2018 2nd international conference on imaging, vision & pattern recognition (icIVPR) (pp. 369-373). IEEE.
+- Hoque, O.B., Jubair, M.I., Islam, M.S., Akash, A.F. and Paulson, A.S., 2018, December. Real time bangladeshi sign language detection using faster r-cnn. In 2018 international conference on innovation in engineering and technology (ICIET) (pp. 1-6). IEEE.
+- Cui, R., Liu, H. and Zhang, C., 2017. Recurrent convolutional neural networks for continuous sign language recognition by staged optimization. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 7361-7369).
+
+---
+
+## Leveraging Deep Learning and Object Detection Techniques to Produce Feasible Search and Rescue Process Solutions after Natural Calamities in Bangladesh
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/25/leveraging-deep-learning-and-object-detection-techniques-to-produce-feasible-search-and-rescue-process-solutions-after-natural-calamities-in-bangladesh-
+
+Bangladesh faces a lot of natural calamities every year. The coastal morphology of Bangladesh influences the impact of natural hazards on the area. Bangladesh suffers from floods, cyclones, storm surge, river bank erosion, earthquake, drought, salinity intrusion, fire and tsunami. Cyclones and floods particularly caused massive damages. Cyclones occurred in 1970, 1991, 2007 and 2009 and killed 364,000, 136,000, 3,363 and 190 respectively. Due to unforeseen circumstances and improper management, the country suffers a lot from human lives and damaged goods and properties. This situation can be significantly improved by proper identification of damaged areas after a natural disaster. Image processing techniques combined with deep learning can play a vital role in detecting those damaged areas and eventually help the overall rescue procedure.
+Bangladesh is a land of natural calamities. Flood, cyclone, drought, famine destroy life and property every year. People live here fighting against the frequent natural calamities. In recent years our country has experienced a great number of natural calamities. Hence, this topic is immensely important and relevant to the current scenarios and it is high time to produce a workable solution to search and rescue procedure of those affected areas.
+Build a deep learning model to detect various objects in affected areas.
+Build an app that can send a message to corresponding authority automatically after analyzing damages.
+Build a prediction model based on historical data.
+- Basics of machine learning.
+- Usage of object detection models such as YOLOv4.
+- Deep learning techniques such as CNN.
+- Different CNN architectures such as AlexNet, VGGNet, ResNet, etc.
+- Usage of high level neural network APIs such as keras.
+- Usage of different libraries such as Numpy, Matplotlib, etc.
+- Usage of different model performance metrics such as precision, recall, f1 score, confusion matrix, etc.
+- Artificial Intelligence (CSE422)
+- Neural Networks (CSE425)
+- Machine Learning (CSE427)
+- Image Processing (CSE428)
+- Munawar, H.S., Ullah, F., Qayyum, S. and Heravi, A., 2021. Application of deep learning on uav-based aerial images for flood detection. Smart Cities, 4(3), pp.1220-1242.
+- Pi, Y., Nath, N.D. and Behzadan, A.H., 2020. Convolutional neural networks for object detection in aerial imagery for disaster response and recovery. Advanced Engineering Informatics, 43, p.101009.
+- Cao, Q.D. and Choe, Y., 2020. Building damage annotation on post-hurricane satellite imagery based on convolutional neural networks. Natural Hazards, 103(3), pp.3357-3376.
+- Lazin, R., Shen, X. and Anagnostou, E., 2021. Estimation of flood-damaged cropland area using a convolutional neural network. Environmental Research Letters, 16(5), p.054011.
+- Pantaleoni, E., Engel, B.A. and Johannsen, C.J., 2007. Identifying agricultural flood damage using Landsat imagery. Precision Agriculture, 8, pp.27-36.
+
+---
+
+## Leaf Disease Detection using Convolution Neural Network and Other Deep learning Techniques
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/26/leaf-disease-detection-using-convolution-neural-network-and-other-deep-learning-techniques
+
+Bangladesh is an agricultural country where economy is largely dependent upon production of many types of crops. The main food crops of Bangladesh are potato, paddy, pulse, barley, oilseeds, fruit, vegetables, spices, maize etc. While rice is the primary staple food and the most important crop, wheat and maize are of second and third importance. Pulses and oilseeds are important crops in the context of supplying plant-based proteins for rural people. Jute and sugarcane are important cash crops. However, crop production is hugely affected due to many types of leaf diseases every year. Many a times, farmers fail to identify the diseases within time and it leads to major losses. Deep learning based approaches can help a lot by providing an automatic solution for detecting crop leaf diseases. Early detection of leaf diseases can help farmers to take necessary approaches for the required treatment of the crops.
+Agriculture is the largest employment sector in Bangladesh, making up 14.2 percent of Bangladesh's GDP in 2017 and employing about 42.7 percent of the workforce. The whole agriculture sector is fully dependent on the production of many crops such as rice, wheat, maize, etc. Hence, working with this topic provides an opportunity to provide a real life solution to the crop disease problems that can eventually help the socio-economic structure of the country.
+Build a deep learning model to identify crop diseases.
+Build a segmentation model to segment the affected areas of crops.
+Build a mobile application to make the whole process more feasible.
+Build a model to suggest potential pesticides.
+- Basics of machine learning.
+- Deep learning techniques such as CNN.
+- Different CNN architectures such as AlexNet, VGGNet, ResNet, etc.
+- Usage of high level neural network APIs such as keras.
+- Usage of different libraries such as Numpy, Matplotlib, etc.
+- Usage of different model performance metrics such as precision, recall, f1 score, confusion matrix, etc.
+- Artificial Intelligence (CSE422)
+- Neural Networks (CSE425)
+- Machine Learning (CSE427)
+- Image Processing (CSE428)
+- Sardogan, M., Tuncer, A. and Ozen, Y., 2018, September. Plant leaf disease detection and classification based on CNN with LVQ algorithm. In 2018 3rd international conference on computer science and engineering (UBMK) (pp. 382-385). IEEE.
+- Saleem, M.H., Potgieter, J. and Arif, K.M., 2019. Plant disease detection and classification by deep learning. Plants, 8(11), p.468.
+- Li, L., Zhang, S. and Wang, B., 2021. Plant disease detection and classification by deep learning—a review. IEEE Access, 9, pp.56683-56698.
+- Jasim, M.A. and Al-Tuwaijari, J.M., 2020, April. Plant leaf diseases detection and classification using image processing and deep learning techniques. In 2020 International Conference on Computer Science and Software Engineering (CSASE) (pp. 259-265). IEEE.
+- Lu, J., Tan, L. and Jiang, H., 2021. Review on convolutional neural network (CNN) applied to plant leaf disease classification. Agriculture, 11(8), p.707.
+
+---
+
+## Natural Language Processing - Usage and Scope in Modern Day Data
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/27/natural-language-processing---usage-and-scope-in-modern-day-data
+
+Natural language processing (NLP) is the branch of computer science—specifically, the branch of artificial intelligence or AI—concerning giving computers the capacity to understand text and spoken words in the same manner that humans do. NLP blends computational linguistics (human language rule-based modeling) with statistical, machine learning, and deep learning models. These technologies, when combined, allow computers to analyze human language in the form of text or speech data and 'understand' its full meaning, complete with the speaker's or writer's intent and sentiment. Efficient NLP techniques (in both Bengali and English) can help machines to communicate well with the users and provide a lot of useful insights. NLP can be used in speech recognition, speech tagging, co-reference resolution, summarization, sentiment analysis, etc.
+Natural language processing enables computers to speak with humans in their native language while also automating other language-related processes. NLP, for example, enables computers to read text, hear voice, analyze it, gauge sentiment, and identify which bits are significant. Machines can now interpret more language-based data than humans, without becoming fatigued and in a consistent, unbiased manner. Given the massive volume of unstructured data generated every day, from medical records to social media, automation will be essential for efficiently analyzing text and audio data.
+Build a model to perform sentiment analysis, hate speech recognition, fake news classification, etc.
+Build an application for summarization, medical document analysis, etc.
+Provide useful insights in businesses regarding market trends, customer behavior, etc.
+- Basics of machine learning.
+- Usage of high level neural network APIs such as keras.
+- Usage of different libraries such as Natural Language Toolkit (NLTK), Gensim, CoreNLP, spaCy, TextBlob, etc.
+- Usage of different model performance metrics such as precision, recall, f1 score, confusion matrix, etc.
+- Artificial Intelligence (CSE422)
+- Machine Learning (CSE427)
+- Natural Language Processing-I (CSE431)
+- Natural Language Processing-II (CSE440)
+- Neural Networks (CSE425)
+- Pak, A. and Paroubek, P., 2010, May. Twitter as a corpus for sentiment analysis and opinion mining. In LREc (Vol. 10, No. 2010, pp. 1320-1326).
+- Liu, B. and Zhang, L., 2012. A survey of opinion mining and sentiment analysis. In Mining text data (pp. 415-463). Springer, Boston, MA.
+- Tripto, N.I. and Ali, M.E., 2018, September. Detecting multilabel sentiment and emotions from bangla youtube comments. In 2018 International Conference on Bangla Speech and Language Processing (ICBSLP) (pp. 1-6). IEEE.
+- Del Vigna12, F., Cimino23, A., Dell’Orletta, F., Petrocchi, M. and Tesconi, M., 2017, January. Hate me, hate me not: Hate speech detection on facebook. In Proceedings of the first Italian conference on cybersecurity (ITASEC17) (pp. 86-95).
+- Neto, J.L., Freitas, A.A. and Kaestner, C.A., 2002. Automatic text summarization using a machine learning approach. In Advances in Artificial Intelligence: 16th Brazilian Symposium on Artificial Intelligence, SBIA 2002 Porto de Galinhas/Recife, Brazil, November 11–14, 2002 Proceedings 16 (pp. 205-215). Springer Berlin Heidelberg.
+- Murff, H.J., FitzHenry, F., Matheny, M.E., Gentry, N., Kotter, K.L., Crimin, K., Dittus, R.S., Rosen, A.K., Elkin, P.L., Brown, S.H. and Speroff, T., 2011. Automated identification of postoperative complications within an electronic medical record using natural language processing. Jama, 306(8), pp.848-855.
+- Liu, X., Shin, H. and Burns, A.C., 2021. Examining the impact of luxury brand's social media marketing on customer engagement: Using big data analytics and natural language processing. Journal of Business research, 125, pp.815-826.
+
+---
+
+## Robot Learning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/28/robot-learning
+
+Synopsis
+Robot Learning
+Relevance of the Topic
+Machine Learning, Reinforcement Learning, Computer Vision, Continual Learning
+Future Research/Scope
+Multi-robot coordination
+Identifying the strengths, limitations, and open research issues
+Developing new RL algorithms
+Developing new methods for generating training data
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+- Artificial Intelligence
+- Machine Learning
+- Introduction to Robotics
+Reading List
+
+---
+
+## Exploring the Application of Generative Adversarial Networks (GANs) in Medical Imaging: Enhancing Medical Diagnosis Accuracy through Deep Learning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/29/exploring-the-application-of-generative-adversarial-networks-(gans)-in-medical-imaging-enhancing-medical-diagnosis-accuracy-through-deep-learning
+
+The primary emphasis of the research is on examining the use of Generative Adversarial Networks (GANs) in medical imaging with the aim of enhancing the precision of medical diagnosis using deep learning methods. GANs are potent deep-learning models that combine a generator and a discriminator to create realistic and excellent synthetic images. This study intends to investigate how GANs may be used to produce realistic medical images, augment small datasets, and improve the precision of medical diagnosis.
+The provision of appropriate and timely healthcare interventions depends critically on an accurate medical diagnosis. However, due to variances in the quality of images, the complexity of anatomical structures, and the existence of abnormalities or subtle patterns, medical image interpretation can be difficult. This research will aid in the creation of cutting-edge diagnostic tools by investigating the use of GANs in medical imaging. The findings of this study are highly relevant to the healthcare industry since they can increase the accuracy of medical diagnoses, lower the possibility of misdiagnosis, and ultimately lead to better patient care and treatment results.
+There is intriguing potential for development in the future of GAN applications in medical imaging. Future research can concentrate on creating GAN structures that are specially designed for creating medical images, guaranteeing great quality and anatomical correctness. The accuracy of medical diagnoses can also be enhanced by examining the integration of GANs with other deep learning models, such as convolutional neural networks (CNNs), for better feature extraction and categorization. Furthermore, it may be beneficial to investigate the potential of GANs for producing enhanced datasets for uncommon diseases or illnesses with few data. Future studies must also focus on examining the ethical issues and potential biases in GAN-generated medical images.
+Studying the use of GANs in medical imaging to increase diagnostic precision develops important skills such as:
+- Researchers develop competency in deep learning frameworks like TensorFlow or PyTorch, GAN architectures, and the training and fine-tuning of GAN models utilizing datasets of medical images.
+- Additionally, they gain expertise in handling medical imaging data, preprocessing data, and evaluating the efficacy and clinical use of artificially produced images.
+- Besides, researchers learn about diagnostic procedures, medical imaging data problems, and medical image processing approaches.
+- This study improves problem-solving skills, critical thinking, and the capacity to use cutting-edge deep learning techniques to enhance medical diagnosis in a hospital setting.
+- CSE 221: Algorithms
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+[https://eandv.biomedcentral.com/articles/10.1186/s40662-022-00277-3](https://eandv.biomedcentral.com/articles/10.1186/s40662-022-00277-3)[https://www.mdpi.com/1999-5903/13/1/8](https://www.mdpi.com/1999-5903/13/1/8)[https://arxiv.org/abs/1805.03144](https://arxiv.org/abs/1805.03144)[https://medinform.jmir.org/2022/6/e37365](https://medinform.jmir.org/2022/6/e37365)
+
+---
+
+## Applications of Natural Language Processing (NLP)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/30/applications-of-natural-language-processing-(nlp)
+
+How does ChatGPT like Chatbots, Grammarly or LanguageTool.org work? Speaking to Siri, Google search, YouTube captions, or talking to a computer in general or making a computer understand language, speech recognition, converting image to text (OCR), etc. everything are applications of Natural Language Processing (NLP).
+Students from most universities are doing research in Natural Language Processing (NLP). We are using language to talk to a computer or robot. For a computer to understand us, NLP is a must.
+Applications in medical/health sciences, business, education, detecting fake news and cyber-bullying, automated customer service, etc.
+How to work with emotion/sentiment analysis, word senses, information extraction, named entities, language models, chatbots and dialogue systems, etc.
+- Algorithms
+- Artificial Intelligence
+- Automata and Computability
+- Compiler Design
+- Computer Graphics
+- Cybersecurity
+- Data Science
+- Discrete Mathematics
+- Human Computer Interface (HCI)
+- Image Processing
+- Machine Learning
+- Natural Language Processing
+- Neural Networks
+- Numerical Methods
+- Robotics
+- Speech and Language Processing Dan Jurafsky and James H. Martin
+[https://web.stanford.edu/~jurafsky/slp3/](https://web.stanford.edu/~jurafsky/slp3/) - ACL Anthology
+[https://aclanthology.org/](https://aclanthology.org/)
+
+---
+
+## Applications of Data Science (DS) and Pattern Recognition (PR)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/31/applications-of-data-science-(ds)-and-pattern-recognition-(pr)
+
+Finding features, patterns, detecting and classifying objects, handwriting recognition, Optical character recognition (OCR), speech recognition, remote sensing, geospatial analysis, biomedical and health data analysis, text classification, identifying roads, image classification, image generation, etc.
+Self-driving cars, climate change and disaster management, cybersecurity, geospatial analysis and urban planning etc. require high-level of pattern recognition and analysis.
+Artificial Intelligence, Machine Learning, Deep Learning etc. work on finding patterns, learning patterns and applying the knowledge based on learning patterns. As the future is increasingly AI-based, students are expected to be able to automate many parts of their work domain.
+Applying machine learning algorithms and related concepts including Regression, Classification, Learning, Bias, Dimensionality, Support Vector Machines, Kernel Methods, Decision Trees, Nearest Neighbor, Clustering, etc.
+- Algorithms
+- Artificial Intelligence
+- Automata and Computability
+- Compiler Design
+- Computer Graphics
+- Cybersecurity
+- Data Science
+- Databases
+- Discrete Mathematics
+- Human Computer Interface (HCI)
+- Image Processing
+- Machine Learning
+- Natural Language Processing
+- Neural Networks
+- Numerical Methods
+- Robotics
+- Understanding ML by Shai Shalev-Shwartz and Shai Ben-David
+[https://www.cs.huji.ac.il/w~shais/UnderstandingMachineLearning/copy.html](https://www.cs.huji.ac.il/w~shais/UnderstandingMachineLearning/copy.html) - State-of-the-Art
+[https://paperswithcode.com/search?q_meta=&q_type=&q=journal](https://paperswithcode.com/search?q_meta=&q_type=&q=journal)
+
+---
+
+## Applications of Parallel, Distributed, and High-Performance Computing (HPC)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/32/applications-of-parallel-distributed-and-high-performance-computing-(hpc)
+
+Synopsis
+What does the infrastructure for Google, Facebook, Amazon, Microsoft, Twitter look like? How to make our codes/programs run faster: on multiple CPU cores, multiple computers, different computers all around the world? What are the principles behind supercomputers?
+Relevance of the Topic
+High-Performance Computing Applications include
+o Reinforcement Learning, Deep Learning, Machine Learning, Federated Learning
+o Artificial Intelligence
+o Big Data
+o Cyber Security
+o Simulations
+Future Research/Scope
+Masters and PhD opportunities abroad may include usage of high-performance computers.
+Skills Learned
+- Federated Learning: Collaborative Machine Learning
+- Exposure to various concepts related to Parallel, Distributed, and High-Performance Computing (HPC)
+Relevant courses to the topic
+- Advanced Programming in UNIX
+- Automata and Computability
+- Blockchain and Cryptocurrencies
+- Cloud Computing
+- Compiler Design
+- Computer Networks
+- Cybersecurity
+- Database Systems
+- Enterprise and Software Architecture
+- Fault Tolerant System
+- Internet of Things (IoT)
+- Operating Systems
+- Parallel, Distributed, and High-Performance Computing (HPC)
+- Serverless and Microservices
+- Simulation and Modeling
+Reading List
+- Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann
+- Distributed Systems by Maarten van Steen and Andrew S. Tanenbaum
+- Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services by Brendan Burns
+- Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures by Neal Ford, Mark Richards, et al.
+- Database Internals: A Deep Dive into How Distributed Data Systems Work by Alex Petrov
+- Building Event-Driven Microservices: Leveraging Organizational Data at Scale by Adam Bellemare
+- Security Engineering: A Guide to Building Dependable Distributed Systems by Ross Anderson
+- Site Reliability Engineering: How Google Runs Production Systems by Jennifer Petoff, Niall Murphy, et al.
+- Building Microservices: Designing Fine-Grained Systems by Sam Newman
+- Terraform: Up and Running: Writing Infrastructure as Code by Yevgeniy Brikman
+
+---
+
+## Solving the contextual bandit problem in stochastic, adversarial setting using an online classification oracle or an offline regression oracle.
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/33/solving-the-contextual-bandit-problem-in-stochastic-adversarial-setting-using-an-online-classification-oracle-or-an-offline-regression-oracle
+
+Synopsis
+(write your synopsis here)
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+http://proceedings.mlr.press/v119/foster20a/foster20a.pdf
+
+---
+
+## Automated Repair of Asymmetric Web Pages during Resolution of Mobile Friendly Problems
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/34/automated-repair-of-asymmetric-web-pages-during-resolution-of-mobile-friendly-problems
+
+Synopsis
+In software development, software usability is an important aspect to ensure the end-user does not strain or encounter problems with the use of a product or website’s user interface. Mobile friendly problem (MFP) causes the low quality of the website visibility and has a potential risk to decrease usability for a mobile user. The existing solutions to mobile friendly problems do not address symmetrical structure of web pages. To address this limitation, we have proposed an automatic repair technique that generates symmetric mobile friendly patches by tuning the symmetric criteria of a web page. The empirical evaluation shows that this approach gets better structure on the basis of symmetry in 90.7% of the evaluated websites. Moreover, A survey based evaluation shows that 88%, out of 54 websites, have been considered as more preferable than the previous version by the users.
+Relevance of the Topic
+Mobile friendly problem (MFP) causes the low quality of the website visibility and has a potential risk to decrease usability for a mobile user. The solution proposed an automatic repair technique that generates symmetric mobile friendly patches for a web page.
+Future Research/Scope
+A feasible future work is to handle the dynamic changes along with the symmetric mobile friendliness of a web page. This solution needs to introduce fixing the online version of a web site. Another possible future work is to analyze the relation between symmetry, mobile friendliness and complexity of a web page to quantify this relation. As the complexity of a web page depends on the elements, contents and layout, symmetry analysis on different types of website can extract valuable insights. Moreover, new HTML elements have been introduced in modern web pages. The modification of these elements needs different approach in the context of symmetric mobile friendly solution. In addition to that, different types of new viewports are being introduced day by day. These new viewports may need updated solution to incorporate.
+Skills Learned
+- Automatic Testing (Selenium)
+- Webpage segmentation
+- CSS Media Query
+- Any programming language
+Relevant courses to the topic
+- CSE 471: Systems Analysis and Design
+Reading List
+- https://www.scitepress.org/Papers/2021/105005/105005.pdf
+
+---
+
+## Impact of label noise and efficacy of noise filters in software defect prediction
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/35/impact-of-label-noise-and-efficacy-of-noise-filters-in-software-defect-prediction
+
+Synopsis
+A well-established fact in the domain of software defect classification is that dataset labels collected using automated algorithms contain noise. Several prior studies examined the impact of noise and proposed novel ways of dealing with this issue. Those studies, however, relied on randomly simulated artificial noise on clean datasets, but real-world noise is not random. Using a recently proposed dataset with both clean labels annotated by experts and noisy labels obtained by heuristics, this paper revisits the question of how label noise impacts the defect classification performance and demonstrate how the answer varies among several types of classification algorithms. Based on a diverse set of 9 different noise filters, this paper empirically investigates their ability to improve the performance of classifiers trained with label noise. Contrary to previous findings, we observe that the noise filters mostly struggle to improve performance over unfiltered noisy data. Lastly, we conduct several small-scale experiments in a bid to explain our findings and uncover actionable insights.
+Relevance of the Topic
+By using a diverse set of classifiers, imbalance-methods and noise filters, this study empirically investigates how the presence of label noise in post-release defect prediction datasets affect performance and evaluates the effectiveness of noise filters in minimizing the adverse effects of noise.
+Future Research/Scope
+A feasible future work is to investigate several alternatives to filtering for noise handling. The relatively higher cost of P→N noise suggests while designing any auto defect-labeling algorithm, recall of defect class should be prioritized over precision.
+Skills Learned
+Machine learning, deep learning
+Relevant courses to the topic
+- CSE 427: Machine Learning
+- CSE 470: Software Engineering
+Reading List
+- https://ksiresearch.org/seke/seke20paper/paper126.pdf
+
+---
+
+## On the Evolutionary Properties of Fix Inducing Changes
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/36/on-the-evolutionary-properties-of-fix-inducing-changes
+
+Synopsis
+A major aspect of maintaining the quality of software systems is the management of bugs. Bugs are commonly fixed in a corrective manner; detected after the code is tested or reported in production. Analyzing Fix-Inducing Changes (FIC) — developer code that introduces bugs — provides the opportunity to estimate these bugs proactively. This study analyzes the evolution of FICs to visualize patterns associated with the introduction of bugs throughout and within project releases. Furthermore, the association between FICs and complexity metrics, an important element of software evolution, is extracted to quantify the characteristics of buggy code. The findings indicate that FICs become less frequent as the software evolves and more commonly appear in the early stages of individual releases. It is also observed that FICs are correlated to longer Commit intervals. Lastly, FICs are found to be more present in codes with fewer lines and less cyclomatic complexity, which corresponds with the law of growing complexity in software evolution.
+Relevance of the Topic
+Analyzing Fix-Inducing Changes (developer code that introduce bugs) provides the opportunity to estimate bugs beforehand. This study analyzes the evolution of FICs to visualize patterns associated with the introduction of bugs throughout and within project releases.
+Skills Learned
+Software repository mining, Data mining
+Relevant courses to the topic
+- CSE 470: Software Engineering
+- CSE 471: Systems Analysis and Design
+Reading List
+- http://ceur-ws.org/Vol-2767/02-QuASoQ-2020.pdf
+
+---
+
+## A machine learning-based inference and analysis of crop production based on climate parameters in Bangladesh
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/37/a-machine-learning-based-inference-and-analysis-of-crop-production-based-on-climate-parameters-in-bangladesh
+
+Synopsis
+As a traditionally agricultural country, Bangladesh has a major economic dependency on the crops it grows. Predicting the production of crops is a significant part of the economic program of the country. Among the many domains that can be used to perform the prediction, this report adopts the parameters of the weather to foretell the production of crops. Correlating between the yield of crops and the climate has been widely experimented upon across the globe. This study adapts and improves on the techniques and processes introduced in previous studies to derive a broader, localized and intuitive correlation between the two entities. Using standard approaches of machine learning – linear regression, support vector machine, random forest and more – this paper not only provides appropriate prediction models for all the crops considered but also infers the numeric effect of various climate factors on the unit production 14 of the crops.
+Relevance of the Topic
+Using standard approaches of machine learning – linear regression, support vector machine, random forest and more – this study provides appropriate prediction models for all the crops considered and infers the numeric effect of various climate factors on the unit production of the crops.
+Skills Learned
+Machine learning
+Relevant courses to the topic
+- CSE 427: Machine Learning
+Reading List
+- https://aquibazmain.github.io/documents/agriculture_ML.pdf
+
+---
+
+## Human-Centric Explainable AI Framework for Enhanced Diagnostic Accuracy in Healthcare
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/38/human-centric-explainable-ai-framework-for-enhanced-diagnostic-accuracy-in-healthcare
+
+The study topic focuses on creating an AI framework that is human-centric and comprehensible to increase diagnostic precision in healthcare. The goal of the study is to develop an AI system that can provide suggestions that medical practitioners can comprehend and rely on, in addition to making accurate diagnoses and providing transparent justifications for those diagnoses. The research effort aims to improve the interaction between AI and healthcare practitioners, ultimately resulting in enhanced diagnosis accuracy and patient outcomes, by applying human-centric principles and interpretability methodologies.
+A human-centric explainable AI framework for improved diagnosis accuracy is a topic that is highly relevant to the healthcare industry. For efficient treatment planning and patient care, a timely and accurate diagnosis is essential. The approach overcomes the black-box characteristic of AI models, which frequently prevents their acceptance in healthcare, by offering accessible explanations for diagnoses produced by AI. Healthcare professionals and patients will benefit from the research's increased trust and confidence in AI systems, which will improve diagnostic precision, lower medical errors, and improve patient outcomes.
+Some potential areas in the field of human-centric explainable AI for enhanced diagnostic accuracy in healthcare for further investigation include:
+- Personalization and adaptability: Investigating methods to tailor the AI system to the requirements of specific medical professionals and modify the explanations to suit their degree of knowledge.
+- User-centered evaluation: evaluating the effects of the explainable AI framework on clinical decision-making, diagnostic accuracy, and healthcare professionals' trust.
+- Integration with decision support systems: Investigation of the explainable AI framework's integration with decision support systems in order to deliver thorough and context-sensitive diagnostic advice.
+This research will help undergraduate students develop valuable skills, including:
+- proficiency with AI techniques and algorithms, including deep learning and machine learning.
+- Expertise in methods and tools for interpretability to produce clear and comprehensible explanations for AI decisions.
+- Ability to preprocess and analyze data for use with electronic health records and healthcare datasets.
+- Critical thinking and problem-solving skills regarding the use of AI in healthcare.
+- Effective communication abilities to interact with healthcare professionals, policymakers, and patients while presenting study findings.
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+- (reading list here)
+
+---
+
+## Application of TinyML
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/39/application-of-tinyml
+
+This domain is something where students will learn how to implement machine learning on resource-constrained devices. The objective of this research is to deploy machine learning on low powers, low-resource devices that can be used in areas us as health care, security, agriculture, etc.
+This topic is very relevant for future IoT applications.
+Students should be able to use this knowledge for their higher studies, such as M.Sc./Ph.D.
+- Embedded Systems
+- Optimized ML for resource-constrained devices
+- Data Analysis
+- Digital Logic Design
+- DSD
+- ML
+[https://www.ece.mcmaster.ca/faculty/hassan/assets/publications/tinyCare_ICHI_2022.pdf](https://www.ece.mcmaster.ca/faculty/hassan/assets/publications/tinyCare_ICHI_2022.pdf)[https://dl.acm.org/doi/abs/10.1145/3555776.3577747](https://dl.acm.org/doi/abs/10.1145/3555776.3577747)[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9893137](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9893137)- https://www.researchgate.net/publication/356903797_TinyML-Based_Fall_Detection_for_Connected_Personal_Mobility_Vehicles
+
+---
+
+## Application of U-net architecture in Medical domain
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/42/application-of-u-net-architecture-in-medical-domain
+
+Synopsis
+The medical image analysis field is developing day by day, and segmenting organs, diseases, or abnormalities is a challenging task to complete. Dental disease diagnosis is a field where image segmentation can help gain significant improvements as dentists worldwide face various problems in diagnosing dental diseases with the naked eye. A deep neural network, U-net, was created for biomedical image segmentation and had multiple variations and advancements to serve better performance. This research will explore variants of U-net models for medical image segmentation and study their performance.
+Relevance of the Topic
+Medical Imaging
+Data Science
+Deep Learning
+Future Research/Scope
+In further higher studies. Such as M.Sc./Ph.D.
+Skills Learned
+Python
+Deep Learning
+Image processing
+Dataset
+Relevant courses to the topic
+- Machine Learning
+- AI
+- Data Structure, Algorithms
+Reading List
+[https://link.springer.com/article/10.1007/s11760-023-02528-9](https://link.springer.com/article/10.1007/s11760-023-02528-9)
+[https://link.springer.com/article/10.1007/s11760-023-02528-9](https://link.springer.com/article/10.1007/s11760-023-02528-9)
+[https://paperswithcode.com/task/medical-image-segmentation/codeless?page=4&q=](https://paperswithcode.com/task/medical-image-segmentation/codeless?page=4&q=)
+
+---
+
+## Develop a large language model capable of generating Bangla Government papers
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/43/develop-a-large-language-model-capable-of-generating-bangla-government-papers
+
+Developing a language model requires significant computational resources, access to large amounts of training data, and expertise in deep learning and natural language processing. Additionally, ensuring the accuracy and reliability of the generated government papers is crucial, as these documents have legal and administrative implications
+A comprehensive approach involving several steps are as follows:
+Data Collection: Gather a diverse and extensive dataset of Bangla government papers, including documents such as legislation, policy papers, reports, and official correspondence. This data should cover a wide range of topics and include various writing styles and formats.
+Data Preprocessing: Clean and preprocess the collected dataset to remove any unnecessary information, correct errors, and standardize the format. This step involves tasks such as tokenization, normalization, and removing duplicates or irrelevant sections.
+Model Training: Utilize a deep learning architecture, such as GPT-3.5, to train the language model on the preprocessed Bangla government papers dataset. The training process involves optimizing the model's parameters using techniques like supervised or unsupervised learning.
+Fine-Tuning: Fine-tune the pretrained language model on a specific task related to Bangla government papers, such as generating summaries or drafting policy recommendations. This step helps the model adapt to the specific requirements and nuances of the task at hand.
+Evaluation and Iteration: Assess the performance of the developed language model by comparing its outputs with human-generated Bangla government papers. Utilize evaluation metrics such as BLEU (Bilingual Evaluation Understudy) or ROUGE (Recall-Oriented Understudy for Gisting Evaluation) to measure the quality of the model's outputs. Iterate and refine the model by adjusting its architecture, training parameters, or dataset if necessary.
+Deployment: Once the language model achieves satisfactory performance, deploy it as an application or API that allows users to generate Bangla government papers. Provide an intuitive user interface where users can input specific requirements or prompts, and the model generates the corresponding output.
+It is interconnected with several similar topics in the field of natural language processing and artificial intelligence.
+Language Generation: Generating human-like text is a fundamental task in natural language processing. The development of language models, such as GPT-3.5, focuses on generating coherent and contextually relevant text based on given prompts. This topic is relevant to other applications, including chatbots, content generation, translation, and summarization.
+Multilingual Natural Language Processing: Building language models that can handle diverse languages is a significant area of research. As Bangla is a widely spoken language, developing language models capable of generating Bangla text contributes to the broader goal of multilingual natural language processing, enabling better communication and accessibility across various languages.
+Document Generation: Generating specific types of documents, such as government papers, involves understanding the structure, format, and content requirements of those documents. This topic aligns with the broader field of document generation, which includes applications like generating legal contracts, technical reports, academic papers, and business correspondence.
+Information Extraction and Understanding: To generate accurate and contextually relevant government papers, the language model must have a deep understanding of the information contained in the input prompts. This aligns with research on information extraction and understanding, which involves extracting key facts, entities, and relationships from text and leveraging that information in downstream tasks like summarization or document generation.
+Domain-Specific Language Models: Developing language models tailored to specific domains, such as Bangla government papers, is an emerging research area. These domain-specific models are designed to capture the domain-specific knowledge, vocabulary, and writing styles required for generating high-quality content within that specific context. Similar efforts have been made in domains like medical, legal, or scientific language generation.
+Scaled Large Language Model to the next level with variational deep learning models.
+- Natural Language Processing with Deep Learning.
+Large Language Model building in Bangla - Work procedure learning with govt personnel
+- (Course list here)
+If you're interested in developing a large language model capable of generating Bangla government papers, here are some reading materials that can help you in your work:
+1. "Natural Language Processing with Python" by Steven Bird, Ewan Klein, and Edward Loper: This book provides a comprehensive introduction to natural language processing (NLP) using the Python programming language. It covers various NLP tasks, including text classification, information extraction, and text generation, which are relevant to your project.
+2. "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This influential book provides a thorough introduction to deep learning, a key technology underlying large language models. It covers the foundational concepts and techniques of deep learning, including neural networks, optimization algorithms, and training methodologies.
+3. "The Illustrated GPT-3 (Gabriel Goh)": This online article provides a detailed and visual explanation of the GPT-3 architecture, which can help you understand the inner workings of the model. Although it specifically focuses on GPT-3, the concepts discussed can be applied to GPT-3.5 as well.
+4. Research Papers on Language Models: Dive into research papers on language models, particularly those related to large-scale language model training and fine-tuning. Explore papers such as "Language Models are Few-Shot Learners" by Tom B. Brown et al., "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" by Jacob Devlin et al., and "GPT-3: Language Models are Few-Shot Learners" by Tom B. Brown et al. These papers discuss techniques and approaches for training and fine-tuning language models.
+5. Bangla Government Papers and Documentation: Study existing Bangla government papers, including legislation, policy documents, and official reports, to familiarize yourself with the format, structure, and language used in these documents. This will help you understand the specific requirements and nuances of generating Bangla government papers.
+6. Online Bangla NLP Resources: Explore online resources and tools related to Bangla natural language processing. Websites like BNLP (Bangla Natural Language Processing) and BanglaNLP provide datasets, libraries, and tutorials specifically tailored for NLP tasks in Bangla.
+Remember to keep up with the latest research papers and advancements in the field of language models, NLP, and deep learning, as new techniques and approaches continue to emerge.
+
+---
+
+## Investigate the use of transformers in generating Dockers or Docker-compose yaml which could be used in CI/CD
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/44/investigate-the-use-of-transformers-in-generating-dockers-or-docker-compose-yaml-which-could-be-used-in-cicd
+
+Transformers, a type of deep learning model, have gained significant popularity in natural language processing (NLP) tasks such as text generation. While transformers are primarily used for NLP, they are not specifically designed for generating Dockers or Docker-compose YAML files. However, it's possible to adapt transformer models for generating such files by framing the problem as a text generation task.
+To use transformers for generating Docker or Docker-compose YAML files, you would need to follow these general steps:
+1. Dataset Creation: Collect or create a dataset of Docker or Docker-compose YAML files. This dataset should include valid configuration examples that represent the desired output you want the transformer to generate.
+2. Preprocessing: Preprocess the dataset by tokenizing the YAML files into a format suitable for input to the transformer model. Tokenization involves breaking down the text into smaller units such as words or subwords.
+3. Model Training: Train a transformer model on the preprocessed dataset. You can utilize existing transformer architectures such as GPT (Generative Pre-trained Transformer) or BERT (Bidirectional Encoder Representations from Transformers) and fine-tune them on your specific dataset.
+4. Text Generation: Once the transformer model is trained, you can generate Docker or Docker-compose YAML files by providing a prompt or seed text to the model and sampling from the output distribution of the model to generate the next token. You can iteratively generate tokens until you reach the desired length or a specific termination condition.
+5. Postprocessing: Convert the generated tokens back into YAML format and perform any necessary postprocessing to ensure the generated YAML is syntactically correct.
+It's worth mentioning that while transformers can be powerful for generating text, they may not always produce perfect or valid Docker or Docker-compose YAML files. The generated files may require manual inspection and adjustments to ensure correctness before using them in your CI/CD pipeline.
+While transformers can assist in generating text, the complexity and structure of YAML files may not make them an ideal fit for this task. It might be more efficient to explore other methods, such as templating engines or configuration management tools, for automating Docker or Docker-compose YAML generation in CI/CD workflows.
+A few research papers and projects that are relevant to the intersection of transformers, Docker, Docker-compose, and CI/CD:
+"Code2Sequence: Generating Sequences from Structured Representations of Code" by Wang et al. - This paper explores the generation of code sequences from structured representations using transformers. While it doesn't focus specifically on Docker or CI/CD, it showcases the application of transformers in generating code: [https://arxiv.org/abs/1908.02459](https://arxiv.org/abs/1908.02459)
+"DeepDocker: Learning Docker Containers in Depth" by Wang et al. - This paper proposes DeepDocker, a framework that applies deep learning techniques, including transformers, to automatically learn and predict Dockerfile instructions: [https://arxiv.org/abs/1812.02609](https://arxiv.org/abs/1812.02609)
+"Dockerfile2Vec: Learning Distributed Representations of Dockerfile Instructions" by Wang et al. - This work presents Dockerfile2Vec, a technique that utilizes Word2Vec and transformers to learn distributed representations of Dockerfile instructions, enabling code search and recommendation tasks: [https://dl.acm.org/doi/10.1145/3377811.3380371](https://dl.acm.org/doi/10.1145/3377811.3380371)
+"Compositional Code Generation from Natural Language" by Yin et al. - This paper focuses on generating code snippets from natural language descriptions, which could be relevant for generating Docker or Docker-compose YAML files from textual descriptions: [https://arxiv.org/abs/1611.02266](https://arxiv.org/abs/1611.02266)
+(write your future scope here)
+Several skills and benefits, including:
+Knowledge of Transformers: You will gain a deeper understanding of transformer models, their architecture, and their applications in natural language processing tasks. This knowledge can be valuable in various NLP-related projects and tasks.
+Docker and Docker-compose Expertise: Through your exploration of Docker and Docker-compose YAML files, you will enhance your knowledge and proficiency in using containerization technologies. This knowledge is highly relevant in modern software development and deployment practices.
+CI/CD Understanding: Investigating the integration of Docker or Docker-compose YAML generation into CI/CD workflows will give you insights into continuous integration and continuous deployment practices. This expertise is highly sought after in software development teams and DevOps roles.
+Text Generation and Language Modeling: Working on generating YAML files using transformers will provide you with experience in text generation tasks and language modeling techniques. This skill set can be useful for various text-based generation tasks, such as chatbots, document generation, and code generation.
+Problem-solving and Adaptability: By exploring unconventional approaches and adapting transformer models for generating infrastructure configurations, you will develop problem-solving skills and learn to think creatively and flexibly in finding solutions to complex challenges.
+Research and Critical Thinking: Investigating the existing literature and research papers related to transformers, Docker, Docker-compose, and CI/CD will enhance your research skills and critical thinking abilities. This will enable you to analyze, evaluate, and apply relevant research findings to your own work.
+- (Course list here)
+"Attention Is All You Need" by Vaswani et al. - The original paper introducing the Transformer model: [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
+"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" by Devlin et al. - The paper that introduced the BERT model, a widely used transformer-based model: [https://arxiv.org/abs/1810.04805](https://arxiv.org/abs/1810.04805)
+"Transformers Explained" by Jay Alammar - A comprehensive blog post explaining the working principles of transformers with interactive visualizations: [http://jalammar.github.io/illustrated-transformer/](http://jalammar.github.io/illustrated-transformer/)
+Docker documentation - Official documentation for Docker, which provides detailed information about Docker concepts, commands, and best practices: [https://docs.docker.com/](https://docs.docker.com/)
+Docker-compose documentation - Official documentation for Docker-compose, which explains how to define and manage multi-container Docker applications using YAML files: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
+"Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation" by Jez Humble and David Farley - A book that covers the principles and practices of continuous delivery, including CI/CD pipelines: [https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/)
+"The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Jez Humble, Patrick Debois, and John Willis - A comprehensive guide to DevOps practices, including CI/CD and infrastructure automation: [https://itrevolution.com/book/the-devops-handbook/](https://itrevolution.com/book/the-devops-handbook/)
+"Infrastructure as Code: Managing Servers in the Cloud" by Kief Morris - A book that explores the concept of infrastructure as code and provides practical guidance on using tools like Docker and Docker-compose for managing infrastructure: [https://www.oreilly.com/library/view/infrastructure-as-code/9781491924338/](https://www.oreilly.com/library/view/infrastructure-as-code/9781491924338/)
+
+---
+
+## Building automated testing tools for inspecting the vulnerabilities of a website using a neural network
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/45/building-automated-testing-tools-for-inspecting-the-vulnerabilities-of-a-website-using-a-neural-network
+
+Building automated testing tools for inspecting the vulnerabilities of a website using a neural network involves several steps. Here's an overview of the process:
+1. Data Collection: Gather a diverse dataset of websites, including both vulnerable and secure ones. This dataset should cover various types of vulnerabilities, such as SQL injection, cross-site scripting (XSS), remote code execution, etc. Additionally, collect corresponding labels indicating whether each website is vulnerable or secure.
+2. Feature Extraction: Extract relevant features from the collected websites. These features could include URL structure, HTML tags, input fields, cookies, HTTP headers, and more. The goal is to represent each website in a format that can be understood by a neural network.
+3. Dataset Preparation: Split the dataset into training, validation, and testing sets. It's crucial to have a sufficient amount of data for training to enable the neural network to learn patterns and generalize well.
+4. Neural Network Architecture: Design a neural network architecture suitable for vulnerability detection. This could involve using recurrent neural networks (RNNs), convolutional neural networks (CNNs), or a combination of both. The architecture should take the extracted features as input and output a prediction of whether a website is vulnerable or secure.
+5. Training: Train the neural network using the labeled dataset. The network learns to recognize patterns in the features and associate them with vulnerability labels. This process involves forward propagation, calculating the loss, and backpropagation to update the network's weights. Training continues until the network achieves satisfactory performance on the validation set.
+6. Testing and Evaluation: Evaluate the trained network on the testing set to assess its performance. Metrics such as accuracy, precision, recall, and F1 score can be used to measure the effectiveness of the automated testing tool. Adjustments can be made to the network or the feature extraction process based on the evaluation results.
+7. Deployment and Integration: Integrate the trained neural network into an automated testing tool or framework. This tool should accept a website as input and use the neural network to predict its vulnerability status. It can generate reports highlighting potential vulnerabilities and provide recommendations for improvement.
+8. Continuous Improvement: As new vulnerabilities emerge or updates are made to existing ones, keep updating the dataset and retrain the neural network periodically. This ensures that the automated testing tool stays up to date and effective in identifying vulnerabilities.
+Automated tools should be used as aids in the process but should not be relied upon solely for detecting vulnerabilities. Regular human review and testing are still essential for comprehensive website security.
+Some of them:
+Web Application Security: This field focuses on securing web applications from various vulnerabilities and attacks. It includes topics such as secure coding practices, authentication and authorization mechanisms, input validation, session management, and secure communication.
+Penetration Testing: Penetration testing, also known as ethical hacking, involves simulating attacks on a system or application to identify vulnerabilities. It often includes manual testing techniques to uncover security weaknesses that automated tools might miss.
+Machine Learning for Security: Machine learning techniques are widely used in the field of cybersecurity. Apart from vulnerability detection, machine learning algorithms can be applied to tasks such as malware detection, intrusion detection, anomaly detection, and network traffic analysis.
+Natural Language Processing (NLP) for Security: NLP techniques can be employed in security applications, such as analyzing and classifying security-related texts, identifying phishing emails, or detecting malicious code in software.
+Adversarial Machine Learning: This field explores how machine learning models can be attacked or manipulated by malicious actors. Adversarial machine learning focuses on developing robust models that can withstand attacks and maintain their effectiveness.
+Secure Software Development Lifecycle (SDLC): The secure SDLC emphasizes integrating security practices throughout the software development process. It includes activities such as threat modeling, security code reviews, security testing, and secure deployment practices.
+Vulnerability Management: Vulnerability management involves the identification, assessment, and remediation of vulnerabilities in systems or applications. It includes vulnerability scanning, patch management, vulnerability prioritization, and risk assessment.
+Security Testing Tools: There are various security testing tools available in the market that help identify vulnerabilities in web applications. These tools include both automated scanners and manual testing frameworks.
+(write your future scope here)
+Web Application Security Knowledge: You will gain a deep understanding of web application vulnerabilities and security best practices. This includes knowledge of common vulnerabilities like SQL injection, XSS, CSRF, and more. You will also learn about secure coding practices and techniques to mitigate these vulnerabilities.
+Machine Learning and Neural Networks: By working with neural networks, you will develop a solid understanding of machine learning concepts and techniques. This includes data preprocessing, feature extraction, model architecture design, training, evaluation, and deployment. You will gain hands-on experience in building and training neural networks for a specific application.
+Data Collection and Preprocessing: Collecting and preparing a diverse dataset for training a neural network is a crucial step. You will learn how to gather relevant data, label it appropriately, and preprocess it for effective training. This includes data cleaning, feature extraction, and handling imbalanced datasets.
+Model Evaluation and Metrics: Evaluating the performance of your neural network model is essential. You will learn how to select appropriate evaluation metrics such as accuracy, precision, recall, and F1 score. Understanding these metrics will help you assess the effectiveness of your automated testing tool.
+Security Testing Techniques: Developing an automated testing tool involves understanding various security testing techniques. You will gain knowledge of both manual and automated testing approaches, including vulnerability scanning, penetration testing, and secure coding practices. This knowledge can be applied to other security testing scenarios as well.
+Programming and Software Development: Building automated testing tools requires programming skills. You will strengthen your programming abilities, particularly in languages commonly used for web development and machine learning, such as Python, JavaScript, or others. You will also learn about software development practices, version control, and integration of machine learning models into software systems.
+Problem-solving and Critical Thinking: Throughout the process, you will encounter challenges and complexities that require problem-solving and critical thinking skills. You will learn to analyze issues, experiment with different approaches, and find effective solutions to problems encountered during the development of the testing tool.
+Continuous Learning and Adaptability: The field of cybersecurity is constantly evolving, with new vulnerabilities and attack techniques emerging regularly. Building automated testing tools requires a commitment to continuous learning and staying up to date with the latest security trends. You will develop the ability to adapt to new technologies, research findings, and security threats.
+- (Course list here)
+- "The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws" by Dafydd Stuttard and Marcus Pinto: This book provides an in-depth understanding of web application security vulnerabilities and techniques for identifying and exploiting them.
+- "Black Hat Python: Python Programming for Hackers and Pentesters" by Justin Seitz: This book focuses on using Python for security-related tasks, including building tools for penetration testing and vulnerability discovery.
+- "Machine Learning and Security: Protecting Systems with Data and Algorithms" by Clarence Chio and David Freeman: This book explores the application of machine learning techniques in the field of cybersecurity, covering topics such as malware detection, intrusion detection, and vulnerability assessment.
+- "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This comprehensive book provides a solid foundation in deep learning, including neural network architectures, training algorithms, and practical implementation techniques.
+- "Security Engineering: A Guide to Building Dependable Distributed Systems" by Ross Anderson: This book offers insights into the principles and practices of building secure systems, covering topics such as cryptography, authentication, access control, and secure protocols.
+- "The Tangled Web: A Guide to Securing Modern Web Applications" by Michal Zalewski: This book focuses on web application security and provides an in-depth exploration of various vulnerabilities and defensive techniques.
+- "Applied Cyber Security and the Smart Grid: Implementing Security Controls into the Modern Power Infrastructure" by Eric D. Knapp and Raj Samani: This book discusses the security challenges and solutions in the context of smart grid systems, which can provide insights into securing complex and interconnected systems.
+- "OWASP Testing Guide v4": The OWASP Testing Guide is a comprehensive resource that provides detailed guidance on web application security testing techniques, methodologies, and best practices.
+
+---
+
+## Application of Machine Leraning in network bandwidth Slicing
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/48/application-of-machine-leraning-in-network-bandwidth-slicing
+
+Dr. Amitabha Chakrabarty (ACH)
+Professor
+amitabha@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Utilizing Computer Vision for Detecting Human Behavior, Emotions, and Cognitive Responses: An Application in Enhancing Student Engagement
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/49/utilizing-computer-vision-for-detecting-human-behavior-emotions-and-cognitive-responses-an-application-in-enhancing-student-engagement
+
+This research project centers on the application of computer vision techniques for the detection and analysis of human behavior, emotions, and cognition, particularly in the context of student engagement. Leveraging computer vision technology, this study aims to develop a framework that can accurately assess and understand student engagement levels during educational activities.
+The project will involve the utilization of various computer vision algorithms and models to capture and interpret visual cues, such as facial expressions, body language, and eye movements, to gauge students' emotional and cognitive states. Additionally, it will explore the integration of sensor data and machine learning techniques to provide a comprehensive analysis of student engagement, enabling educators to make data-driven decisions to enhance the learning experience.
+In today's digital and remote learning environments, assessing and improving student engagement is a crucial aspect of effective education. Traditional methods of gauging student participation and understanding, such as classroom observation, have limitations. This research has significant relevance in the field of education as it offers innovative tools and techniques for educators to better understand student behavior and emotions, ultimately leading to more tailored and effective teaching strategies. Enhanced student engagement can result in improved learning outcomes and overall educational experiences.
+The future of this research area is promising, with several avenues for further exploration. Future studies can delve deeper into refining computer vision models for more precise and context-specific behavior and emotion recognition. Additionally, the integration of multimodal data, such as audio and physiological signals, can provide a more comprehensive understanding of human behavior.
+Furthermore, research efforts should focus on addressing ethical concerns related to privacy and consent when implementing such technologies in educational settings. Ensuring transparency, fairness, and accountability in the use of computer vision for student engagement analysis is of paramount importance.
+Undertaking research in computer vision and its application in education equips researchers with valuable skills, including:
+- Proficiency in computer vision technologies and tools.
+- Expertise in machine learning and deep learning methodologies.
+- Data collection and analysis skills, particularly related to human behavior and emotions.
+- Ethical and privacy awareness in the application of AI technologies.
+- The ability to contribute to innovative educational practices and improve learning outcomes.
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+- HUM 103: Ethics and Culture
+- PSY 101: Introduction to Psychology
+[https://link.springer.com/article/10.1007/s00530-023-01153-3](https://link.springer.com/article/10.1007/s00530-023-01153-3)[https://ieeexplore.ieee.org/abstract/document/6786307](https://ieeexplore.ieee.org/abstract/document/6786307)[https://www.sciencedirect.com/science/article/abs/pii/S0360131515300427](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300427)[https://doi.org/10.1002/pits.20303](https://doi.org/10.1002/pits.20303)[https://psycnet.apa.org/record/2003-07012-007](https://psycnet.apa.org/record/2003-07012-007)
+
+---
+
+## AI-Enhanced Security Analytics
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/51/ai-enhanced-security-analytics
+
+Synopsis
+- AI-Enhanced Security Analytics: Developing AI algorithms for real-time security analytics that can detect anomalies and potential threats within large volumes of data.
+- Behavioral Analysis for Insider Threat Detection: Using AI to profile and detect abnormal behaviors among employees and privileged users to prevent insider threats.
+- Deep Learning for Malware Detection: Exploring deep learning models for the automatic detection of malware, even those with polymorphic or metamorphic characteristics.
+- AI for Network Intrusion Detection and Prevention Systems (NIDPS): Enhancing NIDPS with AI algorithms to identify and respond to network intrusions more effectively.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Cryptographic Protocols for Secure Multi-Party Computation
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/52/cryptographic-protocols-for-secure-multi-party-computation
+
+Synopsis
+Researching cryptographic protocols that enable multiple parties to jointly compute functions over their inputs while keeping those inputs private.
+Exploring the integration of biometric data and cryptography to enhance access control and authentication.
+Research into cryptographic access control models specific to healthcare data to ensure privacy and compliance with regulations like HIPAA.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Trust Management
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/56/trust-management
+
+Dr. Md Sadek Ferdous (SDF)
+Professor
+sadek.ferdous@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Movement Detection in Indoor Positioning Systems of Production Halls
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/57/movement-detection-in-indoor-positioning-systems-of-production-halls
+
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+- (Course list here)
+[https://arxiv.org/abs/2109.10757](https://arxiv.org/abs/2109.10757)[https://www.mdpi.com/1424-8220/23/16/7108](https://www.mdpi.com/1424-8220/23/16/7108)- https://www.mdpi.com/1424-8220/23/16/7108
+
+---
+
+## Augmented Intelligence of Things for Vehicle Road Cooperation Systems
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/58/augmented-intelligence-of-things-for-vehicle-road-cooperation-systems
+
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+- (Course list here)
+[https://www.mdpi.com/1424-8220/23/4/1963](https://www.mdpi.com/1424-8220/23/4/1963)[https://www.hindawi.com/journals/misy/2022/7632892/](https://www.hindawi.com/journals/misy/2022/7632892/)- https://inria.hal.science/hal-02284820v3/document
+
+---
+
+## Enhancing the Performance of Machine Learning Algorithm in Classifying IoT BotNet Attacks
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/59/enhancing-the-performance-of-machine-learning-algorithm-in-classifying-iot-botnet-attacks-
+
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+- (Course list here)
+[https://www.hindawi.com/journals/cin/2022/4515642/](https://www.hindawi.com/journals/cin/2022/4515642/)[https://search.proquest.com/openview/ba7fd473524c19fb3205914a0fd4c26a/1?pq-origsite=gscholar&cbl=18750&diss=y](https://search.proquest.com/openview/ba7fd473524c19fb3205914a0fd4c26a/1?pq-origsite=gscholar&cbl=18750&diss=y)- https://turcomat.org/index.php/turkbilmat/article/download/13972/10017/24849
+
+---
+
+## Role Of Generative AI In Cybersecurity
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/60/role-of-generative-ai-in-cybersecurity
+
+Dr. Amitabha Chakrabarty (ACH)
+Professor
+amitabha@bracu.ac.bd
+ML
+DL
+Cyber Security
+
+---
+
+## Augmented Reality Navigation for the Visually Impaired
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/61/augmented-reality-navigation-for-the-visually-impaired
+
+The development of an augmented reality (AR) navigation system tailored for the visually impaired addresses a critical need for enhancing mobility and independence among individuals with visual impairments. By leveraging advancements in computer vision, sensor technology, and haptic/audio feedback mechanisms, this system aims to provide real-time assistance in navigating complex environments, detecting obstacles, and recognizing objects. The system will:
+- Utilize computer vision and object recognition algorithms to identify objects and obstacles in the user's surroundings.
+- Translate this visual information into audio or haptic cues, guiding the user safely and efficiently.
+- Integrate user preferences and accessibility features for personalized experiences.
+Visual impairment poses significant challenges to daily navigation, often requiring reliance on guide animals, canes, or assistance from others. Traditional aids offer limited assistance and can be cumbersome to use. An AR navigation system offers a promising solution by overlaying digital information onto the user's physical surroundings, thereby enhancing spatial awareness and facilitating independent mobility. This technology has the potential to revolutionize the lives of visually impaired individuals by empowering them to navigate confidently and efficiently in various environments, including indoor spaces, streets, and public transportation.
+- Incorporating real-time pathfinding and route planning based on user destination and surroundings.
+- Integrating with smart city infrastructure for enhanced accessibility information.
+- Exploring multimodal feedback using audio, haptic, and even olfactory cues.
+- Conducting user studies and gathering feedback to refine and personalize the system.
+This research will help undergraduate students develop valuable skills, including:
+Developing an AR navigation system for the visually impaired involves a multidisciplinary approach, encompassing skills in computer vision, sensor fusion, human-computer interaction, signal processing, and accessibility design. Additionally, proficiency in software development, particularly in programming languages such as Python, C++, and Java, is essential for implementing the system's algorithms and user interfaces. Strong problem-solving abilities, attention to user experience, and empathy for the needs of visually impaired individuals are also crucial skills for designing effective and user-friendly solutions.
+- CSE 221: Algorithms
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+- Human-Computer Interaction (HCI)
+- TBA
+
+---
+
+## Preserving Digital Integrity: Advancements in DeepFake Detection
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/62/preserving-digital-integrity-advancements-in-deepfake-detection
+
+Synopsis
+The emergence of DeepFake technology, fueled by advancements in artificial intelligence, poses a significant threat to the integrity and authenticity of digital media. DeepFake videos, which employ sophisticated algorithms to manipulate or generate realistic-looking content, have the potential to deceive viewers and spread misinformation on a massive scale. Detecting DeepFake videos is crucial for safeguarding the credibility of visual content and combating the proliferation of fake news and malicious propaganda.
+Relevance of the Topic
+In an era where visual content plays a crucial role in shaping public opinion, detecting DeepFake videos is essential for maintaining the credibility of digital media platforms, news agencies, and online communication channels. DeepFakes have the potential to deceive and manipulate viewers by superimposing faces onto different bodies, altering facial expressions, or synthesizing entirely fabricated content. Detecting these manipulations is vital for preventing the dissemination of false information, protecting individual privacy, and upholding journalistic standards.
+Future Research/Scope
+Future research in DeepFake detection could explore novel approaches leveraging advanced machine learning models, deep neural networks, and multimodal analysis techniques to enhance detection accuracy and robustness. Additionally, there is a need to develop scalable and real-time detection solutions capable of identifying DeepFake videos across diverse platforms and content formats. Moreover, research efforts could focus on addressing emerging challenges posed by evolving DeepFake generation techniques and adversarial attacks aimed at circumventing detection algorithms.
+Skills Learned
+Developing DeepFake detection methods requires proficiency in machine learning, computer vision, signal processing, and data analysis. Researchers in this field need to possess strong programming skills, particularly in languages such as Python and TensorFlow, for implementing and training deep learning models. Additionally, knowledge of image and video processing techniques, statistical analysis, and domain-specific expertise in digital forensics and media manipulation are essential for designing effective detection algorithms and evaluating their performance.
+Relevant courses to the topic
+- CSE 221: Algorithms
+- CSE 422: Artificial Intelligence
+- CSE 425: Neural Networks
+- CSE 427: Machine Learning
+- CSE 428: Image Processing
+- CSE437: Data Science
+Reading List
+
+---
+
+## Applications of Computer Modeling & Simulation (M&S)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/63/applications-of-computer-modeling-simulation-(m-s)
+
+Synopsis
+Computer Modeling & Simulation (M&S) help us create digital twin or digital version of real world systems or processes. It is crucial to test ideas, to design algorithms, medicine, to experiment, predict, optimize or for self-driving cars in a game like environment or a virtual world.
+Relevance of the Topic
+- Innovation
+- Experiment
+- Prototyping
+- Improve Safety
+- Tackle Complex Problems
+- Test Ideas
+Future Research/Scope
+- Virtual Reality (VR) / Augmented Reality (AR) / Extended Reality (XR)
+- Immersive Experience
+- Driving Simulations
+- Flying Planes
+Skills Learned
+- Problem Solving
+- Critical Thinking
+- Event Simulation
+- Agent Based Modeling
+- Data Analysis and Visualization for Result Interpretation
+- High-Performance Computing for Running Simulations
+- Programming for Model Development
+Relevant courses to the topic
+- Computer Graphics
+- Simulation and Modeling
+- Petri Net Theory and Modeling of Systems
+Reading List
+- Modelling and Simulation in Python by Allen B. Downey
+- Simulation Modeling and Analysis by Averill M. Law
+
+---
+
+## Cybersecurity and Ethical Hacking
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/64/cybersecurity-and-ethical-hacking
+
+Protect your computer systems, mobile, data, network from unauthorized access, improve safety, privacy and make the world a safer place!
+- Hackers, scammers, spammers are finding new ways.
+- We need secure mobile, operating systems, websites, databases, network, software etc.
+- Safety and privacy are crucial for us.
+- Website security
+- Database security
+- Mobile security
+- Data security
+- Network security
+- Internet of Things (IoT) security
+- Vulnerability assessment
+- Penetration testing
+- Cryptography
+- Ethical Hacking
+- Blockchain
+- Computer Networks
+- Cryptography
+- Cryptanalysis
+- The Hacker Playbook 3: Practical Guide To Penetration Testing
+- Hacking: The Art of Exploitation by Jon Erickson
+- 11 Strategies of a World-Class Cybersecurity Operations Center
+[https://www.mitre.org/news-insights/publication/11-strategies-world-class-cybersecurity-operations-center](https://www.mitre.org/news-insights/publication/11-strategies-world-class-cybersecurity-operations-center) - ISC2 CISSP Certified Information Systems Security Professional Official Study Guide
+- CompTIA Security+ Study Guide
+
+---
+
+## Vision (Computer Vision and Machine Vision)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/65/vision-(computer-vision-and-machine-vision)
+
+Synopsis
+Help computers understand the visual world through cameras, videos, pictures to identify objects, track movements and analyze scenes.
+Relevance of the Topic
+- Self driving cars
+- Medical report analysis
+- Security systems
+- Robotics
+Future Research/Scope
+- Smart city
+- Autonomous driving
+- Immersive education
+Skills Learned
+Relevant courses to the topic
+- Artificial Intelligence
+- Image Processing
+- Machine Learning
+- Machine Vision
+- Computer Vision
+Reading List
+Papers from
+- CVPR (Conference on Computer Vision and Pattern Recognition)
+- ICCV (International Conference on Computer Vision)
+- ECCV (European Conference on Computer Vision)
+
+---
+
+## AI for Health and Life Science
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/72/ai-for-health-and-life-science
+
+Mr. Annajiat Alim Rasel (AAR)
+Senior Lecturer
+annajiat@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Spiking Neural Network (SNN)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/73/spiking-neural-network-(snn)
+
+Spiking Neural Networks (SNNs) represent a class of artificial neural networks that more closely mimic the computational mechanisms of biological neural networks compared to traditional artificial neural networks. Unlike conventional models that use continuous activation functions, SNNs operate using discrete spikes or action potentials. The key components of SNNs include spiking neurons, which communicate through these discrete spikes, and synaptic plasticity mechanisms, which adjust the strength of connections between neurons based on activity patterns. SNNs are considered the third generation of artificial neural networks.
+The relevance of SNNs extends across multiple domains, from theoretical neuroscience to practical applications in artificial intelligence. In the realm of AI, SNNs promise improvements in energy efficiency due to their sparse and event-driven nature, which could revolutionize fields such as robotics, sensory processing, and adaptive learning systems. The integration of SNNs into neuromorphic computing platforms also holds the potential to create more powerful and efficient computing systems that emulate brain-like processing.
+- Algorithmic Enhancements: Developing more sophisticated learning algorithms that leverage the temporal dynamics of spiking activity.
+- Hardware Development: Advancing neuromorphic hardware that can efficiently simulate SNNs, including the development of specialized circuits and chips that mimic neuronal behavior.
+- Applications in Real-World Scenarios: Investigating the application of SNNs in practical systems such as autonomous vehicles, real-time video processing, and brain-computer interfaces.
+- Theoretical Understanding: Deep knowledge of neural dynamics, synaptic plasticity, and temporal coding principles, bridging the gap between biological and artificial neural systems.
+- Algorithm Development: Proficiency in designing and implementing algorithms that handle discrete event-based information processing, including learning and adaptation mechanisms specific to SNNs.
+- Simulation and Modeling: Expertise in using computational tools and software to model and simulate the behavior of spiking neurons and networks, as well as analyzing their performance.
+- CSE425: Neural Networks
+- Book: Time-Space, Spiking Neural Networks and Brain-Inspired Artificial Intelligence (
+[https://link.springer.com/book/10.1007/978-3-662-57715-8](https://link.springer.com/book/10.1007/978-3-662-57715-8)) - Review Paper: Spiking Neural Networks and Their Applications: A Review (
+[https://www.mdpi.com/2076-3425/12/7/863](https://www.mdpi.com/2076-3425/12/7/863))
+
+---
+
+## Quantum Neural Network (QNN)
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/74/quantum-neural-network-(qnn)
+
+Quantum Neural Networks (QNNs) represent an emerging intersection of quantum computing and neural network paradigms, where principles of quantum mechanics are leveraged to enhance or redefine neural network architectures and learning processes. Unlike classical neural networks that operate with classical bits, QNNs utilize quantum bits (qubits) and quantum gates to perform computations. The primary advantage of QNNs lies in their potential to exploit quantum phenomena such as superposition, entanglement, and quantum interference to achieve exponential speed-ups in processing and learning tasks.
+The relevance of Quantum Neural Networks is multifaceted, touching on both theoretical and practical dimensions. The rapid advancement of quantum computing technology suggests that QNNs could be at the forefront of next-generation neural network models. In particular, QNNs could significantly impact fields such as optimization, cryptography, drug discovery, and artificial intelligence by providing new ways to model and solve problems that require high-dimensional data processing or feature complex dependencies. Furthermore, as quantum hardware continues to evolve, QNNs will play a crucial role in demonstrating the practical utility of quantum computing.
+- Algorithm Development: Creating new quantum algorithms tailored for neural network training and inference, focusing on operations to enhance the performance of QNNs.
+- Hybrid Quantum-Classical Models: Investigating hybrid approaches that combine quantum and classical components, such as quantum-enhanced machine learning algorithms that leverage classical neural networks with quantum processors.
+- Applications and Case Studies: Applying QNNs to real-world problems and case studies across various domains, such as financial modeling, material science, and healthcare, to assess their practical utility and impact.
+- Theoretical Foundations: Advancing the theoretical understanding of how quantum mechanics can be utilized to improve neural network models, including the study of quantum information theory and quantum learning dynamics.
+- Quantum Computing Fundamentals: Deep understanding of quantum mechanics principles, quantum bits, and quantum gates, and their application to computational problems.
+- Algorithm Design and Optimization: Proficiency in designing and optimizing quantum algorithms for neural network applications, including techniques for quantum data processing and quantum circuit optimization.
+- Programming Quantum Computers: Skills in programming quantum computers using languages and frameworks to implement and test quantum neural network models.
+- Mathematical and Computational Analysis: Expertise in the mathematical and computational tools required to analyze and simulate quantum neural networks, including linear algebra, probability theory, and numerical methods.
+- CSE425: Neural Networks
+- CSE481: Quantum Computing I
+- CSE482: Quantum Computing II
+
+---
+
+## Large Language Model (LLM)-Based Software Engineering: Enhancing Development Efficiency and Innovation
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/75/large-language-model-(llm)-based-software-engineering-enhancing-development-efficiency-and-innovation
+
+The primary objective of this research is to explore the transformative potential of Large Language Models (LLMs) in the field of Software Engineering. This study aims to understand the capabilities of LLM-based tools in enhancing software development processes, improving code quality, and facilitating project management. By examining tools such as OpenAI’s Codex, Google’s BERT, and custom LLM implementations, the research will assess their efficiency, accuracy, and impact on current software engineering practices.
+As software development continues to face increasing complexity and demands for efficiency, LLM-based tools offer a revolutionary approach to automating and optimizing various aspects of the development process. These tools utilize advanced AI algorithms to understand and generate human-like code and documentation, significantly reducing the manual effort involved in coding and debugging. This research will delve into the mechanisms of these tools, their practical applications, and their implications for the future of software engineering.
+The research will employ a mixed-methods approach, combining both qualitative and quantitative research methods. The qualitative aspect will involve a comprehensive literature review of existing studies and articles on LLM-based software engineering tools. The quantitative aspect will involve the use of surveys and interviews with software developers and industry experts to gather firsthand information about their experiences and perceptions of these tools. Additionally, a comparative analysis of different LLM-based tools will be conducted to evaluate their performance, accuracy, and user-friendliness.
+- Performance Optimization: Future research could focus on optimizing the performance of LLM-based tools, enhancing their speed, and improving the efficiency and accuracy of generated outputs.
+- Customization and Personalization: Exploring how these tools can be tailored to meet the specific needs of individual developers or teams, enhancing their usability and effectiveness.
+- Integration with Other Tools: Investigating the integration of LLM-based tools with existing software development environments, such as IDEs and version control systems, to streamline workflows and improve developer productivity.
+- Advanced LLM Understanding: Developing a deep understanding of the AI algorithms and LLMs used in software engineering tools, including natural language processing and machine learning techniques.
+- Code Evaluation: Gaining the ability to critically evaluate the quality, readability, maintainability, and performance of code generated by LLMs.
+- Quantitative Research: Enhancing skills in conducting quantitative research, including designing surveys, conducting structured interviews, and performing statistical analyses.
+- Technical Writing: Improving the ability to communicate complex technical concepts clearly and concisely, particularly in writing the thesis and any subsequent publications.
+- Artificial Intelligence: Provides a foundational understanding of AI concepts crucial for comprehending how LLM-based tools function.
+- Software Engineering: Offers knowledge about software development practices essential for understanding the context and applications of these tools.
+- Data Structures and Algorithms: Essential for evaluating the efficiency and effectiveness of the code generated by LLM-based tools.
+- Machine Learning: Provides insights into the machine learning algorithms leveraged by LLM-based tools.
+- Programming Languages: Equips the necessary background to understand and evaluate the code produced by these tools.
+- Kitchenham, Barbara, et al. “Large Language Models for Software Engineering: Survey and Open Problems.”. 2023. (
+[https://arxiv.org/abs/2310.03533](https://arxiv.org/abs/2310.03533)) - Roziere, Baptiste, et al. "Leveraging automated unit tests for code generation." 2021. (
+[https://arxiv.org/abs/2110.06773)](https://arxiv.org/abs/2110.06773) - Wang, Bo, et al. "An Exploratory Study on Using Large Language Models for Mutation Testing." 2024. (
+[https://arxiv.org/abs/2406.09843v1](https://arxiv.org/abs/2406.09843v1))
+
+---
+
+## Some of the Recent Publications
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/76/some-of-the-recent-publications
+
+You can go through some of these publications to get an idea of what my team is working at currently.
+In agriculture, medical domain, etc.
+Data Science, Python
+- AI, ML,DL,NN
+[https://ieeexplore.ieee.org/abstract/document/10100703](https://ieeexplore.ieee.org/abstract/document/10100703)[https://ieeexplore.ieee.org/abstract/document/9268723](https://ieeexplore.ieee.org/abstract/document/9268723)[https://www.mdpi.com/1424-8220/23/7/3751](https://www.mdpi.com/1424-8220/23/7/3751)[https://ieeexplore.ieee.org/abstract/document/10534523](https://ieeexplore.ieee.org/abstract/document/10534523)[https://ieeexplore.ieee.org/abstract/document/10534371](https://ieeexplore.ieee.org/abstract/document/10534371)[https://ieeexplore.ieee.org/abstract/document/10477346](https://ieeexplore.ieee.org/abstract/document/10477346)[https://ieeexplore.ieee.org/abstract/document/10534420](https://ieeexplore.ieee.org/abstract/document/10534420)- https://ieeexplore.ieee.org/abstract/document/10499500
+
+---
+
+## Human Robot Interaction
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/84/human-robot-interaction
+
+Human-Robot Interaction (HRI) is a multidisciplinary field focused on the study and design of systems where humans and robots interact. It encompasses aspects of robotics, cognitive science, psychology, and design to ensure smooth and efficient communication between robots and humans. The goal of HRI is to make robots more intuitive, responsive, and adaptable to human needs in various contexts such as healthcare, manufacturing, and social environments. As robots become increasingly integrated into daily life, challenges include enhancing natural communication through speech, gestures, and emotions while addressing safety, trust, and ethical considerations.
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+- (Course list here)
+- Computational HRI:
+[https://hrc2.io/assets/pdfs/papers/ThomazHoffmanCakmak16.pdf](https://hrc2.io/assets/pdfs/papers/ThomazHoffmanCakmak16.pdf) - Human-Robot Interaction - An introduction:
+[https://www.human-robot-interaction.org/](https://www.human-robot-interaction.org/\)
+
+---
+
+## AI based accessibility for people with disabilities, specially blindness
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/86/ai-based-accessibility-for-people-with-disabilities-specially-blindness
+
+Synopsis
+Research on assistive systems for blind, deaf, ADHD, anxiety disorder, physical and mental disabilities
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## 3D MRI Segmentation for Brain Tumor Detection
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/88/3d-mri-segmentation-for-brain-tumor-detection
+
+Brain tumors are one of the most challenging medical conditions to diagnose and treat due to their complexity and variability. Magnetic Resonance Imaging (MRI) is a widely used imaging modality for detecting and characterizing brain tumors, providing detailed structural information about the brain. However, manual segmentation of brain tumors from 3D MRI scans is time-consuming, prone to human error, and requires expert radiologists. Automating this process using deep learning techniques can significantly improve the accuracy and efficiency of tumor detection and segmentation. We aim to develop a deep learning-based pipeline for 3D MRI segmentation to accurately detect and delineate brain tumors. The model will leverage advanced architectures like 3D Convolutional Neural Networks (CNNs) or U-Net variants to process volumetric MRI data and identify tumor regions. This automated approach will assist in early diagnosis, treatment planning, and monitoring of brain tumor progression.
+The accurate segmentation of brain tumors from MRI scans is critical for diagnosing and treating patients with brain cancer. Early and precise detection can lead to better patient outcomes by enabling timely intervention and personalized treatment plans. Furthermore, automating this process reduces the burden on radiologists, allowing them to focus on more complex tasks. With the increasing availability of large-scale medical imaging datasets and advancements in deep learning, there is a growing opportunity to develop robust models that can generalize across different types of brain tumors and imaging protocols.
+- Multi-modal MRI Integration: Future work could involve integrating multiple MRI modalities (e.g., T1-weighted, T2-weighted, FLAIR) to improve segmentation accuracy.
+- Generalization Across Datasets: Investigate the model's ability to generalize across different hospitals and imaging protocols, addressing challenges related to dataset bias.
+- Real-time Segmentation: Develop lightweight models capable of real-time tumor segmentation for use in clinical settings.
+- Explainability: Incorporate explainability techniques (e.g., attention maps, and SHAP values) to provide insights into the model's decision-making process, which is crucial for gaining trust from medical professionals.
+- Longitudinal Analysis: Extend the model to track tumor growth or shrinkage over time, aiding in treatment monitoring and prognosis prediction.
+- Deep Learning: Hands-on experience with 3D CNNs, U-Net architectures, and other segmentation models.
+- Medical Image Processing: Understanding of MRI data preprocessing, including normalization, skull stripping, and data augmentation.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Numpy for implementing deep learning models.
+- Data Visualization: Skills in visualizing 3D MRI data and segmentation results using tools like Matplotlib, Plotly, or ITK-SNAP.
+- CSE428: Image Processing
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine) - Crash Course on Interpretation of Brain Imaging:
+[Brain Imaging](https://youtu.be/DdPRfPm9SI4?si=hSrYehlabNqcbALL)
+- Books
+- Research Papers
+- "A Review of Deep-Learning-Based Medical Image Segmentation Methods" – Liu et al., Sustainability
+[Link](https://doi.org/10.3390/su13031224) - "U-Net: Convolutional Networks for Biomedical Image Segmentation" – Ronneberger et al., MICCAI
+[Link](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) - "3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation" – Özgün Çiçek et al., MICCAI
+[Link](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49) - "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation" – Isensee et al., Nature Methods
+[Link](https://www.nature.com/articles/s41592-020-01008-z) - "Attention U-Net: Learning Where to Look for the Pancreas" – Oktay et al., MIDL
+[Link](https://arxiv.org/abs/1804.03999) - "Image Segmentation Using Deep Learning: A Survey" – Minaee et al., IEEE Transactions on Pattern Analysis and Machine Intelligence
+[Link](https://doi.org/10.1109/TPAMI.2021.3059968) - "Deep learning for medical image segmentation: State-of-the-art advancements and challenges" – Rayed et al., Informatics in Medicine Unlocked
+[Link](https://doi.org/10.1016/j.imu.2024.101504) - "A Joint Graph and Image Convolution Network for Automatic Brain Tumor Segmentation" – Camillo Saueressig et al., MICCAI Workshops
+[Link](https://doi.org/10.48550/arXiv.2109.05580)|[Code](https://github.com/rsinghlab/GNN-Tumor-Seg) - "UnSegGNet: Unsupervised Image Segmentation using Graph Neural Networks" – Reddy et al., ArXiv
+[Link](https://arxiv.org/html/2405.06057v1)|[Code](https://github.com/ksgr5566/unseggnet) - "VIG-UNet: Vision Graph Neural Networks For Medical Image Segmentation" – Jiang et al., ISBI
+[Link](https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://april.zju.edu.cn/core/papercite-data/pdf/jiang2023vig.pdf) - "On the use of GNN-based structural information to improve CNN-based semantic image segmentation" – Coupeau et al., Journal of Visual Communication and Image Representation
+[Link](https://doi.org/10.1016/j.jvcir.2024.104167) - "Review of Graph Neural Networks for Medical Image" – Jing Wang, EAI Endorsed Transactions on e-Learning
+[Link](https://doi.org/10.4108/eetel.4358)
+- "A Review of Deep-Learning-Based Medical Image Segmentation Methods" – Liu et al., Sustainability
+- Datasets
+- BraTS 2021 (Brain Tumor Segmentation Challenge Dataset)
+[Link](https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1) - BraTS 2020 (Brain Tumor Segmentation Challenge Dataset)
+[Link](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation) - BraTS 2023 (Brain Tumor Segmentation Challenge Dataset) [Updated from 2021]
+[Link](https://www.kaggle.com/datasets/shakilrana/brats-2023-adult-glioma) - BraTS 2019 (Brain Tumor Segmentation Challenge Dataset)
+[Link](https://www.kaggle.com/datasets/aryashah2k/brain-tumor-segmentation-brats-2019) - Decathlon Dataset (Task 01: Brain Tumor Segmentation)
+[Link](http://medicaldecathlon.com/?spm=5aebb161.6e1eb854.0.0.6066c921YzUnPQ) - Kaggle: Brain MRI Segmentation Dataset
+[Link](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset?spm=5aebb161.6e1eb854.0.0.6066c921YzUnPQ)
+- BraTS 2021 (Brain Tumor Segmentation Challenge Dataset)
+- Code Tutorials & Repositories
+- Code Tutorial:
+[U-Net Implementation in TensorFlow/Keras](https://github.com/zhixuhao/unet)
+- Code Tutorial:
+- Videos & Playlists
+- Playlist:
+[Medical Imaging with Deep Learning](https://youtube.com/playlist?list=PLheiZMDg_8ufxEx9cNVcOYXsT3BppJP4b&si=jz1RpuMzTfUrezIM) - Blog:
+["Deep Learning with MRI and CT Images"](https://towardsdatascience.com/deep-learning-with-magnetic-resonance-and-computed-tomography-images-e9f32273dcb5)– Towards Data Science
+- Playlist:
+
+---
+
+## Pancreas Segmentation in CT Images for Cancer Detection
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/89/pancreas-segmentation-in-ct-images-for-cancer-detection
+
+Pancreatic cancer is one of the deadliest forms of cancer due to its late diagnosis and aggressive nature. Accurate segmentation of the pancreas from Computed Tomography (CT) scans is a critical step in diagnosing pancreatic cancer, assessing tumor size, and planning treatment strategies. However, manual segmentation of the pancreas is challenging due to its small size, irregular shape, and anatomical variability across patients. In this project, we aim to develop a deep learning-based approach for automated pancreas segmentation in CT images. The model will utilize advanced architectures like 3D U-Net or attention-based CNNs to accurately delineate the pancreas region, enabling early detection of abnormalities and supporting clinical decision-making.
+The pancreas is a difficult organ to segment due to its complex morphology and low contrast in CT images. Automated segmentation can significantly reduce the time and effort required by radiologists, while also improving diagnostic accuracy. Early and precise detection of pancreatic abnormalities, such as tumors, can lead to better patient outcomes through timely intervention. With advancements in deep learning and the availability of large-scale medical imaging datasets, there is an opportunity to create robust models that can assist in the early detection of pancreatic cancer.
+- Multi-organ Segmentation: Extend the model to segment other abdominal organs alongside the pancreas, providing a more comprehensive analysis of CT scans.
+- Tumor Subtype Classification: Incorporate classification layers to differentiate between benign and malignant pancreatic lesions.
+- Cross-modality Integration: Combine CT data with other imaging modalities (e.g., MRI or PET) to improve segmentation and diagnostic accuracy.
+- Explainability: Develop techniques to explain model predictions, ensuring transparency and trust in clinical settings.
+- Clinical Deployment: Optimize the model for real-time inference to integrate it into clinical workflows.
+- Deep Learning: Experience with 3D U-Net, attention mechanisms, and CNNs for medical image segmentation.
+- Medical Image Processing: Knowledge of CT image preprocessing, including intensity normalization, resampling, and augmentation.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Numpy.
+- Data Visualization: Skills in visualizing CT scan slices and segmentation masks using tools like ITK-SNAP or Matplotlib.
+- CSE428: Image Processing
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine)
+- Books
+- Research Papers
+- "Pancreatic cancer detection through semantic segmentation of CT images: a short review" – Karri et al., Discover Artificial Intelligence
+[Link](https://link.springer.com/article/10.1007/s44163-024-00148-x) - "Improved Pancreatic Cancer Detection and Localization on CT Scans: A Computer-Aided Detection Model Utilizing Secondary Features" – Ramaekers et al., Cancers
+[Link](https://doi.org/10.3390/cancers16132403) - "Pancreatic Cancer Detection on CT Scans with Deep Learning: A Nationwide Population-based Study" – Chen et al., Radiology
+[Link](https://doi.org/10.1148/radiol.220152) - "Semantic segmentation of pancreatic medical images by using convolutional neural network" – Huang et al., Biomedical Signal Processing and Control
+[Link](https://doi.org/10.1016/j.bspc.2021.103458) - "Segmentation of pancreatic ductal adenocarcinoma (PDAC) and surrounding vessels in CT images using deep convolutional neural networks and texture descriptors" – Mahmoudi et al., Nature Scientific Reports
+[Link](https://www.nature.com/articles/s41598-022-07111-9) - "A Review of Deep-Learning-Based Medical Image Segmentation Methods" – Liu et al., Sustainability
+[Link](https://doi.org/10.3390/su13031224) - "U-Net: Convolutional Networks for Biomedical Image Segmentation" – Ronneberger et al., MICCAI
+[Link](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) - "3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation" – Özgün Çiçek et al., MICCAI
+[Link](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49) - "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation" – Isensee et al., Nature Methods
+[Link](https://www.nature.com/articles/s41592-020-01008-z) - "Attention U-Net: Learning Where to Look for the Pancreas" – Oktay et al., MIDL
+[Link](https://arxiv.org/abs/1804.03999) - "Image Segmentation Using Deep Learning: A Survey" – Minaee et al., IEEE Transactions on Pattern Analysis and Machine Intelligence
+[Link](https://doi.org/10.1109/TPAMI.2021.3059968) - "Deep learning for medical image segmentation: State-of-the-art advancements and challenges" – Rayed et al., Informatics in Medicine Unlocked
+[Link](https://doi.org/10.1016/j.imu.2024.101504) - "UnSegGNet: Unsupervised Image Segmentation using Graph Neural Networks" – Reddy et al., ArXiv
+[Link](https://arxiv.org/html/2405.06057v1)|[Code](https://github.com/ksgr5566/unseggnet) - "Review of Graph Neural Networks for Medical Image" – Jing Wang, EAI Endorsed Transactions on e-Learning
+[Link](https://doi.org/10.4108/eetel.4358)
+- "Pancreatic cancer detection through semantic segmentation of CT images: a short review" – Karri et al., Discover Artificial Intelligence
+- Datasets
+- Code Tutorials & Repositories
+- Tutorial:
+[How to Segment a Pancreas CT](https://medium.com/towards-data-science/how-to-segment-ct-pancreas-3a390acb3c70) - Code Tutorial:
+[U-Net Implementation in TensorFlow/Keras](https://github.com/zhixuhao/unet)
+- Tutorial:
+- Videos & Playlists
+- Playlist:
+[Medical Imaging with Deep Learning](https://youtube.com/playlist?list=PLheiZMDg_8ufxEx9cNVcOYXsT3BppJP4b&si=jz1RpuMzTfUrezIM) - Blog:
+["Deep Learning with MRI and CT Images"](https://towardsdatascience.com/deep-learning-with-magnetic-resonance-and-computed-tomography-images-e9f32273dcb5)– Towards Data Science
+- Playlist:
+
+---
+
+## Breast Cancer Detection from Mammography, Histopathology, & Ultrasound Images
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/90/breast-cancer-detection-from-mammography-histopathology-ultrasound-images
+
+Breast cancer is one of the most common cancers worldwide, and early detection significantly improves survival rates. Mammography and histopathology images are widely used for breast cancer screening and diagnosis. However, manual analysis of these images by radiologists or pathologists can be time-consuming and prone to human error. We aim to develop a deep learning-based system for automated breast cancer detection using mammography and histopathology images. The model will leverage advanced architectures like Convolutional Neural Networks (CNNs) or Vision Transformers (ViTs) to classify images as benign or malignant and localize suspicious regions. This approach will assist in early diagnosis, reduce false positives/negatives, and support clinical decision-making.
+Early and accurate detection of breast cancer is critical for improving patient outcomes. Automated systems can enhance diagnostic accuracy, reduce the workload on healthcare professionals, and provide consistent results across different imaging modalities. With the increasing availability of large annotated datasets and advancements in deep learning, there is significant potential to develop robust models that can aid in breast cancer screening and diagnosis.
+- Multi-modal Fusion: Combine mammography with other imaging modalities (e.g., ultrasound, MRI) to improve diagnostic accuracy.
+- Explainability: Develop explainable AI techniques to highlight regions of interest in the images, ensuring transparency for clinicians.
+- Real-time Screening: Optimize the model for real-time inference to integrate it into clinical workflows for faster diagnosis.
+- Risk Stratification: Extend the model to predict the risk of breast cancer recurrence or progression based on image features.
+- Generalization Across Populations: Investigate the model's performance across diverse populations to address biases in training data.
+- Deep Learning: Hands-on experience with CNNs, transfer learning, and Vision Transformers (ViTs).
+- Medical Image Analysis: Understanding of mammography and histopathology image preprocessing, including normalization and augmentation.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and OpenCV.
+- Data Visualization: Skills in visualizing image data and model predictions using tools like Matplotlib and Plotly.
+- CSE428: Image Processing
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine)
+- Books
+- Research Papers
+- "Deep Learning Based Methods for Breast Cancer Diagnosis: A Systematic Review and Future Direction" – Nasser et al., Diagnostics
+[Link](https://www.mdpi.com/2075-4418/13/1/161) - "Deep learning empowered breast cancer diagnosis: Advancements in detection and classification" – Jawad Ahmad et al., PLOS One
+[Link](https://doi.org/10.1371/journal.pone.0304757) - "The Role of Deep Learning in Advancing Breast Cancer Detection Using Different Imaging Modalities: A Systematic Review" – Madani et al., Cancers
+[Link](https://doi.org/10.3390/cancers14215334) - "Deep learning algorithms for the early detection of breast cancer: A comparative study with traditional machine learning" – Martinez et al., Informatics in Medicine Unlocked
+[Link](https://doi.org/10.1016/j.imu.2023.101317) - "Application of Deep Learning in Breast Cancer Imaging" – Balkenende et al., Seminars in Nuclear Medicine
+[Link](https://doi.org/10.1053/j.semnuclmed.2022.02.003) - "Strategies for Enhancing the Multi-Stage Classification Performances of HER2 Breast Cancer from Hematoxylin and Eosin Images" – Shovon et al., Diagnostics
+[Link](https://www.mdpi.com/2075-4418/12/11/2825#) - "Integrative hybrid deep learning for enhanced breast cancer diagnosis: leveraging the Wisconsin Breast Cancer Database and the CBIS-DDSM dataset" – Chandra Murty et al., Scientific Reports
+[Link](https://www.nature.com/articles/s41598-024-74305-8) - "Mammography with deep learning for breast cancer detection" – Lulu Wang, Frontiers in Oncology
+[Link](https://doi.org/10.3389/fonc.2024.1281922) - "U-Net: Convolutional Networks for Biomedical Image Segmentation" – Ronneberger et al., MICCAI
+[Link](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) - "Review of Graph Neural Networks for Medical Image" – Jing Wang, EAI Endorsed Transactions on e-Learning
+[Link](https://doi.org/10.4108/eetel.4358)
+- "Deep Learning Based Methods for Breast Cancer Diagnosis: A Systematic Review and Future Direction" – Nasser et al., Diagnostics
+- Datasets
+- CBIS-DDSM (Curated Breast Imaging Subset of DDSM)
+[Link](https://www.cancerimagingarchive.net/collection/cbis-ddsm/) - Breast Cancer Histopathological Database (BreakHis)
+[Link](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - Invasive Ductal Carcinoma (IDC) Dataset [Widely Used, Binary Classification]
+[Link](https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images/data) - Breast Cancer Digital Repository (BCDR)
+[Link](https://www.medicmind.tech/cancer-imaging-data) - BACH (Breast Cancer Histology Images Challenge)
+[Link](https://iciar2018-challenge.grand-challenge.org/Dataset/?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - MIAS (Mammographic Image Analysis Society Database)
+[Link](http://peipa.essex.ac.uk/info/mias.html?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - PCam (PatchCamelyon) [Simple Classification]
+[Link](https://github.com/basveeling/pcam?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - TCGA-BRCA (The Cancer Genome Atlas - Breast Invasive Carcinoma) [For Multi-Modal]
+[Link](https://portal.gdc.cancer.gov/projects/TCGA-BRCA?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - Breast Cancer Wisconsin (Diagnostic) [Tabular Data with Features Extracted from Images]
+[Link](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
+- CBIS-DDSM (Curated Breast Imaging Subset of DDSM)
+- Code Tutorials & Repositories
+- Code Tutorial:
+[Breast cancer classification with Keras and Deep Learning](https://pyimagesearch.com/2019/02/18/breast-cancer-classification-with-keras-and-deep-learning/)
+- Code Tutorial:
+- Videos & Playlists
+
+---
+
+## Epilepsy/Seizure Detection from EEG Signals
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/92/epilepsyseizure-detection-from-eeg-signals
+
+Epilepsy is a neurological disorder characterized by recurrent seizures, affecting millions of people worldwide. Early and accurate detection of seizures is crucial for timely medical intervention and improving the quality of life for patients. Electroencephalography (EEG) is the most common diagnostic tool for monitoring brain activity and detecting seizures. However, manual analysis of EEG signals by neurologists is time-consuming and prone to human error, especially in long-term monitoring scenarios. We aim to develop a deep learning-based system for automated seizure detection using EEG signals. The model will leverage advanced architectures like Recurrent Neural Networks (RNNs), Convolutional Neural Networks (CNNs), or hybrid models to analyze temporal and spectral features of EEG data. This approach will enable real-time seizure detection, reduce false alarms, and assist clinicians in making informed decisions.
+Seizure detection from EEG signals is a critical task in epilepsy diagnosis and management. Automated systems can provide continuous monitoring, reduce the burden on healthcare professionals, and improve patient outcomes by enabling faster intervention. With the increasing availability of large EEG datasets and advancements in deep learning, there is significant potential to develop robust models that can accurately detect seizures and differentiate them from normal brain activity or artifacts.
+- Real-time Monitoring: Optimize the model for real-time seizure detection to integrate it into wearable devices or clinical monitoring systems.
+- Multi-modal Data Integration: Combine EEG with other physiological signals (e.g., ECG, EMG) to improve detection accuracy and provide a more comprehensive understanding of seizure activity.
+- Personalized Models: Develop patient-specific models that adapt to individual EEG patterns, improving detection accuracy for personalized healthcare.
+- Explainability: Incorporate explainability techniques to highlight key EEG features contributing to seizure detection, ensuring transparency for clinicians.
+- Long-term Monitoring: Extend the model to analyze long-term EEG recordings, enabling the detection of rare or subtle seizure patterns.
+- Deep Learning: Hands-on experience with RNNs, CNNs, and hybrid models for time-series and signal-processing tasks.
+- Signal Processing: Understanding of EEG signal preprocessing, including filtering, denoising, and feature extraction (e.g., Fourier Transform, Wavelet Transform).
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and SciPy for implementing deep learning models.
+- Data Visualization: Skills in visualizing EEG signals and model predictions using tools like Matplotlib and Plotly.
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- CSE430: Digital Signal Processing
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine)
+- Books:
+- "Epileptic Seizures and the EEG: Measurement, Models, Detection and Prediction" – Andrea Varsavsky, Iven Mareels, Mark Cook
+[Link](https://books.google.com.bd/books/about/Epileptic_Seizures_and_the_EEG.html?id=fw7LBQAAQBAJ&redir_esc=y)
+- "Epileptic Seizures and the EEG: Measurement, Models, Detection and Prediction" – Andrea Varsavsky, Iven Mareels, Mark Cook
+- Research Papers:
+- "EEG-based epileptic seizure detection using deep learning techniques: A survey" – Neurocomputing
+Link:[Neurocomputing](https://doi.org/10.1016/j.neucom.2024.128644) - "Epileptic Seizure Detection Based on EEG Signals and CNN" – Frontiers in Neuroinformatics
+Link:[Frontiers in Neuroinformatics](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2018.00095/full) - "EEG-Based Epileptic Seizure Detection Using Binary Dragonfly Algorithm and Deep Neural Network" – Nature Scientific Reports
+Link:[Nature Scientific Reports](https://www.nature.com/articles/s41598-023-44318-w) - "EEG Seizure Detection: Concepts, Techniques, Challenges, and Future Directions" – Multimedia Tools and Applications
+Link:[PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10071471/)
+- "EEG-based epileptic seizure detection using deep learning techniques: A survey" – Neurocomputing
+- Datasets
+- CHB-MIT Scalp EEG Database
+[Link](https://physionet.org/content/chbmit/1.0.0/?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - Bonn University EEG Dataset
+[Link](https://www.ukbonn.de/epileptologie/arbeitsgruppen/ag-lehnertz-neurophysik/downloads/)|[Kaggle Preprocessed](https://www.kaggle.com/datasets/harunshimanto/epileptic-seizure-recognition) - SWEC-ETHZ iEEG Database and Algorithms
+[Link](http://ieeg-swez.ethz.ch/) - TUH EEG Corpus (Temple University Hospital EEG Corpus)
+[Link](https://isip.piconepress.com/projects/nedc/html/tuh_eeg/) - EPILEPSIAE (European Epilepsy Database)
+[Link](https://epilepsy-database.eu/) - UPenn and Mayo Clinic's Seizure Detection Challenge
+[Link](https://www.kaggle.com/c/seizure-detection/data?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP) - Kaggle: American Epilepsy Society Seizure Prediction Challenge
+[Link](https://www.kaggle.com/c/seizure-prediction/data?spm=5aebb161.6e1eb854.0.0.6066c921QUPtAP)
+- CHB-MIT Scalp EEG Database
+- Tutorials and Guides
+- Epilepsy Tutorial – Brainstorm
+It guides users through EEG analysis for epilepsy detection using Brainstorm software.
+Link:[Brainstorm](https://neuroimage.usc.edu/brainstorm/Tutorials/Epilepsy)
+- Epilepsy Tutorial – Brainstorm
+- Code Tutorials
+- Videos
+- Understanding EEG: A Practical Guide for Patients and Families – YouTube
+Explains EEG, its importance in epilepsy diagnosis, and what to expect during an EEG procedure.
+Link:[YouTube](https://www.youtube.com/watch?v=FpdyFMNEZRM)
+- Understanding EEG: A Practical Guide for Patients and Families – YouTube
+
+---
+
+## Predicting Antibiotic Resistance in Bacterial Strains from Genomic Data
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/93/predicting-antibiotic-resistance-in-bacterial-strains-from-genomic-data
+
+Antibiotic resistance is a growing global health crisis, rendering many life-saving drugs ineffective and complicating the treatment of bacterial infections. Predicting antibiotic resistance in bacterial strains based on genomic or metagenomic data can help guide clinical decisions, improve treatment outcomes, and inform public health strategies. In this project, we aim to develop a deep learning-based system to predict antibiotic resistance by analyzing bacterial genomes. The model will use sequence-based approaches, such as Convolutional Neural Networks (CNNs) or transformer architectures, to identify mutations, genes, or pathways associated with resistance. Additionally, multi-task learning will be employed to predict resistance to multiple antibiotics simultaneously, enabling a comprehensive analysis of bacterial strains. This approach will assist in early identification of resistant strains, optimize antibiotic stewardship, and accelerate drug discovery.
+The rise of antibiotic-resistant bacteria poses a significant threat to global health, food security, and economic development. Traditional methods for detecting antibiotic resistance, such as culture-based assays, are time-consuming and labor-intensive. Automated prediction systems using genomic data can provide rapid and accurate insights into resistance profiles, enabling timely interventions. With the increasing availability of genomic datasets and advancements in deep learning, there is an opportunity to develop scalable models that can address this critical challenge.
+- Metagenomic Analysis: Extend the model to analyze metagenomic data from environmental or clinical samples, enabling the detection of resistance in complex microbial communities.
+- Explainability: Incorporate explainability techniques to identify specific genetic markers or pathways contributing to resistance, aiding in biological interpretation.
+- Drug Repurposing: Use the model to identify existing drugs that could be repurposed to target resistant strains.
+- Integration with Clinical Data: Combine genomic predictions with clinical metadata (e.g., patient history, treatment outcomes) to improve predictive accuracy and relevance.
+- Deep Learning: Hands-on experience with CNNs, transformers, and multi-task learning for genomic data analysis.
+- Bioinformatics: Understanding of bacterial genome annotation, sequence alignment, and feature extraction.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Biopython for implementing deep learning models.
+- Data Visualization: Skills in visualizing genomic data and model predictions using tools like Matplotlib, Seaborn, and IGV (Integrative Genomics Viewer).
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine) - Coursera:
+[Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
+- Books
+- Research Papers
+- "Machine Learning for Antimicrobial Resistance Prediction: Current Practice, Limitations, and Clinical Perspective" – Kim et al., Clinical Microbiology Reviews
+[Link](https://journals.asm.org/doi/10.1128/cmr.00179-21) - "DeepARG: A deep learning approach for predicting antibiotic resistance genes" – Arango-Argoty et al., Microbiome (Springer Nature)
+[Link](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0401-z) - "Prediction of antimicrobial resistance based on whole-genome sequencing and machine learning" – Yunxiao Ren et al., Bioinformatics
+[Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC8722762/) - "Using Machine Learning to Predict Antimicrobial Resistance―A Literature Review" – Sakagianni et al., Antibiotics
+[Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC10044642/)
+- "Machine Learning for Antimicrobial Resistance Prediction: Current Practice, Limitations, and Clinical Perspective" – Kim et al., Clinical Microbiology Reviews
+- Datasets
+- Code Tutorials & Repositories
+- DeepARG: Deep Learning for Antibiotic Resistance Prediction (GitHub)
+[Link](https://github.com/gaarangoa/deeparg) - How to build a machine learning model to predict antimicrobial peptides (End-to-end Bioinformatics) (YouTube/GitHub)
+[Link](https://youtu.be/0NrFIGLwW0Q?si=jTCuAxptOyzYNZX_) [https://github.com/Lucy-Moctezuma/ML-Tutorial-for-Antibiotic-Resistance-Predictions-for-E.-Coli](https://github.com/Lucy-Moctezuma/ML-Tutorial-for-Antibiotic-Resistance-Predictions-for-E.-Coli)- https://github.com/YunxiaoRen/ML-iAMR
+- DeepARG: Deep Learning for Antibiotic Resistance Prediction (GitHub)
+- Videos & Playlists
+- "Machine Learning in Computational Biology" – MIT
+[YouTube Playlist](https://youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc&si=PxfIPMmn7lQx5t-j) - "Using Artificial Intelligence to Detect Antibiotic Resistance" – ASM (YouTube)
+[Link](https://youtu.be/dqIU0tbpI_U?si=P9yL5AENAyj2Jo5c)
+- "Machine Learning in Computational Biology" – MIT
+
+---
+
+## Probiotic Discovery and Functional Prediction from Bacterial Genomes
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/94/probiotic-discovery-and-functional-prediction-from-bacterial-genomes
+
+Probiotics are live microorganisms that confer health benefits to the host when administered in adequate amounts. Identifying potential probiotic strains and predicting their functional effects (e.g., immune modulation, metabolic health) is critical for developing next-generation probiotics and personalized microbiome therapies. In this project, we aim to use deep learning techniques to analyze bacterial genomes and predict probiotic properties such as the production of beneficial metabolites, adhesion to host cells, or resistance to stomach acid. Sequence-based models like Convolutional Neural Networks (CNNs) or transformers will be used to identify genomic features associated with probiotic functionality. Additionally, Graph Neural Networks (GNNs) will model interactions between probiotics and the host microbiome to predict functional outcomes. This approach will accelerate the discovery of novel probiotics and deepen our understanding of their mechanisms of action.
+The human microbiome plays a crucial role in health and disease, and probiotics offer a promising avenue for modulating the microbiome to improve health outcomes. However, identifying effective probiotic strains and understanding their functional effects remain challenging. Automated prediction systems using deep learning can streamline probiotic discovery, reduce experimental costs, and enable personalized interventions based on individual microbiome profiles.
+- Functional Annotation: Extend the model to predict specific functional effects of probiotics, such as immune modulation, gut barrier enhancement, or metabolic regulation.
+- Personalized Probiotics: Develop patient-specific models that recommend probiotics based on individual microbiome compositions.
+- Interaction Modeling: Use GNNs to simulate complex interactions between probiotics, pathogens, and the host microbiome.
+- Clinical Validation: Collaborate with experimental biologists to validate predicted probiotic strains in vitro or in vivo.
+- Metagenomic Integration: Incorporate metagenomic data to predict how probiotics influence the overall microbiome composition.
+- Deep Learning: Hands-on experience with CNNs, transformers, and GNNs for genomic and microbiome data analysis.
+- Bioinformatics: Understanding of bacterial genome annotation, sequence alignment, and feature extraction.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Biopython.
+- Data Visualization: Skills in visualizing genomic and microbiome data using tools like Matplotlib, Plotly, and Cytoscape.
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine) - Coursera:
+[Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
+- Books
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+[Link](https://www.google.com.bd/books/edition/Deep_Learning_for_Biomedical_Data_Analys/aFw4EAAAQBAJ?hl=en&gbpv=0))
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+- Research Papers
+- "Applications of Artificial Intelligence in Microbiome Analysis and Probiotic Interventions—An Overview and Perspective Based on the Current State of the Art" – D'Urso et al., Applied Sciences
+[Link](https://www.mdpi.com/2076-3417/14/19/8627) - "iProbiotics: a machine learning platform for rapid identification of probiotic properties from whole-genome primary sequences" – Yu Sun et al., Briefings in Bioinformatics
+[Link](https://doi.org/10.1093/bib/bbab477)
+- "Applications of Artificial Intelligence in Microbiome Analysis and Probiotic Interventions—An Overview and Perspective Based on the Current State of the Art" – D'Urso et al., Applied Sciences
+- Datasets
+- Videos & Playlists
+- "Machine Learning in Computational Biology" – MIT
+[YouTube Playlist](https://youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc&si=PxfIPMmn7lQx5t-j)
+- "Machine Learning in Computational Biology" – MIT
+
+---
+
+## Predicting Viral Host Range from Genomic Sequences
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/95/predicting-viral-host-range-from-genomic-sequences
+
+Understanding the host range of viruses is critical for controlling viral infections, designing antiviral therapies, and preventing zoonotic spillover events. Predicting the host specificity of viruses (e.g., bacteriophages, human viruses) based on their genomic sequences can provide insights into virus-host interactions and facilitate targeted interventions. In this project, we aim to develop a deep learning-based system to predict viral host range using genomic data. Sequence-based models like Convolutional Neural Networks (CNNs) or transformers will analyze viral genomes to identify features associated with host specificity. Additionally, Graph Neural Networks (GNNs) will model virus-host interactions as graphs, where nodes represent viruses and hosts, and edges represent infection relationships. This approach will enable rapid identification of viral hosts and improve our understanding of viral ecology.
+Viruses are responsible for numerous diseases in humans, animals, and plants, and understanding their host range is essential for mitigating outbreaks and developing treatments. Automated prediction systems using deep learning can accelerate the identification of viral hosts, especially for emerging pathogens, and aid in the design of phage therapies for bacterial infections.
+- Zoonotic Spillover Prediction: Extend the model to predict the likelihood of zoonotic transmission based on viral genomic features.
+- Phage Therapy Optimization: Use the model to identify bacteriophages with high specificity for pathogenic bacteria, aiding in phage therapy development.
+- Cross-Species Transmission: Investigate viral mutations or genomic features that enable cross-species transmission.
+- Explainability: Incorporate explainability techniques to identify key genomic regions driving host specificity predictions.
+- Global Surveillance: Develop tools for large-scale surveillance of viral host ranges using genomic data from diverse geographic regions.
+- Deep Learning: Hands-on experience with CNNs, transformers, and GNNs for genomic and interaction data analysis.
+- Bioinformatics: Understanding of viral genome annotation, sequence alignment, and feature extraction.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Biopython.
+- Data Visualization: Skills in visualizing genomic and interaction data using tools like Matplotlib, Plotly, and Cytoscape.
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine) - Coursera:
+[Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
+- Books
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+[Link](https://www.google.com.bd/books/edition/Deep_Learning_for_Biomedical_Data_Analys/aFw4EAAAQBAJ?hl=en&gbpv=0))
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+- Research Papers
+- "Bioinformatics approaches for unveiling virus-host interactions" – Iuchi et al., Computational and Structural Biotechnology Journal
+[Link](https://www.sciencedirect.com/science/article/pii/S2001037023000892) - "HostNet: improved sequence representation in deep neural networks for virus-host prediction" – Ming et al., Bioinformatics
+[Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05582-9) - "RNAVirHost: a machine learning–based method for predicting hosts of RNA viruses through viral genomes" – Cheng et al., Gigascience
+[Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11340644/) - "Predicting the hosts of prokaryotic viruses using GCN-based semi-supervised learning" – Shang et al., BMC Biology
+[Link](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-021-01180-4) - "VIDHOP, viral host prediction with deep learning" – Florian Mock et al., Bioinformatics
+[Link](https://doi.org/10.1093/bioinformatics/btaa705)
+- "Bioinformatics approaches for unveiling virus-host interactions" – Iuchi et al., Computational and Structural Biotechnology Journal
+- Datasets
+- Code Tutorials & Repositories
+- How to build a machine learning model to predict antimicrobial peptides (End-to-end Bioinformatics) (YouTube/GitHub)
+[Link](https://youtu.be/0NrFIGLwW0Q?si=jTCuAxptOyzYNZX_)
+- How to build a machine learning model to predict antimicrobial peptides (End-to-end Bioinformatics) (YouTube/GitHub)
+- Videos & Playlists
+- "Machine Learning in Computational Biology" – MIT
+[YouTube Playlist](https://youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc&si=PxfIPMmn7lQx5t-j) - "My Hero & Me - Different flavors of phage-host prediction powered by machine learning: how and why?" – YouTube Video
+[Link](https://www.youtube.com/watch?v=UmdNdMwi_OY)
+- "Machine Learning in Computational Biology" – MIT
+
+---
+
+## Disease Classification and Progression Prediction Using Multi-Omics Data Integration with Deep Learning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/96/disease-classification-and-progression-prediction-using-multi-omics-data-integration-with-deep-learning
+
+Diseases such as cancer, cardiovascular disorders, and neurological conditions are complex and involve interactions across multiple biological layers (genomics, transcriptomics, proteomics, etc.). Integrating multi-omics data provides a more comprehensive understanding of disease mechanisms and can significantly improve predictive accuracy for disease classification and progression. We aim to develop a deep learning-based system to classify diseases and predict their progression by integrating multiple omics modalities. The model will use multi-modal deep learning architectures to process different omics datasets (e.g., gene expression, DNA methylation, proteomics) through separate branches, fusing them at various levels (early, late, or intermediate fusion). Attention mechanisms will be employed to identify the most informative omics layers, while autoencoders will reduce dimensionality and noise. Graph Neural Networks (GNNs) may also be used to represent multi-omics data as interaction graphs. This approach will enable accurate disease classification, subtype discovery, and survival analysis, contributing to personalized medicine and improved patient outcomes.
+Multi-omics integration is essential for capturing the complexity of biological systems and understanding disease mechanisms at multiple levels. Traditional single-omics analyses often fail to capture the full picture, leading to incomplete insights. By leveraging deep learning to integrate multi-omics data, we can uncover novel biomarkers, discover disease subtypes, and predict clinical outcomes with higher accuracy. This has significant implications for personalized medicine, early diagnosis, and treatment optimization.
+- Survival Analysis: Extend the model to predict patient survival times or time-to-event outcomes using techniques like Cox proportional hazards models or deep survival networks.
+- Subtype Discovery: Use clustering techniques to identify novel disease subtypes based on multi-omics data, enabling more targeted therapies.
+- Explainability: Incorporate explainability techniques to highlight key omics features driving disease classification or progression predictions.
+- Cross-Disease Applications: Apply the model to other diseases beyond cancer, such as neurodegenerative or autoimmune disorders, to test its generalizability.
+- Real-Time Monitoring: Develop tools for real-time monitoring of disease progression using longitudinal multi-omics data.
+- Deep Learning: Hands-on experience with multi-modal neural networks, attention mechanisms, autoencoders, and GNNs for multi-omics data integration.
+- Bioinformatics: Understanding of omics data preprocessing, normalization, and feature extraction.
+- Python Programming: Proficiency in Python and libraries like TensorFlow, PyTorch, and Scikit-learn for implementing deep learning models.
+- Data Visualization: Skills in visualizing multi-omics data and model predictions using tools like Matplotlib, Seaborn, and Cytoscape.
+- CSE422: Artificial Intelligence
+- CSE425: Neural Networks
+- CSE427: Machine Learning
+- CSE443: Bioinformatics I
+- Coursera:
+[AI for Medical Diagnosis](https://www.coursera.org/learn/ai-for-medical-diagnosis?specialization=ai-for-medicine) - Coursera:
+[Genomic Data Science Specialization](https://www.coursera.org/specializations/genomic-data-science)
+- Books
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+[Link](https://www.google.com.bd/books/edition/Deep_Learning_for_Biomedical_Data_Analys/aFw4EAAAQBAJ?hl=en&gbpv=0))
+- "Deep Learning for Biomedical Data Analysis" – Mourad Elloumi (
+- Research Papers
+- "A review of multi-omics data integration through deep learning approaches for disease diagnosis, prognosis, and treatment" – Wekesa et al., Frontiers in Genetics
+[Link](https://doi.org/10.3389/fgene.2023.1199087) - "Deep learning-based approaches for multi-omics data integration and analysis" – Ballard et al., BioData Mining
+[Link](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-024-00391-z) - "Multi-Omics Integration For Disease Prediction Via Multi-Level Graph Attention Network And Adaptive Fusion" – Luo et al., IEEE Journal of Biomedical and Health Informatics
+[Link](https://www.biorxiv.org/content/10.1101/2023.03.19.533326v1.full)|[Code](https://github.com/Yaolab-fantastic/GRAMI-NET) - "MODILM: towards better complex diseases classification using a novel multi-omics data integration learning model" – Zhong et al., BMC Medical Informatics and Decision Making
+[Link](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-023-02173-9) - "Multi-omics integration method based on attention deep learning network for biomedical data classification" – Gong et al., Computer Methods and Programs in Biomedicine
+[Link](https://doi.org/10.1016/j.cmpb.2023.107377)
+- "A review of multi-omics data integration through deep learning approaches for disease diagnosis, prognosis, and treatment" – Wekesa et al., Frontiers in Genetics
+- Datasets
+- Code Tutorials & Repositories
+- Videos & Playlists
+- "Machine Learning in Computational Biology" – MIT
+[YouTube Playlist](https://youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc&si=PxfIPMmn7lQx5t-j) - "The What and Why of Multi-Omics Integration | 2023 EMSL Summer School, Day 5" – YouTube
+[Link](https://youtu.be/V-Rbcso4Aag?si=9e5NALd-TJBBOKGe)
+- "Machine Learning in Computational Biology" – MIT
+
+---
+
+## Balancing User Privacy and Business Needs in Digital Identity Systems
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/98/balancing-user-privacy-and-business-needs-in-digital-identity-systems
+
+Synopsis
+This research explores the challenge of aligning user-centric identity models like Self-Sovereign Identity (SSI) with existing federated identity systems widely used by businesses. While SSI offers greater user privacy and control, it often clashes with enterprise needs for compliance, scalability, and centralized oversight.
+Relevance of the Topic
+Future Research/Scope
+Skills Learned
+Relevant courses to the topic
+Reading List
+
+---
+
+## 3D visualization of 2D/360 image and navigation in virtual reality through motion processing via smartphone sensors
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/112/3d-visualization-of-2d360-image-and-navigation-in-virtual-reality-through-motion-processing-via-smartphone-sensors
+
+Dr. Md. Ashraful Alam (ASA)
+Associate Professor
+ashraful.alam@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Financial document analysis and data extraction using LLM
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/118/financial-document-analysis-and-data-extraction-using-llm
+
+Mr. Abdullah Al Nakib (ANK)
+Lecturer
+abdullah.alnakib@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Understanding User Perceptions and Gender-Based Preferences in Ride-Sharing Platforms: A Comparative Study of Uber, Pathao, and inDrive in Bangladesh
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/124/understanding-user-perceptions-and-gender-based-preferences-in-ride-sharing-platforms-a-comparative-study-of-uber-pathao-and-indrive-in-bangladesh
+
+This study aims to explore how users in Bangladesh perceive and use popular ride-sharing platforms such as Uber, Pathao, and inDrive, compared to informal ride systems where riders and passengers connect without app mediation. Through surveys and interviews with both riders and passengers, the research will examine factors influencing platform choice, satisfaction levels, and desired improvements.
+A key focus of the study will be to analyze gender-based differences in adoption and perception, particularly investigating the lower participation of female users in ride-sharing services. It will identify whether issues of safety, convenience, cost, or trust are major barriers and suggest design-level interventions to improve inclusivity.
+By combining quantitative and qualitative methods, the study will offer a holistic understanding of the ride-sharing ecosystem in Bangladesh and propose actionable design recommendations to make such platforms safer, more inclusive, and user-friendly.
+Ride-sharing platforms have transformed urban mobility in Bangladesh, yet issues of safety, gender inclusivity, and trust continue to affect user adoption. Understanding these behavioral and perceptual factors is crucial for both policymakers and platform developers. The findings will contribute to Human-Computer Interaction (HCI), gender-inclusive design, and transportation system research, offering evidence-based insights that can guide future feature design and policy reform.
+Future extensions of this study may include cross-country comparisons, integration of behavioral analytics from app usage data, or the development of a prototype “inclusive ride-sharing” model focusing on safety feedback loops and gender-sensitive features. The work could also expand to explore AI-driven trust mechanisms and recommendation systems for safer ride-matching.
+- Designing and conducting mixed-method user studies (survey + interview)
+- Quantitative data analysis (Cramér’s V, regression, and correlation)
+- Thematic coding and qualitative insight extraction
+- Designing user-centered, inclusive platform recommendations
+- Research writing and visualization
+- Human-Computer Interaction
+- Data Analytics and Visualization
+- Chan, N. D., & Shaheen, S. A. (2012). Ridesharing in North America: Past, Present, and Future. Transport Reviews.
+- Rayle, L., et al. (2016). Just a Better Taxi? A Survey-Based Comparison of Taxis, Transit, and Ride-Hailing Services. Transport Policy.
+- Ge, Y., et al. (2020). Racial and Gender Discrimination in Transportation Network Companies. PNAS.
+- Rosenblat, A. (2018). Uberland: How Algorithms Are Rewriting the Rules of Work. University of California Press.
+- Shaheen, S., & Cohen, A. (2021). Shared Mobility and the Transformation of Public Transit. Springer.
+
+---
+
+## Artificial intelligence agents for biology
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/125/artificial-intelligence-agents-for-biology
+
+Emerging research tools are transforming modern biological research, including deep-learning–based cell identification, programmable protein editing technologies, and AI-driven research agents. These methods enable more accurate data analysis, precise biological manipulation, and automation of complex experimental workflows, making advanced research more accessible to early-career scientists. For thesis students, these developments highlight how interdisciplinary skills in biology, data science, and artificial intelligence are becoming essential for future research, while also emphasizing the importance of critical evaluation, validation, and responsible use of advanced technologies in scientific studies.
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+- (Course list here)
+- Swanson, K., Wu, W., Bulaong, N.L. et al. The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies. Nature 646, 716–723 (2025).
+[https://doi.org/10.1038/s41586-025-09442-9](https://doi.org/10.1038/s41586-025-09442-9) - Tang, L. Artificial intelligence agents for biology. Nat Methods 22, 2496–2497 (2025).
+[https://doi.org/10.1038/s41592-025-02958-y](https://doi.org/10.1038/s41592-025-02958-y)
+
+---
+
+## Physics-Informed Variational Autoencoders for Cosmological Field Reconstruction and Parameter Inference.
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/126/physics-informed-variational-autoencoders-for-cosmological-field-reconstruction-and-parameter-inference
+
+Synopsis
+This research introduces the Physics-Informed Variational Autoencoder (PI-VAE), a novel framework designed to reconstruct cosmological fields and infer fundamental parameters directly from high-dimensional simulation data. By embedding physical constraints—such as the matter power spectrum and mass conservation—directly into the training objective, the model overcomes the "shortcut learning" limitations of traditional deep learning.
+Using multi-channel data (Gas Mass, Velocity, and Magnetic Fields) from the CAMELS dataset, PI-VAE achieves near-perfect inference for matter density (Ωm) with an R2 score of 0.957 and a robust R2 of 0.732 for fluctuation amplitude (σ8). Notably, the model improves physics fidelity by 98.6% over vanilla VAEs, ensuring that reconstructed maps of the Cosmic Web are both visually sharp and scientifically valid. This work provides a foundation for scaling AI-driven cosmological analysis to 3D data and real-world telescope surveys.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Quantum-Aware Image Encoding and Adversarial Perturbation
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/127/quantum-aware-image-encoding-and-adversarial-perturbation
+
+Synopsis
+This thesis, titled "Quantum-Aware Image Encoding and Adversarial Perturbation," explores a hybrid system designed to protect digital creators from unauthorized generative AI training. It bridges classical adversarial defense with Quantum Image Processing (FRQI/QPIXL) to create "cloaks" that remain effective even after quantum encoding.
+Key Findings:
+• High Robustness: 99.99% of classical adversarial perturbations survive the quantum encoding process, proving the reliability of hybrid pipelines.
+• Invisible Protection: The system maintains high visual fidelity with a mean PSNR of 32.30 dB and an SSIM near 1.0, ensuring protections are imperceptible to humans.
+• NISQ-Ready: The framework uses a modular, patch-based architecture specifically optimized for current Noisy Intermediate-Scale Quantum (NISQ) hardware.
+• Effective Defense: Successfully misleads advanced feature extractors like DINOv2, providing a scalable foundation for digital sovereignty against future quantum-accelerated AI.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## A Comparative Study of Classical, Quantum and Hybrid Machine Learning for Anti-Money Laundering Detection
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/128/a-comparative-study-of-classical-quantum-and-hybrid-machine-learning-for-anti-money-laundering-detection
+
+Synopsis
+The work presents a comparative study of classical, quantum, transformer-based, and hybrid machine learning approaches for Anti-Money Laundering (AML) detection using the IBM AML transaction dataset. The study evaluates multiple classical and quantum models under a unified experimental framework, proposes a two-stage hybrid pipeline combining Isolation Forest with quantum classifiers, and validates selected quantum models on real IBM Quantum hardware. The paper also incorporates statistical significance analysis and runtime comparisons to assess both predictive performance and practical feasibility. Overall, the work provides a comprehensive benchmark of current classical and near-term quantum approaches for AML detection while exploring the practical applicability of hybrid quantum machine learning under existing NISQ hardware constraints.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+(write your future scope here)
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Vision-Language-Action Models: Open Challenges in Embodied AI
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/129/vision-language-action-models-open-challenges-in-embodied-ai
+
+Synopsis
+Vision-Language-Action (VLA) models are an emerging class of AI systems that combine visual perception, natural-language understanding, reasoning, and physical actions. They are particularly important for embodied AI and robotics, where an agent must understand its environment, follow instructions, make decisions, and interact with the physical world. The challenges include multimodal understanding, reasoning, data, evaluation, generalization across robots and environments, computational efficiency, whole-body coordination, safety, autonomous agents, and human–robot collaboration.
+- What makes VLA models different from LLMs and VLMs?
+- Why is it difficult to transfer a model between different robots or environments?
+- What kinds of data and evaluation methods are needed for embodied AI?
+- How can we make robotic agents both capable and safe?
+- Which of the 10 challenges could be addressed using reinforcement learning?
+Relevant courses to the topic
+- Neural Networks, Reinforcement Learning, Computer Vision, NLP - Foundation Models
+Reading List
+- Poria, S., Majumder, N., Hung, C.-Y., Bagherzadeh, A. A., Li, C., Kwok, K., … Hsu, D. (2026). 10 Open Challenges Steering the Future of Vision-Language-Action Models. Proceedings of the AAAI Conference on Artificial Intelligence, 40(46), 39771–39779.
+- Luo, Yulin, Hao Chen, Zhuangzhe Wu, Bowen Sui, Jiaming Liu, Chenyang Gu, Zhuoyang Liu et al. "Look before acting: Enhancing vision foundation representations for vision-language-action models." arXiv preprint arXiv:2603.15618 (2026).
+
+---
+
+## Offline Reinforcement Learning: Addressing Out-of-Distribution Actions
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/130/offline-reinforcement-learning-addressing-out-of-distribution-actions
+
+Synopsis
+A major challenge in offline reinforcement learning (RL) is: how to learn an effective policy using only a previously collected dataset, without further interaction with the environment. Since the agent cannot explore and collect new data, it may generate out-of-distribution (OOD) actions, actions that are poorly represented or completely absent in the training dataset. Such actions can lead to unreliable or overly optimistic decisions. In general, the problem can be summarized as:
+How can an offline RL agent generate high-reward actions while remaining within the distribution of actions supported by the available dataset?
+Relevant courses to the topic
+- Probability and Statistics, Reinforcement Learning
+Reading List
+- Hu, X., Li, S., Xu, Y., Tang, B., & Chen, L. (2026). Enhancing Diffusion Policies with Distribution-Matching Generator in Offline Reinforcement Learning. Proceedings of the AAAI Conference on Artificial Intelligence, 40(26), 21894–21902. https://doi.org/10.1609/aaai.v40i26.39342
+
+---
+
+## Artificial Intelligence and Deep Learning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/137/artificial-intelligence-and-deep-learning
+
+Ms. Tasnim Ferdous (TNMF)
+Senior Lecturer
+tasnim.ferdous@bracu.ac.bd
+(write your synopsis here)
+(write your relevancy here)
+(write your future scope here)
+(write your Skills acquired here)
+
+---
+
+## Risk-Aware Cryptographic Agility for Post-Quantum Migration
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/138/risk-aware-cryptographic-agility-for-post-quantum-migration
+
+Synopsis
+The emergence of quantum computing threatens widely deployed public-key cryptographic systems such as RSA and ECC, creating an urgent need for post-quantum cryptographic (PQC) migration. This research proposes a risk-aware cryptographic agility framework that dynamically selects appropriate classical, hybrid, or PQC algorithms based on security requirements, computational resources, network conditions, and performance constraints. The study will evaluate standardized and emerging PQC schemes, including ML-KEM, ML-DSA, SLH-DSA, and HQC, through comprehensive security and performance benchmarking. Experimental results will be used to develop an adaptive decision model for selecting optimal cryptographic configurations, aiming to minimize migration overhead while maintaining appropriate security levels across diverse deployment environments.
+Relevance of the Topic
+(write your relevancy here)
+Future Research/Scope
+Future research can extend this work by developing AI-driven cryptographic agility capable of continuously adapting algorithm selection to emerging threats and changing system conditions. The framework can also be evaluated in real-world environments, including IoT, cloud infrastructure, mobile networks, and TLS based applications. Further studies may investigate side-channel resistance, fault attacks, energy efficiency, and hardware acceleration of PQC algorithms. As the post-quantum standardization landscape evolves, newly standardized algorithms can be incorporated into the framework. Finally, formal security analysis and large-scale deployment studies can validate the proposed approach and establish practical guidelines for secure, cost-effective, and scalable post-quantum migration.
+Skills Learned
+Skills: Post-Quantum Cryptography, Cybersecurity, Cryptographic Risk Assessment, Algorithm Optimization.
+Technical: Python/C++, PQC Benchmarking, Network Security, Data Analysis & Research.
+Relevant courses to the topic
+Reading List
+
+---
+
+## Risk-Adaptive Three-Factor Authentication for Secure Digital Identity
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/139/risk-adaptive-three-factor-authentication-for-secure-digital-identity
+
+Synopsis
+Three-factor authentication (3FA) provides stronger identity protection by combining knowledge, possession, and biometric factors; however, conventional 3FA systems often apply the same authentication requirements regardless of contextual risk. This research proposes a Risk-Adaptive Three-Factor Authentication framework that dynamically adjusts authentication requirements based on user behavior, device trust, network conditions, location, and historical authentication patterns. A risk-scoring model will determine appropriate authentication levels while maintaining security and usability. The proposed framework will be experimentally evaluated using metrics including authentication accuracy, false acceptance rate, false rejection rate, latency, usability, and privacy. The study aims to develop a secure, adaptive, and practical authentication framework for modern digital environments.
+Relevance of the Topic
+With increasing cyber threats, identity theft, and unauthorized access, traditional authentication methods are becoming insufficient. Risk-Adaptive Three-Factor Authentication can provide stronger security while improving usability by dynamically adjusting authentication requirements according to contextual risk. This research is highly relevant for banking, healthcare, e-commerce, cloud services, and other security-critical digital platforms.
+Future Research/Scope
+Future research can integrate AI-based behavioral analysis to improve real-time risk assessment and adaptive authentication. The framework can be extended to IoT, mobile, banking, healthcare, and cloud environments. Further studies may explore continuous authentication, privacy-preserving biometrics, adversarial attacks, usability, and large-scale real-world deployment.
+Skills Learned
+Cybersecurity, Multi-Factor Authentication, Risk Assessment, AI-Based Behavioral Analysis, Biometric Security, Python, Data Analysis, and Security Research.
+Relevant courses to the topic
+Reading List
+Link 1: [https://ieeexplore.ieee.org/abstract/document/9850264](https://ieeexplore.ieee.org/abstract/document/9850264)
+Link 2: [https://link.springer.com/chapter/10.1007/978-3-032-23335-6_1](https://link.springer.com/chapter/10.1007/978-3-032-23335-6_1)
+Link 3: [https://ieeexplore.ieee.org/abstract/document/10060915](https://ieeexplore.ieee.org/abstract/document/10060915)
+
+---
+
+## Behavior Aware Adaptive Multi-Factor Authentication
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/140/behavior-aware-adaptive-multi-factor-authentication
+
+Synopsis
+Behavior Aware Adaptive Multi-Factor Authentication enhances traditional MFA by incorporating user behavioral patterns into authentication decisions. This research proposes a framework that analyzes behavioral and contextual attributes such as login patterns, device characteristics, location, and access behavior to dynamically adjust authentication requirements. The system will generate real-time risk scores and apply appropriate authentication factors accordingly. Its effectiveness will be evaluated using security, accuracy, false acceptance, false rejection, latency, and usability metrics. The research aims to develop a secure, intelligent, and user-friendly authentication mechanism for modern digital environments.
+Relevance of the Topic
+Increasing cyber threats make static MFA insufficient. Behavior aware authentication enables dynamic, risk-based security, reducing unauthorized access while maintaining usability across banking, healthcare, cloud, and digital services.
+Future Research/Scope
+Future research can explore AI-driven continuous authentication, privacy-preserving behavioral analysis, adversarial attacks, and large-scale real-world deployment.
+Skills Learned
+(write your Skills acquired here)
+Relevant courses to the topic
+Reading List
+
+---
+
+## Verifiable Agentic Search and Generative Process Supervision for Automated Reasoning
+
+- **Source URL**: https://cse.bracu.ac.bd/thesis/synopsis/141/verifiable-agentic-search-and-generative-process-supervision-for-automated-reasoning
+
+(write your synopsis here)
+Research under this umbrella topic explores how modern automated theorem proving and reasoning systems are transitioning toward agentic, verifier-guided architectures that combine high-level planning with fine-grained tactic execution. To navigate complex formal state spaces, these frameworks leverage adaptive retrieval of project premises and structural proof patterns, interleave formal symbolic verification directly into text generation, and employ lifelong learning strategies that continuously generalize across expanding mathematical domains. In parallel, step-level verification has advanced through generative process reward models (PRMs) that execute explicit chain-of-thought reasoning before scoring proof steps, derive unsupervised step scores directly from language model token probabilities, and utilize verifiable counterfactual error injection to train robust verifiers. Theoretical developments complement these empirical advances by demonstrating that outcome supervision can match the statistical efficiency of process supervision while revealing that policy optimization algorithms like GRPO implicitly embed process reward mechanisms. Finally, to bypass manual annotation bottlenecks, reinforcement learning paradigms are increasingly powered by intrinsic self-certainty signals, multi-agent zero-sum self-play, and task transformations that convert open-ended problems into self-verifiable proxy environments.
+1. Kumarappan, A., Tiwari, M., Song, P., George, R. J., Xiao, C., & Anandkumar, A. (2024). LeanAgent: Lifelong Learning for Formal Theorem Proving. arXiv:2410.06209.
+2. Thompson, K., Saavedra, N., Carrott, P., Fisher, K., Sanchez-Stern, A., Brun, Y., Ferreira, J. F., Lerner, S., & First, E. (2024). Rango: Adaptive Retrieval-Augmented Proving for Automated Software Verification. arXiv:2412.14063.
+3. Liu, H., Sun, J., Li, Z., & Yao, A. C. (2025). ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis. arXiv:2501.18310.
+4. Jia, Z., Rakhlin, A., & Xie, T. (2025). Do We Need to Verify Step by Step? Rethinking Process Supervision from a Theoretical Perspective. arXiv:2502.10581.
+5. Rajaee, S., Pratik, K., Cesa, G., & Behboodi, A. (2025). Local Look-Ahead Guidance via Verifier-in-the-Loop for Automated Theorem Proving. arXiv:2503.09730.
+6. Zhao, J., Liu, R., Zhang, K., Zhou, Z., Gao, J., Li, D., Lyu, J., Qian, Z., Qi, B., Li, X., & Zhou, B. (2025). GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning. arXiv:2504.00891.
+7. Khalifa, M., Agarwal, R., Logeswaran, L., Kim, J., Peng, H., Lee, M., Lee, H., & Wang, L. (2025). Process Reward Models That Think. arXiv:2504.16828.
+8. Zhao, X., Kang, Z., Feng, A., Levine, S., & Song, D. (2025). Learning to Reason without External Rewards. arXiv:2505.19590.
+9. Liu, B., Guertler, L., Yu, S., Liu, Z., Qi, P., Balcells, D., Liu, M., Tan, C., Shi, W., Lin, M., Lee, W. S., & Jaques, N. (2025). SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via Multi-Agent Multi-Turn Reinforcement Learning. arXiv:2506.24119.
+10. Sullivan, M., & Koller, A. (2025). GRPO is Secretly a Process Reward Model. arXiv:2509.21154.
+11. Yang, Z., Shen, W., Li, C., Chen, R., Wan, F., Yan, M., Quan, X., & Huang, F. (2025). SPELL: Self-Play Reinforcement Learning for Evolving Long-Context Language Models. arXiv:2509.23863.
+12. Schrader, T. P., Lange, L., Kaminski, T., Razniewski, S., & Friedrich, A. (2025). A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving. arXiv:2512.17093.
+13. Wang, J., Zhang, J., Guo, Q., Guo, L., Li, R., Zhang, C., et al. (2026). LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning. arXiv:2603.21065.
+14. Ahn, Y., Yeo, S., Im, G., Lee, J., Yeo, J., & Kim, J. (2026). PROMISE: Proof Automation as Structural Imitation of Human Reasoning. arXiv:2604.05399.
+15. Liu, C., Yin, Y., Yuan, Y., Xie, J., Li, B., Li, S., Shen, J., Xu, Y., Shang, L., & Zhang, M. (2026). Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem Proving in Lean 4. arXiv:2604.15839.
+16. Sun, Y., Shi, C., Lyu, H., & Xiong, Y. (2026). On Reasoning-Centric LLM-based Automated Theorem Proving. arXiv:2604.19558.
+17. Chi, Y., & Wang, Y. (2026). Verifiable Counterfactual Supervision for Process Reward Models. arXiv:2605.02395.
+18. Gadetsky, A., Kodryan, M., Panigrahi, S. S., Guo, H., & Brbic, M. (2026). Unsupervised Process Reward Models. arXiv:2605.10158.
+19. Wang, Q., Shi, J., Wang, H., Wan, K., Wu, Y., Liu, B., Wu, Q., Li, H. H., Chen, Y., Zhao, H., & Zhao, W. (2026). From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement. arXiv:2607.23802.
+20. Shen, H., Guo, J., Cui, T., Xiao, Y., & Zhi, L. (2026). MechGeo: Autoformalizing and Proving Euclidean Geometry in Lean 4. arXiv:2608.02295.
+21. Hu, J., Zhang, J., Zhao, Y., & Ringer, T. (2025). HybridProver: Augmenting Theorem Proving with LLM-Driven Proof Synthesis and Refinement. arXiv:2505.15740.
