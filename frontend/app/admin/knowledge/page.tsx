@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 import {
+  ChevronLeft,
+  ChevronRight,
   FileText,
   Globe,
   RefreshCw,
@@ -17,11 +19,15 @@ import { Button, ConfirmDialog } from "@/components/ui/Modal";
 import { api } from "@/lib/api";
 import type { DocumentItem } from "@/lib/types";
 
+const PAGE_SIZE_OPTIONS = [10, 20, 50];
+
 export default function KnowledgeBasePage() {
   const [documents, setDocuments] = useState<DocumentItem[]>([]);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10);
   const [uploadOpen, setUploadOpen] = useState(false);
   const [urlOpen, setUrlOpen] = useState(false);
   const [inspectDocId, setInspectDocId] = useState<string | null>(null);
@@ -33,7 +39,8 @@ export default function KnowledgeBasePage() {
   const loadDocuments = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await api.listDocuments(search, 0, 100);
+      const skip = (page - 1) * pageSize;
+      const res = await api.listDocuments(search, skip, pageSize);
       setDocuments(res.documents);
       setTotal(res.total);
     } catch {
@@ -41,7 +48,7 @@ export default function KnowledgeBasePage() {
     } finally {
       setLoading(false);
     }
-  }, [search]);
+  }, [search, page, pageSize]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -119,7 +126,10 @@ export default function KnowledgeBasePage() {
           <input
             type="text"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setPage(1);
+            }}
             placeholder="Search documents by title or path..."
             className="font-sub w-full rounded-xl border border-border bg-background py-2 pl-10 pr-4 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/20"
           />
@@ -277,6 +287,69 @@ export default function KnowledgeBasePage() {
             </tbody>
           </table>
         </div>
+
+        {/* Pagination Bar */}
+        {total > 0 && (
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-border px-4 py-3 bg-surface/30">
+            <div className="flex items-center gap-2 text-xs text-muted">
+              <span>Showing</span>
+              <strong className="text-text">
+                {Math.min((page - 1) * pageSize + 1, total)}-{Math.min(page * pageSize, total)}
+              </strong>
+              <span>of</span>
+              <strong className="text-text">{total}</strong>
+              <span>documents</span>
+
+              <span className="hidden sm:inline mx-1 text-border">|</span>
+
+              <div className="hidden sm:flex items-center gap-1.5">
+                <span>Per page:</span>
+                <select
+                  value={pageSize}
+                  onChange={(e) => {
+                    setPageSize(Number(e.target.value));
+                    setPage(1);
+                  }}
+                  className="rounded-lg border border-border bg-background px-2 py-1 text-xs text-text outline-none focus:border-accent"
+                >
+                  {PAGE_SIZE_OPTIONS.map((size) => (
+                    <option key={size} value={size}>
+                      {size}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span className="font-sub text-xs text-muted mr-1">
+                Page {page} of {Math.max(1, Math.ceil(total / pageSize))}
+              </span>
+
+              <button
+                type="button"
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page <= 1 || loading}
+                aria-label="Previous page"
+                className="flex items-center gap-1 rounded-lg border border-border bg-background px-2.5 py-1 text-xs font-medium text-text transition hover:bg-surface disabled:opacity-40 disabled:hover:bg-background"
+              >
+                <ChevronLeft className="size-3.5" />
+                <span className="hidden sm:inline">Prev</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page * pageSize >= total || loading}
+                aria-label="Next page"
+                className="flex items-center gap-1 rounded-lg border border-border bg-background px-2.5 py-1 text-xs font-medium text-text transition hover:bg-surface disabled:opacity-40 disabled:hover:bg-background"
+              >
+                <span className="hidden sm:inline">Next</span>
+                <ChevronRight className="size-3.5" />
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Modals */}
