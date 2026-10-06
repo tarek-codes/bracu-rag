@@ -9,12 +9,14 @@ export function Modal({
   onClose,
   title,
   description,
+  maxWidth = "max-w-lg",
   children,
 }: {
   open: boolean;
   onClose: () => void;
   title: string;
   description?: string;
+  maxWidth?: string;
   children: React.ReactNode;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
@@ -31,7 +33,7 @@ export function Modal({
       ref={ref}
       onClose={onClose}
       onClick={(e) => e.target === ref.current && onClose()}
-      className="m-auto w-[calc(100%-1.5rem)] max-w-lg rounded-2xl border border-border bg-background p-0 text-text shadow-2xl backdrop:bg-black/50 backdrop:backdrop-blur-xs"
+      className={`m-auto w-[calc(100%-1.5rem)] ${maxWidth} rounded-2xl border border-border bg-background p-0 text-text shadow-2xl backdrop:bg-black/50 backdrop:backdrop-blur-xs`}
     >
       <div className="p-4 sm:p-6">
         <div className="flex items-start justify-between gap-3 sm:gap-4">

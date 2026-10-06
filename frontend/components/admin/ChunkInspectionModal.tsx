@@ -46,14 +46,15 @@ export function ChunkInspectionModal({
     <Modal
       open={open}
       onClose={onClose}
-      title={activeDoc ? `Chunks: ${activeDoc.title}` : "Inspect Document Chunks"}
+      maxWidth="max-w-4xl"
+      title={activeDoc ? `Document Chunks: ${activeDoc.title}` : "Inspect Document Chunks"}
       description={
         activeDoc
-          ? `${activeDoc.chunks.length} chunks indexed (${activeDoc.mime_type || "text"})`
+          ? `${activeDoc.chunks.length} chunks indexed (${activeDoc.mime_type || "text"}) · ${activeDoc.source_path || "Uploaded document"}`
           : "Viewing indexed document content and chunk boundaries."
       }
     >
-      <div className="max-h-[70vh] space-y-5 overflow-y-auto pr-1">
+      <div className="max-h-[75vh] space-y-5 overflow-y-auto pr-1">
         {loading && (
           <div className="flex items-center justify-center py-12">
             <Loader2 className="size-6 animate-spin text-accent" />
