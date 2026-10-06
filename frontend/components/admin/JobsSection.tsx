@@ -72,6 +72,11 @@ export function JobsSection({ onJobFinished }: { onJobFinished?: () => void }) {
                     ({job.stats.chunks_added || 0} chunks added, {job.stats.files_skipped || 0} skipped)
                   </span>
                 )}
+                {isFailed && job.error_message && (
+                  <span className="font-sub text-error text-[11px] truncate max-w-[200px]" title={job.error_message}>
+                    - {job.error_message}
+                  </span>
+                )}
               </div>
 
               <div className="shrink-0 flex items-center gap-2.5">

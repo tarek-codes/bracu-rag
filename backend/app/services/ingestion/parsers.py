@@ -164,21 +164,37 @@ def parse_docx(content_bytes: bytes, filename: str) -> ParsedContent:
     )
 
 
-async def parse_url(url: str, timeout_seconds: float = 15.0) -> ParsedContent:
-    """Fetch and parse web page using trafilatura with SSRF guard."""
+async def parse_url(url: str, timeout_seconds: float = 20.0) -> ParsedContent:
+    """Fetch and parse web page using trafilatura with SSRF guard and Cloudflare bypass."""
     safe_url = validate_url_for_ssrf(url)
     import trafilatura
 
-    async with httpx.AsyncClient(follow_redirects=True, timeout=timeout_seconds) as client:
-        response = await client.get(
-            safe_url,
-            headers={
-                "User-Agent": "BRACU-RAG-Bot/1.0 (BRAC University Academic Chatbot)",
-                "Accept": "text/html,application/xhtml+xml",
-            },
-        )
-        response.raise_for_status()
-        html = response.text
+    html = ""
+    # Try fetching with curl_cffi with realistic browser TLS fingerprinting (bypasses Cloudflare / anti-bot)
+    try:
+        from curl_cffi.requests import AsyncSession
+
+        async with AsyncSession(impersonate="chrome124", timeout=timeout_seconds) as session:
+            resp = await session.get(safe_url, headers={"Accept-Language": "en-US,en;q=0.9"})
+            if resp.status_code == 200 and "Just a moment..." not in resp.text:
+                html = resp.text
+            elif resp.status_code != 200:
+                resp.raise_for_status()
+    except Exception as exc:
+        logger.warning("curl_cffi_fetch_failed_falling_back_to_httpx", url=safe_url, error=str(exc))
+
+    if not html:
+        async with httpx.AsyncClient(follow_redirects=True, timeout=timeout_seconds) as client:
+            response = await client.get(
+                safe_url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                    "Accept-Language": "en-US,en;q=0.9",
+                },
+            )
+            response.raise_for_status()
+            html = response.text
 
     extracted = trafilatura.extract(
         html,

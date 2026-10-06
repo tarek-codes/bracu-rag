@@ -79,7 +79,11 @@ export function useChatStream({ sessionId, onSessionCreated, onTurnComplete }: O
         fetch(`${API_BASE}/chat/stream`, {
           method: "POST",
           credentials: "include",
-          headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "text/event-stream",
+            "ngrok-skip-browser-warning": "true",
+          },
           body: JSON.stringify({ content: question, session_id: sessionRef.current }),
           signal: controller.signal,
         });
