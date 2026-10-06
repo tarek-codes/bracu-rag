@@ -13,6 +13,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const { theme, toggle } = useTheme();
   const router = useRouter();
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!loading && user?.role !== "admin") {
@@ -27,8 +28,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       </div>
     );
   }
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
     { href: "/admin/knowledge", label: "Knowledge Base", icon: Database },
