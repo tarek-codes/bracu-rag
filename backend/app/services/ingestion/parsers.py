@@ -58,15 +58,27 @@ def parse_text_or_markdown(content_bytes: bytes, filename: str) -> ParsedContent
 
     normalized = normalize_text(raw_text)
 
-    # Extract first heading as title if available
     title = os.path.splitext(os.path.basename(filename))[0]
-    for line in normalized.split("\n"):
-        line_clean = line.strip()
-        if line_clean.startswith("#"):
-            candidate = re.sub(r"^#+\s*", "", line_clean).strip()
-            if candidate:
-                title = candidate
-                break
+
+    # Check for YAML frontmatter title
+    frontmatter_match = re.match(r"^---\s*\n(.*?)\n---\s*\n", normalized, re.DOTALL)
+    if frontmatter_match:
+        for fline in frontmatter_match.group(1).splitlines():
+            if fline.strip().startswith("title:"):
+                raw_val = fline.split("title:", 1)[1].strip().strip("\"'")
+                if raw_val and not raw_val.lower().startswith("sites_default_files"):
+                    title = raw_val
+                    break
+
+    # If title is filename or empty, extract first meaningful heading (excluding 'Page X')
+    if not title or title == os.path.splitext(os.path.basename(filename))[0]:
+        for line in normalized.split("\n"):
+            line_clean = line.strip()
+            if line_clean.startswith("#"):
+                candidate = re.sub(r"^#+\s*", "", line_clean).strip()
+                if candidate and not re.match(r"^page\s*\d+$", candidate, re.IGNORECASE):
+                    title = candidate
+                    break
 
     mime_type = "text/markdown" if filename.endswith((".md", ".markdown")) else "text/plain"
     return ParsedContent(

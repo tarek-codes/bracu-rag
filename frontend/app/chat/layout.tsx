@@ -78,6 +78,17 @@ export default function ChatLayout({ children }: { children: React.ReactNode }) 
     }
   };
 
+  const bulkRemove = async (ids: string[]) => {
+    if (ids.length === 0) return;
+    const idsSet = new Set(ids);
+    setSessions((prev) => prev.filter((s) => !idsSet.has(s.id)));
+    await api.bulkDeleteSessions(ids).catch(refreshSessions);
+    if (activeId && idsSet.has(activeId)) {
+      router.push("/chat");
+      setWorkspaceKey((k) => k + 1);
+    }
+  };
+
   return (
     <div className="flex h-dvh overflow-hidden">
       <div className={collapsed ? "md:hidden" : "contents"}>
@@ -92,6 +103,7 @@ export default function ChatLayout({ children }: { children: React.ReactNode }) 
           onRename={rename}
           onClear={clear}
           onDelete={remove}
+          onBulkDelete={bulkRemove}
         />
       </div>
 

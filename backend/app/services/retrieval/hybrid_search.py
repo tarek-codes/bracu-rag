@@ -1,6 +1,7 @@
 import re
 import uuid
 from ast import literal_eval
+from collections.abc import Sequence
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -18,42 +19,128 @@ _faiss_chunk_ids: list[uuid.UUID] = []
 _faiss_signature: tuple[int, str | None] | None = None
 
 
+def _has_active_llm_key() -> bool:
+    if settings.OPENROUTER_API_KEY and not settings.OPENROUTER_API_KEY.startswith("dummy_"):
+        return True
+    if settings.GROQ_API_KEY and not settings.GROQ_API_KEY.startswith("dummy_"):
+        return True
+    return False
+
+
 def _use_mock_model() -> bool:
     import os
 
     return (
-        os.getenv("TESTING") == "1"
-        or settings.ENVIRONMENT == "test"
-        or not settings.GROQ_API_KEY
-        or settings.GROQ_API_KEY.startswith("dummy_")
+        os.getenv("TESTING") == "1" or settings.ENVIRONMENT == "test" or not _has_active_llm_key()
     )
 
 
+DOMAIN_STOP_WORDS = {"brac", "bracu", "university"}
+STOP_WORDS = {
+    "a",
+    "about",
+    "all",
+    "an",
+    "and",
+    "any",
+    "are",
+    "as",
+    "at",
+    "available",
+    "be",
+    "been",
+    "being",
+    "by",
+    "can",
+    "could",
+    "details",
+    "did",
+    "do",
+    "does",
+    "for",
+    "from",
+    "get",
+    "give",
+    "had",
+    "has",
+    "have",
+    "he",
+    "her",
+    "him",
+    "his",
+    "how",
+    "i",
+    "if",
+    "in",
+    "info",
+    "information",
+    "into",
+    "is",
+    "it",
+    "its",
+    "just",
+    "know",
+    "me",
+    "my",
+    "no",
+    "not",
+    "of",
+    "off",
+    "on",
+    "or",
+    "our",
+    "out",
+    "please",
+    "she",
+    "show",
+    "so",
+    "some",
+    "tell",
+    "than",
+    "that",
+    "the",
+    "their",
+    "them",
+    "then",
+    "there",
+    "these",
+    "they",
+    "this",
+    "to",
+    "us",
+    "was",
+    "we",
+    "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "who",
+    "whom",
+    "whose",
+    "why",
+    "will",
+    "with",
+    "would",
+    "you",
+    "your",
+}
+
+
 def _fts_query(query: str, operator: str = "OR") -> str:
-    stop_words = {
-        "a",
-        "an",
-        "and",
-        "are",
-        "available",
-        "how",
-        "is",
-        "the",
-        "to",
-        "what",
-        "which",
-        "where",
-        "who",
-    }
-    terms = [
+    all_terms = [
         term
         for term in re.findall(r"[A-Za-z0-9]+", query)
-        if len(term) > 2 and term.lower() not in stop_words
+        if len(term) > 2 and term.lower() not in STOP_WORDS
     ]
+    distinctive = [t for t in all_terms if t.lower() not in DOMAIN_STOP_WORDS]
+    terms = distinctive if distinctive else all_terms
+    if not terms:
+        return query
     if operator == "AND":
-        return " ".join(terms) or query
+        return " ".join(terms)
     phrases = [f'"{left} {right}"' for left, right in zip(terms, terms[1:], strict=False)]
-    return " OR ".join([*phrases, *terms]) or query
+    return " OR ".join([*phrases, *terms])
 
 
 @dataclass
@@ -141,6 +228,7 @@ class HybridSearchService:
         query: str,
         top_k: int | None = None,
         rrf_k: int = 60,
+        source_paths: Sequence[str] = (),
     ) -> list[RetrievedChunk]:
         """Perform FAISS vector search and Postgres full-text search with RRF."""
         limit = top_k or settings.RETRIEVAL_TOP_K
@@ -149,9 +237,40 @@ class HybridSearchService:
 
         # 1. Embed query asynchronously
         query_vector = await EmbeddingService.embed_query(query)
+        document_ids = await self._documents_for_paths(source_paths)
+        if document_ids:
+            results = await self._search_documents(query, query_vector, document_ids, limit, rrf_k)
+            if results:
+                return results
+            logger.info("targeted_search_empty_widening", source_paths=list(source_paths))
+
         document_ids = await self._select_documents(query, query_vector)
         if not document_ids:
             return []
+        return await self._search_documents(query, query_vector, document_ids, limit, rrf_k)
+
+    async def warm_up(self) -> None:
+        """Load the embedding model and build the FAISS index ahead of the first query."""
+        vector = await EmbeddingService.embed_query("warm up")
+        await self._faiss_ranks(vector, 1)
+
+    async def _documents_for_paths(self, source_paths: Sequence[str]) -> set[uuid.UUID]:
+        if not source_paths:
+            return set()
+        rows = await self.db.execute(
+            text("SELECT id FROM documents WHERE source_path = ANY(:paths)"),
+            {"paths": list(source_paths)},
+        )
+        return {row.id for row in rows}
+
+    async def _search_documents(
+        self,
+        query: str,
+        query_vector: list[float],
+        document_ids: set[uuid.UUID],
+        limit: int,
+        rrf_k: int,
+    ) -> list[RetrievedChunk]:
 
         vec_ranks = await self._faiss_ranks(query_vector, limit * 5)
         vector_chunk_ids = set(vec_ranks)
@@ -181,18 +300,33 @@ class HybridSearchService:
             ORDER BY rank_score DESC
             LIMIT :limit
         """)
+        fts_ranks: dict[uuid.UUID, int] = {}
         try:
             fts_result = await self.db.execute(
                 fts_sql,
                 {
-                    "query": _fts_query(query),
+                    "query": _fts_query(query, operator="AND"),
                     "document_ids": list(document_ids),
                     "limit": limit,
                 },
             )
-            fts_ranks: dict[uuid.UUID, int] = {}
             for rank, row in enumerate(fts_result, start=1):
                 fts_ranks[row.id] = rank
+
+            if len(fts_ranks) < limit:
+                or_result = await self.db.execute(
+                    fts_sql,
+                    {
+                        "query": _fts_query(query, operator="OR"),
+                        "document_ids": list(document_ids),
+                        "limit": limit,
+                    },
+                )
+                for row in or_result:
+                    if row.id not in fts_ranks:
+                        fts_ranks[row.id] = len(fts_ranks) + 1
+                        if len(fts_ranks) >= limit:
+                            break
         except Exception as exc:
             # Fallback for complex queries or syntax
             logger.warning("fts_search_fallback", query=query, error=str(exc))
@@ -266,8 +400,8 @@ class HybridSearchService:
         query: str,
         query_vector: list[float],
     ) -> set[uuid.UUID]:
-        """Route a question to at most three documents before chunk retrieval."""
-        document_limit = settings.RETRIEVAL_DOCUMENT_LIMIT
+        """Route a question to candidate documents before chunk retrieval."""
+        document_limit = max(settings.RETRIEVAL_DOCUMENT_LIMIT, 5)
         lexical_result = await self.db.execute(
             text("""
                 SELECT c.document_id, d.source_path, max(ts_rank_cd(
@@ -303,34 +437,9 @@ class HybridSearchService:
                 {"query": _fts_query(query), "limit": document_limit},
             )
             lexical_rows = list(lexical_result)
-        query_lower = query.lower()
-        preferred_tokens: tuple[str, ...] = ()
-        if any(term in query_lower for term in ("admission", "residential", "postgraduate")):
-            preferred_tokens = ("admission", "faq", "residential")
-        elif any(term in query_lower for term in ("cse", "algorithm", "course")):
-            preferred_tokens = ("cse", "course")
-        elif any(term in query_lower for term in ("tuition", "fee", "scholarship", "waiver")):
-            preferred_tokens = ("tuition", "fee", "scholarship")
+        selected = [row.document_id for row in lexical_rows]
 
-        lexical_rows.sort(
-            key=lambda row: (
-                any(token in (row.source_path or "").lower() for token in preferred_tokens),
-                float(row.score or 0.0),
-            ),
-            reverse=True,
-        )
-        preferred_selected = [
-            row.document_id
-            for row in lexical_rows
-            if any(token in (row.source_path or "").lower() for token in preferred_tokens)
-        ]
-        selected = (
-            preferred_selected[:document_limit]
-            if preferred_selected
-            else [row.document_id for row in lexical_rows]
-        )
-
-        if len(selected) < document_limit and not preferred_selected:
+        if len(selected) < document_limit:
             vector_ranks = await self._faiss_ranks(query_vector, settings.RETRIEVAL_TOP_K * 5)
             if vector_ranks:
                 chunk_rows = await self.db.execute(

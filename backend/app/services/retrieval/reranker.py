@@ -15,13 +15,20 @@ settings = get_settings()
 _reranker_instance: Any = None
 
 
+def _has_active_llm_key() -> bool:
+    if settings.OPENROUTER_API_KEY and not settings.OPENROUTER_API_KEY.startswith("dummy_"):
+        return True
+    if settings.GROQ_API_KEY and not settings.GROQ_API_KEY.startswith("dummy_"):
+        return True
+    return False
+
+
 def _use_mock_model() -> bool:
     return (
         os.getenv("TESTING") == "1"
         or settings.ENVIRONMENT == "test"
         or settings.ENVIRONMENT == "development"
-        or not settings.GROQ_API_KEY
-        or settings.GROQ_API_KEY.startswith("dummy_")
+        or not _has_active_llm_key()
     )
 
 

@@ -118,8 +118,12 @@ Follow this order: load recent turns, rewrite the question into a standalone que
 Run from the repository root unless noted. Adjust here if the real scripts differ, and keep this section accurate.
 
 ```bash
-# Services (install locally, no Docker or Redis for now)
-# PostgreSQL 18.6 with pgvector must be running locally
+# Services
+# Windows: run `docker compose up -d` or `powershell -File scripts\setup_postgres.ps1`
+# Linux: PostgreSQL with pgvector running locally or via Docker
+
+# Windows All-in-One Quickstart (from root)
+.\run_project.ps1
 
 # Backend (from backend/)
 uv sync
@@ -128,16 +132,15 @@ uv run alembic upgrade head
 uv run python -m app.cli ingest-folder    # bulk import KB_SOURCE_DIR
 uv run alembic revision --autogenerate -m "describe change"
 uv run pytest
-uv run ruff check . && uv run ruff format --check .
+uv run ruff check .
+uv run ruff format --check .
 uv run mypy app
 
 # Frontend (from frontend/)
 bun install
 bun run dev
 bun run lint
-bun run typecheck
 bun run build
-bun run gen:api    # regenerate API types from the OpenAPI schema
 ```
 
 Definition of done for any change: lint, type check and tests pass for the area you touched, migrations apply cleanly, and the feature was exercised manually or by a test.

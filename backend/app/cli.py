@@ -63,7 +63,7 @@ def create_admin_command(email: str, password: str, full_name: str) -> None:
     asyncio.run(_create_admin(email, password, full_name))
 
 
-async def _ingest_folder(target_dir: str) -> None:
+async def _ingest_folder(target_dir: str, rechunk: bool = False) -> None:
     settings = get_settings()
     directory = target_dir or settings.KB_SOURCE_DIR
 
@@ -91,7 +91,7 @@ async def _ingest_folder(target_dir: str) -> None:
                 ext = os.path.splitext(file_name)[1].lower()
                 if ext in (".md", ".pdf", ".txt", ".docx"):
                     full_path = os.path.join(root, file_name)
-                    rel_path = os.path.relpath(full_path, directory)
+                    rel_path = os.path.relpath(full_path, directory).replace("\\", "/")
                     files_to_process.append((full_path, rel_path))
 
         click.echo(f"Found {len(files_to_process)} document(s) to inspect.")
@@ -106,6 +106,7 @@ async def _ingest_folder(target_dir: str) -> None:
                     content_bytes=content_bytes,
                     source_type="bulk",
                     stats=stats,
+                    force=rechunk,
                 )
             except Exception as exc:
                 await db.rollback()
@@ -138,9 +139,61 @@ async def _ingest_folder(target_dir: str) -> None:
     default=None,
     help="Target directory containing knowledge documents (defaults to KB_SOURCE_DIR).",
 )
-def ingest_folder_command(target_dir: str | None) -> None:
+@click.option(
+    "--rechunk",
+    is_flag=True,
+    help="Re-chunk unchanged files after a chunker change. Only changed chunks are embedded.",
+)
+def ingest_folder_command(target_dir: str | None, rechunk: bool) -> None:
     """Bulk import documents from KB_SOURCE_DIR."""
-    asyncio.run(_ingest_folder(target_dir or ""))
+    asyncio.run(_ingest_folder(target_dir or "", rechunk))
+
+
+async def _sync_chroma() -> None:
+    from sqlalchemy import text
+
+    from app.services.vectorstore.chroma_store import ChromaChunk, ChromaStore
+
+    if not ChromaStore.enabled():
+        click.echo("Chroma is not configured (set CHROMA_API_KEY and CHROMA_TENANT).")
+        return
+
+    async with async_session_factory() as db:
+        rows = await db.execute(
+            text(
+                "SELECT c.id, c.document_id, c.content, c.embedding::text AS embedding, c.title, "
+                "c.page, c.chunk_index, d.source_path FROM document_chunks c "
+                "JOIN documents d ON d.id = c.document_id WHERE c.embedding IS NOT NULL"
+            )
+        )
+        chunks = [
+            ChromaChunk(
+                chunk_id=row.id,
+                document_id=row.document_id,
+                content=row.content,
+                embedding=[float(x) for x in row.embedding.strip("[]").split(",")],
+                title=row.title,
+                source_path=row.source_path or "",
+                page=row.page,
+                chunk_index=row.chunk_index,
+            )
+            for row in rows
+        ]
+
+    click.echo(f"Mirroring {len(chunks)} chunk(s) from PostgreSQL to Chroma Cloud...")
+    ok = await ChromaStore.upsert_chunks(chunks)
+    if not ok:
+        click.echo("Sync failed. See the log for the Chroma error.")
+        return
+    remote = await asyncio.to_thread(ChromaStore.count_sync)
+    click.echo(f"Done. PostgreSQL chunks: {len(chunks)}, Chroma chunks: {remote}")
+    await engine.dispose()
+
+
+@cli.command("sync-chroma")
+def sync_chroma_command() -> None:
+    """Mirror every PostgreSQL chunk and vector into Chroma Cloud (idempotent upsert)."""
+    asyncio.run(_sync_chroma())
 
 
 if __name__ == "__main__":

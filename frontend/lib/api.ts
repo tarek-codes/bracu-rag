@@ -84,6 +84,11 @@ export const api = {
   renameSession: (id: string, title: string) =>
     json<ChatSession>(`/chat/sessions/${id}`, { method: "PATCH", body: JSON.stringify({ title }) }),
   deleteSession: (id: string) => json<void>(`/chat/sessions/${id}`, { method: "DELETE" }),
+  bulkDeleteSessions: (ids: string[]) =>
+    json<{ deleted_count: number }>("/chat/sessions/bulk", {
+      method: "DELETE",
+      body: JSON.stringify({ ids }),
+    }),
   clearSession: (id: string) => json<{ deleted_count: number }>(`/chat/sessions/${id}/clear`, { method: "POST" }),
   sendFeedback: (messageId: string, rating: 1 | -1, comment?: string) =>
     json<ChatMessage>(`/chat/messages/${messageId}/feedback`, {

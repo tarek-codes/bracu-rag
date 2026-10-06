@@ -62,7 +62,7 @@ export type StreamEvent =
   | { event: "token"; data: { token: string } }
   | {
       event: "done";
-      data: { session_id: string; message_id: string; full_text: string; fallback: boolean };
+      data: { session_id: string; message_id: string; full_text: string; fallback: boolean; model?: string | null; provider?: string | null };
     }
   | { event: "error"; data: { message: string } };
 
@@ -77,6 +77,8 @@ export interface UiMessage {
   rewrittenQuery?: string;
   status: "waiting" | "streaming" | "done" | "error";
   fallback?: boolean;
+  model?: string | null;
+  provider?: string | null;
   error?: string;
 }
 

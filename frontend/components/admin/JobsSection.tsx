@@ -74,7 +74,18 @@ export function JobsSection({ onJobFinished }: { onJobFinished?: () => void }) {
                 )}
               </div>
 
-              <div className="shrink-0 flex items-center gap-2">
+              <div className="shrink-0 flex items-center gap-2.5">
+                <span className="font-sub text-[11px] text-muted hidden sm:inline" title={new Date(job.created_at || job.updated_at).toLocaleString()}>
+                  {new Date(job.created_at || job.updated_at).toLocaleDateString(undefined, {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}{" "}
+                  {new Date(job.created_at || job.updated_at).toLocaleTimeString(undefined, {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </span>
                 <span
                   className={`rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide ${
                     isDone

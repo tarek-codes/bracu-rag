@@ -101,3 +101,32 @@ async def test_chat_stream_endpoint_contract(async_client: AsyncClient) -> None:
     assert resp.status_code == 200
     assert "text/event-stream" in resp.headers.get("content-type", "")
     assert "done" in resp.text
+
+
+@pytest.mark.asyncio
+async def test_bulk_delete_chat_sessions(async_client: AsyncClient) -> None:
+    client = await _get_authenticated_client(async_client, "bulk_user@g.bracu.ac.bd")
+
+    # 1. Create multiple sessions
+    s1 = await client.post("/api/v1/chat/sessions", json={"title": "Session 1"})
+    s2 = await client.post("/api/v1/chat/sessions", json={"title": "Session 2"})
+    assert s1.status_code == 201
+    assert s2.status_code == 201
+
+    id1 = s1.json()["id"]
+    id2 = s2.json()["id"]
+
+    # 2. Bulk delete sessions
+    del_resp = await client.request(
+        "DELETE",
+        "/api/v1/chat/sessions/bulk",
+        json={"ids": [id1, id2]},
+    )
+    assert del_resp.status_code == 200
+    assert del_resp.json()["deleted_count"] == 2
+
+    # 3. Verify deleted
+    get1 = await client.get(f"/api/v1/chat/sessions/{id1}")
+    get2 = await client.get(f"/api/v1/chat/sessions/{id2}")
+    assert get1.status_code == 404
+    assert get2.status_code == 404

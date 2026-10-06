@@ -1,6 +1,6 @@
 import uuid
 from collections.abc import Sequence
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any
 
 import structlog
@@ -12,6 +12,18 @@ from app.models.chat import ChatMessage, ChatSession
 
 logger = structlog.get_logger("memory.conversation")
 settings = get_settings()
+
+_last_message_time = datetime.min.replace(tzinfo=UTC)
+
+
+def _next_message_time() -> datetime:
+    """Strictly increasing timestamps, so history order never depends on clock resolution."""
+    global _last_message_time
+    now = datetime.now(UTC)
+    if now <= _last_message_time:
+        now = _last_message_time + timedelta(microseconds=1)
+    _last_message_time = now
+    return now
 
 
 class ConversationMemoryService:
@@ -75,6 +87,7 @@ class ConversationMemoryService:
             session_id=session.id,
             role="user",
             content=content,
+            created_at=_next_message_time(),
         )
         self.db.add(msg)
         session.updated_at = datetime.now(UTC)
@@ -99,6 +112,7 @@ class ConversationMemoryService:
             role="assistant",
             content=content,
             citations=citations or [],
+            created_at=_next_message_time(),
         )
         self.db.add(msg)
         await self.db.commit()

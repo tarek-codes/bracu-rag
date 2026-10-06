@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
+  Check,
   Eraser,
   LayoutDashboard,
   LogIn,
@@ -44,6 +45,9 @@ function groupSessions(sessions: ChatSession[]): [string, ChatSession[]][] {
 function SessionItem({
   session,
   active,
+  isSelecting,
+  selected,
+  onToggleSelect,
   onRename,
   onClear,
   onDelete,
@@ -51,6 +55,9 @@ function SessionItem({
 }: {
   session: ChatSession;
   active: boolean;
+  isSelecting?: boolean;
+  selected?: boolean;
+  onToggleSelect?: () => void;
   onRename: (title: string) => void;
   onClear: () => void;
   onDelete: () => void;
@@ -67,6 +74,31 @@ function SessionItem({
     document.addEventListener("mousedown", close);
     return () => document.removeEventListener("mousedown", close);
   }, [menuOpen]);
+
+  if (isSelecting) {
+    return (
+      <button
+        type="button"
+        onClick={onToggleSelect}
+        className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left text-[14px] transition ${
+          selected
+            ? "bg-accent-soft/80 font-medium text-text"
+            : "text-text/85 hover:bg-surface-hover"
+        }`}
+      >
+        <div
+          className={`flex size-4 shrink-0 items-center justify-center rounded border transition ${
+            selected
+              ? "border-accent bg-accent text-white"
+              : "border-border bg-background"
+          }`}
+        >
+          {selected && <Check className="size-3 stroke-[3]" />}
+        </div>
+        <span className="truncate flex-1">{session.title || "New Conversation"}</span>
+      </button>
+    );
+  }
 
   if (editing) {
     return (
@@ -172,6 +204,7 @@ export function AppSidebar({
   onRename,
   onClear,
   onDelete,
+  onBulkDelete,
 }: {
   sessions: ChatSession[];
   loading: boolean;
@@ -183,9 +216,46 @@ export function AppSidebar({
   onRename: (id: string, title: string) => void;
   onClear: (id: string) => void;
   onDelete: (id: string) => void;
+  onBulkDelete: (ids: string[]) => void;
 }) {
   const { user, logout } = useAuth();
   const { theme, toggle } = useTheme();
+  const [isSelecting, setIsSelecting] = useState(false);
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [confirmBulk, setConfirmBulk] = useState(false);
+
+  useEffect(() => {
+    if (sessions.length === 0 && isSelecting) {
+      setIsSelecting(false);
+      setSelectedIds(new Set());
+    }
+  }, [sessions.length, isSelecting]);
+
+  const toggleSelect = (id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const selectAll = () => {
+    if (selectedIds.size === sessions.length) {
+      setSelectedIds(new Set());
+    } else {
+      setSelectedIds(new Set(sessions.map((s) => s.id)));
+    }
+  };
+
+  const handleBulkDelete = () => {
+    if (selectedIds.size === 0) return;
+    onBulkDelete(Array.from(selectedIds));
+    setSelectedIds(new Set());
+    setIsSelecting(false);
+    setConfirmBulk(false);
+  };
+
   const initials = (user?.full_name || user?.email || "?")
     .split(/[\s@]/)
     .filter(Boolean)
@@ -203,7 +273,14 @@ export function AppSidebar({
         aria-label="Conversations"
       >
         <div className="flex items-center justify-between px-3 pb-2 pt-3.5">
-          <Link href="/chat" onClick={onNewChat} className="flex items-center gap-2.5 rounded-lg px-1 py-1">
+          <Link
+            href="/chat"
+            onClick={() => {
+              if (isSelecting) setIsSelecting(false);
+              onNewChat();
+            }}
+            className="flex items-center gap-2.5 rounded-lg px-1 py-1"
+          >
             <BrandMark size={28} />
             <span className="font-heading text-[15px] font-semibold tracking-tight">BRACU Assistant</span>
           </Link>
@@ -216,17 +293,66 @@ export function AppSidebar({
           </button>
         </div>
 
-        <div className="px-3 py-2">
+        <div className="px-3 py-2 flex items-center gap-2">
           <Link
             id="new-chat-button"
             href="/chat"
-            onClick={onNewChat}
-            className="flex items-center gap-2.5 rounded-xl border border-border bg-background px-3 py-2.5 text-[14px] font-medium transition hover:border-accent/30 hover:text-accent"
+            onClick={() => {
+              if (isSelecting) setIsSelecting(false);
+              onNewChat();
+            }}
+            className="flex-1 flex items-center gap-2.5 rounded-xl border border-border bg-background px-3 py-2.5 text-[14px] font-medium transition hover:border-accent/30 hover:text-accent"
           >
             <SquarePen className="size-4" aria-hidden />
             New chat
           </Link>
+          {user && sessions.length > 0 && (
+            <button
+              type="button"
+              id="bulk-select-toggle"
+              onClick={() => {
+                setIsSelecting(!isSelecting);
+                setSelectedIds(new Set());
+              }}
+              title={isSelecting ? "Cancel selection" : "Select multiple conversations"}
+              className={`rounded-xl border px-3 py-2.5 text-[13px] font-medium transition flex items-center justify-center shrink-0 ${
+                isSelecting
+                  ? "border-accent bg-accent-soft text-accent"
+                  : "border-border bg-background text-muted hover:text-text hover:bg-surface-hover"
+              }`}
+            >
+              {isSelecting ? "Cancel" : "Select"}
+            </button>
+          )}
         </div>
+
+        {isSelecting && (
+          <div className="mx-3 mb-2 flex items-center justify-between rounded-xl border border-border bg-background px-2.5 py-2 text-xs">
+            <button
+              type="button"
+              id="select-all-chats"
+              onClick={selectAll}
+              className="font-medium text-accent hover:underline"
+            >
+              {selectedIds.size === sessions.length ? "Deselect all" : "Select all"}
+            </button>
+            <div className="flex items-center gap-1.5">
+              <span className="text-muted font-medium">
+                {selectedIds.size} selected
+              </span>
+              <button
+                type="button"
+                id="bulk-delete-confirm-button"
+                disabled={selectedIds.size === 0}
+                onClick={() => setConfirmBulk(true)}
+                className="flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-semibold text-error transition hover:bg-error/10 disabled:opacity-40 disabled:hover:bg-transparent"
+              >
+                <Trash2 className="size-3.5" />
+                Delete
+              </button>
+            </div>
+          </div>
+        )}
 
         <nav className="flex-1 overflow-y-auto px-3 pb-3">
           {!user ? (
@@ -254,6 +380,9 @@ export function AppSidebar({
                       key={s.id}
                       session={s}
                       active={s.id === activeId}
+                      isSelecting={isSelecting}
+                      selected={selectedIds.has(s.id)}
+                      onToggleSelect={() => toggleSelect(s.id)}
                       onNavigate={onCloseMobile}
                       onRename={(t) => onRename(s.id, t)}
                       onClear={() => onClear(s.id)}
@@ -265,6 +394,15 @@ export function AppSidebar({
             ))
           )}
         </nav>
+
+        <ConfirmDialog
+          open={confirmBulk}
+          onClose={() => setConfirmBulk(false)}
+          onConfirm={handleBulkDelete}
+          title={`Delete ${selectedIds.size} conversation${selectedIds.size === 1 ? "" : "s"}?`}
+          description={`The selected ${selectedIds.size} conversation${selectedIds.size === 1 ? "" : "s"} and all associated messages will be permanently deleted.`}
+          confirmLabel={`Delete ${selectedIds.size}`}
+        />
 
         <div className="border-t border-border p-3">
           {user && (

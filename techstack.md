@@ -66,6 +66,7 @@ Pin these exact versions in `pyproject.toml`, `package.json` (and `bun.lock`) an
 | Embedding upgrade path | A larger SentenceTransformers model | Any replacement requires changing `EMBEDDING_DIM`, running its migration, and re-ingesting the corpus |
 | Lightweight alternative | google/embeddinggemma-300m | Use only if CPU or RAM is very limited. Check its license terms before use |
 | Reranker | **cross-encoder/ms-marco-MiniLM-L-6-v2** | Lightweight SentenceTransformers cross-encoder for reranking the top retrieved chunks |
+| Cloud vector mirror | **Chroma Cloud** (`chromadb` CloudClient) | Every chunk and vector written to PostgreSQL is also upserted to a Chroma Cloud collection so the KB is reachable from the cloud. Best effort: PostgreSQL stays the source of truth and a Chroma failure never breaks ingestion or chat. `python -m app.cli sync-chroma` repairs any drift. Settings: `CHROMA_API_KEY`, `CHROMA_HOST`, `CHROMA_TENANT`, `CHROMA_DATABASE`, `CHROMA_COLLECTION_NAME` |
 | Vector store | **FAISS CPU over embeddings stored in PostgreSQL** | FAISS inner-product search over normalized vectors. PostgreSQL remains the source of truth for vectors, metadata, users and chat history |
 | Hybrid search | FAISS plus Postgres full-text search, merged with Reciprocal Rank Fusion | Improves semantic matching and exact term/name matching |
 | LLM (answers) | Groq, a large Llama class model | Pick from Groq's current model list at build time. Keep the model name in config |
@@ -260,6 +261,12 @@ repo/
 
 ```
 DATABASE_URL=
+OPENROUTER_API_KEY=
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+OPENROUTER_MODEL=google/gemini-3.8-flash
+OPENROUTER_REWRITE_MODEL=google/gemini-3.8-flash
+OPENROUTER_REASONING_EFFORT=low
+OPENROUTER_MAX_COMPLETION_TOKENS=1500
 GROQ_API_KEY=
 GROQ_ANSWER_MODEL=openai/gpt-oss-120b
 GROQ_REWRITE_MODEL=openai/gpt-oss-20b

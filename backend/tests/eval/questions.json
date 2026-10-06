@@ -2,42 +2,42 @@
   {
     "id": "admissions-application",
     "question": "How can I apply for admission to BRAC University?",
-    "expected_sources": ["output/pages/bracu_admissions_and_rs_faqs.md"],
+    "expected_sources": ["output/pages/admissions_and_rs_faqs.md"],
     "answer_must_include": ["admission"],
     "must_fallback": false
   },
   {
     "id": "application-fee",
     "question": "What is the undergraduate admission application fee?",
-    "expected_sources": ["output/pages/bracu_tuition_and_other_fees.md"],
+    "expected_sources": ["output/pages/tuition_and_fees.md"],
     "answer_must_include": ["BDT 1,500"],
     "must_fallback": false
   },
   {
     "id": "cse-tuition",
     "question": "What is the CSE tuition fee per credit for students enrolled from Spring 2025?",
-    "expected_sources": ["output/pages/bracu_tuition_and_other_fees.md"],
+    "expected_sources": ["output/pages/tuition_and_fees.md"],
     "answer_must_include": ["8,250"],
     "must_fallback": false
   },
   {
     "id": "residential-semester",
     "question": "Is the Residential Semester compulsory at BRAC University?",
-    "expected_sources": ["output/pages/bracu_admissions_and_rs_faqs.md"],
+    "expected_sources": ["output/pages/admissions_and_rs_faqs.md"],
     "answer_must_include": ["Residential Semester"],
     "must_fallback": false
   },
   {
     "id": "cse-prerequisite",
     "question": "What is the prerequisite for CSE221 Algorithm Analysis and Design?",
-    "expected_sources": ["output/pages/cse_bracu_ac_bd__undergraduate_program.md"],
+    "expected_sources": ["output/pages/cse_undergraduate_programs.md"],
     "answer_must_include": ["CSE220"],
     "must_fallback": false
   },
   {
     "id": "postgraduate-programs",
     "question": "Which postgraduate programs are listed in the BRAC University admissions FAQs?",
-    "expected_sources": ["output/pages/bracu_admissions_and_rs_faqs.md"],
+    "expected_sources": ["output/pages/admissions_and_rs_faqs.md"],
     "answer_must_include": ["postgraduate"],
     "must_fallback": false
   },

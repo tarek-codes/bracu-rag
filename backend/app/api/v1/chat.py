@@ -10,6 +10,7 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
+from app.core.config import get_settings
 from app.core.deps import get_current_user, get_optional_current_user
 from app.db.session import get_db
 from app.models.chat import ChatMessage, ChatSession
@@ -23,32 +24,18 @@ from app.schemas.chat import (
     ChatStreamRequest,
     MessageFeedbackCreate,
 )
+from app.schemas.user import BulkDeleteRequest, BulkDeleteResponse
+from app.services.chat.intent_router import Intent, IntentRouter
 from app.services.chat.llm_stream import GroqChatStreamService
-from app.services.chat.prompts import GREETING_MESSAGE
 from app.services.memory import ConversationMemoryService, QueryRewriter
+from app.services.retrieval.catalog import get_document_catalog
 from app.services.retrieval.hybrid_search import HybridSearchService
 from app.services.retrieval.reranker import RerankerService
 
 logger = structlog.get_logger("api.chat")
+settings = get_settings()
 
 router = APIRouter(prefix="/chat", tags=["Chat & RAG"])
-
-
-def _is_greeting(message: str) -> bool:
-    normalized = message.strip().lower()
-    if not normalized:
-        return False
-    import re
-
-    normalized = re.sub(r"[^\w\s']", "", normalized)
-    return normalized in {
-        "hi",
-        "hello",
-        "hey",
-        "good morning",
-        "good afternoon",
-        "good evening",
-    }
 
 
 @router.post(
@@ -183,6 +170,37 @@ async def rename_chat_session(
 
 
 @router.delete(
+    "/sessions/bulk",
+    response_model=BulkDeleteResponse,
+    status_code=status.HTTP_200_OK,
+    summary="Bulk Delete Chat Sessions",
+    description="Permanently deletes selected chat sessions and all associated messages.",
+)
+async def bulk_delete_chat_sessions(
+    payload: BulkDeleteRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> BulkDeleteResponse:
+    """Delete multiple chat sessions belonging to the current user."""
+    query = select(ChatSession).where(ChatSession.id.in_(set(payload.ids)))
+    if current_user.role != UserRole.ADMIN.value:
+        query = query.where(ChatSession.user_id == current_user.id)
+
+    result = await db.execute(query)
+    sessions = result.scalars().all()
+    for s in sessions:
+        await db.delete(s)
+    await db.commit()
+
+    logger.info(
+        "chat_sessions_bulk_deleted",
+        deleted_count=len(sessions),
+        user_id=str(current_user.id),
+    )
+    return BulkDeleteResponse(deleted_count=len(sessions))
+
+
+@router.delete(
     "/sessions/{session_id}",
     status_code=status.HTTP_204_NO_CONTENT,
     summary="Delete chat session",
@@ -214,11 +232,26 @@ async def _sse_generator(
     """Execute RAG pipeline with conversation memory, query rewrite, and yield SSE events."""
     memory = ConversationMemoryService(db)
 
-    if _is_greeting(user_query):
+    # 1. Fetch message history for routing, query rewrite and context (last N turns)
+    history = await memory.get_history(session.id)
+
+    # 2. Route: small talk, out-of-scope, unsafe and ambiguous messages never reach retrieval
+    catalog = await get_document_catalog(db)
+    decision = await IntentRouter.route(
+        user_query, history, history_messages=settings.CHAT_HISTORY_TURNS * 2, catalog=catalog
+    )
+    logger.info(
+        "intent_routed",
+        intent=decision.intent,
+        reason=decision.reason,
+        documents=list(decision.documents),
+    )
+
+    if decision.intent == Intent.STATIC_REPLY and decision.reply:
         await memory.add_user_message(session, user_query)
         assistant_msg = await memory.add_assistant_message(
             session_id=session.id,
-            content=GREETING_MESSAGE,
+            content=decision.reply,
             citations=[],
         )
         done_payload = {
@@ -226,25 +259,22 @@ async def _sse_generator(
             "data": {
                 "session_id": str(session.id),
                 "message_id": str(assistant_msg.id),
-                "full_text": GREETING_MESSAGE,
+                "full_text": decision.reply,
                 "fallback": False,
             },
         }
         yield f"data: {json.dumps({'event': 'sources', 'data': {'citations': []}})}\n\n"
-        yield f"data: {json.dumps({'event': 'token', 'data': {'token': GREETING_MESSAGE}})}\n\n"
+        yield f"data: {json.dumps({'event': 'token', 'data': {'token': decision.reply}})}\n\n"
         yield f"data: {json.dumps(done_payload)}\n\n"
         return
 
-    # 1. Fetch message history for query rewrite and context (last N turns)
-    history = await memory.get_history(session.id)
-
-    # 2. Query rewrite using conversation memory
-    standalone_query = await QueryRewriter.rewrite_query(user_query, history)
+    # 2b. Standalone query: the router already resolved follow-ups when it could
+    standalone_query = decision.query or await QueryRewriter.rewrite_query(user_query, history)
     yield f"data: {json.dumps({'event': 'query_rewrite', 'data': {'rewritten_query': standalone_query}})}\n\n"
 
     # 3. Hybrid search (vector + full-text with RRF)
     hybrid_service = HybridSearchService(db)
-    candidates = await hybrid_service.search(standalone_query)
+    candidates = await hybrid_service.search(standalone_query, source_paths=decision.documents)
 
     # 4. Reranking with the configured lightweight cross-encoder
     reranked_chunks = await RerankerService.rerank(standalone_query, candidates)
@@ -256,11 +286,14 @@ async def _sse_generator(
     full_answer = ""
     citations_data: list[dict[str, Any]] = []
     fallback = False
+    model: str | None = None
+    provider: str | None = None
 
     async for chunk in GroqChatStreamService.stream_answer(
         question=standalone_query,
         retrieved_chunks=reranked_chunks,
         chat_history=history,
+        intent_tags=decision.tags,
     ):
         event_type = chunk.get("type")
         if event_type == "sources":
@@ -272,6 +305,8 @@ async def _sse_generator(
         elif event_type == "done":
             full_answer = chunk.get("full_text", "")
             fallback = chunk.get("fallback", False)
+            model = chunk.get("model")
+            provider = chunk.get("provider")
 
     # 7. Persist assistant message in memory
     assistant_msg = await memory.add_assistant_message(
@@ -288,6 +323,8 @@ async def _sse_generator(
             "message_id": str(assistant_msg.id),
             "full_text": full_answer,
             "fallback": fallback,
+            "model": model,
+            "provider": provider,
         },
     }
     yield f"data: {json.dumps(done_payload)}\n\n"

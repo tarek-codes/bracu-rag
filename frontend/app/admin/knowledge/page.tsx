@@ -236,12 +236,20 @@ export default function KnowledgeBasePage() {
                           {doc.chunks_count} chunks
                         </button>
                       </td>
-                      <td className="px-4 py-4 text-xs text-muted">
-                        {new Date(doc.updated_at).toLocaleDateString(undefined, {
-                          month: "short",
-                          day: "numeric",
-                          year: "numeric",
-                        })}
+                      <td className="px-4 py-4 text-xs text-muted whitespace-nowrap">
+                        <div>
+                          {new Date(doc.updated_at).toLocaleDateString(undefined, {
+                            month: "short",
+                            day: "numeric",
+                            year: "numeric",
+                          })}
+                        </div>
+                        <div className="font-sub text-[11px] text-muted/80">
+                          {new Date(doc.updated_at).toLocaleTimeString(undefined, {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
+                        </div>
                       </td>
                       <td className="px-5 py-4 text-right">
                         <div className="flex items-center justify-end gap-1">

@@ -117,6 +117,8 @@ export function useChatStream({ sessionId, onSessionCreated, onTurnComplete }: O
                   id: ev.data.message_id,
                   content: ev.data.full_text,
                   fallback: ev.data.fallback,
+                  model: ev.data.model,
+                  provider: ev.data.provider,
                   status: "done",
                 });
                 const created = sessionRef.current === null;
@@ -177,6 +179,8 @@ export function useChatStream({ sessionId, onSessionCreated, onTurnComplete }: O
         id: undefined,
         error: undefined,
         rewrittenQuery: undefined,
+        model: undefined,
+        provider: undefined,
         status: "waiting",
       });
       void run(question.content, assistantKey);

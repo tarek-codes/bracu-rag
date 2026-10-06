@@ -1,5 +1,7 @@
 import os
+import uuid
 from datetime import UTC, datetime
+from typing import Any
 
 import structlog
 from sqlalchemy import func, select
@@ -18,6 +20,7 @@ from app.services.ingestion.parsers import (
     parse_url,
 )
 from app.services.retrieval.embeddings import EmbeddingService
+from app.services.vectorstore.chroma_store import ChromaChunk, ChromaStore
 
 logger = structlog.get_logger("ingestion.pipeline")
 
@@ -56,7 +59,9 @@ class IngestionPipeline:
         title: str | None = None,
         source_type: str = "file",
         stats: IngestionStats | None = None,
+        force: bool = False,
     ) -> Document | None:
+        """Ingest one file. `force` re-chunks even when the file hash is unchanged."""
         if stats is None:
             stats = IngestionStats()
 
@@ -68,7 +73,7 @@ class IngestionPipeline:
         result = await self.db.execute(select(Document).where(Document.source_path == file_path))
         existing_doc = result.scalar_one_or_none()
 
-        if existing_doc and existing_doc.file_hash == file_hash:
+        if existing_doc and existing_doc.file_hash == file_hash and not force:
             chunk_count_res = await self.db.execute(
                 select(func.count(DocumentChunk.id)).where(
                     DocumentChunk.document_id == existing_doc.id
@@ -143,9 +148,13 @@ class IngestionPipeline:
         existing_chunks = existing_chunks_query.scalars().all()
         existing_chunks_by_hash = {c.chunk_hash: c for c in existing_chunks}
 
+        removed_chunk_ids: list[uuid.UUID] = []
+        added_chunks: list[tuple[DocumentChunk, Any]] = []
+
         # Determine chunks to delete (no longer present)
         for old_hash, old_chunk in existing_chunks_by_hash.items():
             if old_hash not in new_chunk_hashes:
+                removed_chunk_ids.append(old_chunk.id)
                 await self.db.delete(old_chunk)
                 stats.chunks_removed += 1
 
@@ -182,6 +191,7 @@ class IngestionPipeline:
                     embedding=reused_vector,
                 )
                 self.db.add(new_chunk_model)
+                added_chunks.append((new_chunk_model, reused_vector))
                 stats.chunks_added += 1
                 stats.chunks_reused += 1
             else:
@@ -206,9 +216,28 @@ class IngestionPipeline:
                     embedding=vector,
                 )
                 self.db.add(new_chunk_model)
+                added_chunks.append((new_chunk_model, vector))
                 stats.chunks_added += 1
 
+        await self.db.flush()
+        mirror_rows = [
+            ChromaChunk(
+                chunk_id=model.id,
+                document_id=doc.id,
+                content=model.content,
+                embedding=[float(x) for x in vector],
+                title=model.title,
+                source_path=file_path,
+                page=model.page,
+                chunk_index=model.chunk_index,
+            )
+            for model, vector in added_chunks
+        ]
         await self.db.commit()
+
+        # Postgres is committed first and stays the source of truth; Chroma is a best-effort mirror.
+        await ChromaStore.delete_chunks(removed_chunk_ids)
+        await ChromaStore.upsert_chunks(mirror_rows)
 
         if is_update:
             stats.files_updated += 1

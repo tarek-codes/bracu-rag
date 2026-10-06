@@ -22,6 +22,16 @@ class Settings(BaseSettings):
     # Database settings
     DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/bracu_rag"
 
+    # OpenRouter LLM API
+    OPENROUTER_API_KEY: str = ""
+    OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
+    OPENROUTER_MODEL: str = "z-ai/glm-5.3-flash"
+    OPENROUTER_REWRITE_MODEL: str = "amazon/nova-lite-v1"
+    OPENROUTER_REASONING_EFFORT: Literal["none", "default", "low", "medium", "high"] = "low"
+    OPENROUTER_MAX_COMPLETION_TOKENS: int = 1500
+    # Comma separated, tried in order after OPENROUTER_MODEL fails, before Groq.
+    OPENROUTER_FALLBACK_MODELS: str = "z-ai/glm-4.7-flash,z-ai/glm-5.3-flashx,google/gemini-3.8-flash,qwen/qwen3.7-flash,mistralai/mistral-small-24b-instruct-2501,google/gemma-3-12b-it,amazon/nova-lite-v1,meta-llama/llama-3.1-8b-instruct,openai/gpt-oss-120b,openai/gpt-oss-20b"
+
     # Groq LLM API
     GROQ_API_KEY: str = ""
     GROQ_ANSWER_MODEL: str = "openai/gpt-oss-120b"
@@ -37,13 +47,20 @@ class Settings(BaseSettings):
 
     # RAG Retrieval Parameters
     RETRIEVAL_TOP_K: int = 10
-    RETRIEVAL_DOCUMENT_LIMIT: int = 3
+    RETRIEVAL_DOCUMENT_LIMIT: int = 5
     RERANK_TOP_N: int = 5
     SIMILARITY_THRESHOLD: float = 0.5
     RETRIEVAL_FAISS_WEIGHT: float = 0.25
     RETRIEVAL_TEXT_WEIGHT: float = 1.0
     CHAT_HISTORY_TURNS: int = 6
     KB_SOURCE_DIR: str = ""
+
+    # Chroma Cloud Vector DB
+    CHROMA_HOST: str = "api.trychroma.com"
+    CHROMA_TENANT: str = ""
+    CHROMA_API_KEY: str = ""
+    CHROMA_DATABASE: str = "rag"
+    CHROMA_COLLECTION_NAME: str = "rag"
 
     # Security & Auth
     JWT_SECRET: str = "insecure_dev_secret_key_change_in_production"

@@ -37,14 +37,14 @@ def compute_file_hash(content_bytes: bytes) -> str:
 class MarkdownChunker:
     """Structure-aware chunker splitting on markdown headings and paragraphs.
 
-    Target chunk size: 500-800 tokens (~2000-3200 chars).
+    Target chunk size: up to ~1000 tokens (4000 chars) so a whole course or person stays together.
     Overlap: 10-15% (~250-400 chars).
     """
 
     def __init__(
         self,
         min_chars: int = 400,
-        max_chars: int = 2800,
+        max_chars: int = 4000,
         overlap_chars: int = 350,
     ):
         self.min_chars = min_chars
@@ -60,13 +60,12 @@ class MarkdownChunker:
         if not normalized_doc:
             return []
 
-        # Split into sections based on Markdown headers (#, ##, ###)
-        sections = self._split_by_headers(normalized_doc, document_title)
+        sections = self._split_into_units(normalized_doc, document_title)
 
         chunks: list[ChunkItem] = []
         chunk_idx = 0
 
-        for section_title, section_text in sections:
+        for section_title, section_text, unit_heading in sections:
             if len(section_text) <= self.max_chars:
                 if len(section_text.strip()) >= 50:
                     ch_hash = compute_hash(section_text)
@@ -83,6 +82,8 @@ class MarkdownChunker:
                 # Sub-split large sections with overlap
                 sub_chunks = self._split_large_section(section_text)
                 for sub_text in sub_chunks:
+                    if unit_heading and not sub_text.startswith(unit_heading):
+                        sub_text = f"{unit_heading}\n\n{sub_text}"
                     if len(sub_text.strip()) >= 50:
                         ch_hash = compute_hash(sub_text)
                         chunks.append(
@@ -97,8 +98,50 @@ class MarkdownChunker:
 
         return chunks
 
-    def _split_by_headers(self, text: str, default_title: str) -> list[tuple[str, str]]:
-        header_pattern = re.compile(r"^(#{1,4})\s+(.+)$", re.MULTILINE)
+    def _split_into_units(self, text: str, default_title: str) -> list[tuple[str, str, str]]:
+        """Keep one logical unit (a course, a person) in one chunk whenever it fits.
+
+        The unit heading level is the shallowest level (1 to 3) that repeats. A unit that
+        fits in max_chars stays whole, so facts like a prerequisite are never stored apart
+        from the name of the thing they describe. A larger unit is split by its sub-headings
+        and every piece repeats the unit heading for context.
+        """
+        level = self._unit_level(text)
+        if level is None:
+            return [(t, b, "") for t, b in self._split_by_headers(text, default_title)]
+
+        units = self._split_by_headers(text, default_title, max_level=level)
+        sections: list[tuple[str, str, str]] = []
+        for unit_title, unit_text in units:
+            if len(unit_text) <= self.max_chars or not unit_text.startswith("#"):
+                sections.append((unit_title, unit_text, ""))
+                continue
+            heading, _, body = unit_text.partition("\n")
+            # Pack consecutive sub-sections so a big unit becomes a few chunks, not one per heading.
+            groups: list[list[str]] = [[]]
+            size = 0
+            for _, sub_text in self._split_by_headers(body.strip(), unit_title):
+                if groups[-1] and size + len(sub_text) > self.max_chars:
+                    groups.append([])
+                    size = 0
+                groups[-1].append(sub_text)
+                size += len(sub_text) + 2
+            for number, group in enumerate(groups, start=1):
+                title = unit_title if number == 1 else f"{unit_title} (part {number})"
+                sections.append((title, f"{heading}\n\n" + "\n\n".join(group), heading))
+        return sections
+
+    @staticmethod
+    def _unit_level(text: str) -> int | None:
+        counts = {1: 0, 2: 0, 3: 0}
+        for match in re.finditer(r"^(#{1,3})\s+\S", text, re.MULTILINE):
+            counts[len(match.group(1))] += 1
+        return next((lvl for lvl in (1, 2, 3) if counts[lvl] >= 2), None)
+
+    def _split_by_headers(
+        self, text: str, default_title: str, max_level: int = 4
+    ) -> list[tuple[str, str]]:
+        header_pattern = re.compile(rf"^(#{{1,{max_level}}})\s+(.+)$", re.MULTILINE)
         matches = list(header_pattern.finditer(text))
 
         if not matches:

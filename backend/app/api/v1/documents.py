@@ -32,6 +32,7 @@ from app.schemas.document import (
     UrlIngestRequest,
 )
 from app.services.retrieval.embeddings import EmbeddingService
+from app.services.vectorstore.chroma_store import ChromaStore
 from app.tasks.ingestion import (
     run_file_ingestion_task,
     run_url_ingestion_task,
@@ -198,9 +199,12 @@ async def bulk_delete_documents(
 ) -> BulkDocumentDeleteResponse:
     result = await db.execute(select(Document).where(Document.id.in_(set(payload.ids))))
     documents = result.scalars().all()
+    deleted_ids = [document.id for document in documents]
     for document in documents:
         await db.delete(document)
     await db.commit()
+    for deleted_id in deleted_ids:
+        await ChromaStore.delete_document(deleted_id)
 
     logger.info(
         "documents_bulk_deleted",
@@ -315,6 +319,7 @@ async def delete_document(
 
     await db.delete(doc)
     await db.commit()
+    await ChromaStore.delete_document(document_id)
     logger.info("document_deleted", document_id=str(document_id))
     return MessageResponse(message=f"Document '{doc.title}' deleted successfully")
 

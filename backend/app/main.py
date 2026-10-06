@@ -15,6 +15,7 @@ from app.core.logging import get_logger, setup_logging
 from app.core.middleware import RequestLoggingMiddleware
 from app.db.session import async_session_factory, engine
 from app.models.document import IngestionJob
+from app.services.retrieval.hybrid_search import HybridSearchService
 
 settings = get_settings()
 
@@ -43,6 +44,14 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
                 logger.warning("recovered_dangling_ingestion_jobs", count=affected)
     except Exception as exc:
         logger.error("startup_job_recovery_failed", error=str(exc))
+
+    # Load models and the vector index now so the first user question is not slow
+    try:
+        async with async_session_factory() as db:
+            await HybridSearchService(db).warm_up()
+        logger.info("retrieval_warmed_up")
+    except Exception as exc:
+        logger.warning("retrieval_warm_up_failed", error=str(exc))
 
     yield
 
@@ -102,6 +111,20 @@ app.add_middleware(
 
 # Custom Request ID and Logging Middleware
 app.add_middleware(RequestLoggingMiddleware)
+
+
+# Root endpoint
+@app.get("/", include_in_schema=False)
+async def root() -> dict[str, str]:
+    return {
+        "name": settings.APP_NAME,
+        "version": settings.APP_VERSION,
+        "status": "online",
+        "docs_url": "/docs",
+        "health_url": "/health",
+        "api_v1": "/api/v1",
+    }
+
 
 # Root-level health endpoint
 app.include_router(health_router, prefix="", tags=["System"])

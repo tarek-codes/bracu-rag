@@ -13,12 +13,17 @@ settings = get_settings()
 _model_instance: Any = None
 
 
+def _has_active_llm_key() -> bool:
+    if settings.OPENROUTER_API_KEY and not settings.OPENROUTER_API_KEY.startswith("dummy_"):
+        return True
+    if settings.GROQ_API_KEY and not settings.GROQ_API_KEY.startswith("dummy_"):
+        return True
+    return False
+
+
 def _use_mock_model() -> bool:
     return (
-        os.getenv("TESTING") == "1"
-        or settings.ENVIRONMENT == "test"
-        or not settings.GROQ_API_KEY
-        or settings.GROQ_API_KEY.startswith("dummy_")
+        os.getenv("TESTING") == "1" or settings.ENVIRONMENT == "test" or not _has_active_llm_key()
     )
 
 
@@ -56,7 +61,7 @@ class EmbeddingService:
                     settings.EMBEDDING_MODEL,
                     trust_remote_code=True,
                 )
-                model.max_seq_length = 1024
+                model.max_seq_length = 512
                 _model_instance = model
                 logger.info("embedding_model_loaded", model_name=settings.EMBEDDING_MODEL)
             except Exception as exc:
@@ -84,7 +89,7 @@ class EmbeddingService:
                 # batch_size=8 keeps attention matrices and KV cache inside CPU L2/L3 cache
                 embeddings = model.encode(  # type: ignore[attr-defined]
                     texts,
-                    batch_size=8,
+                    batch_size=32,
                     normalize_embeddings=True,
                     show_progress_bar=False,
                 )

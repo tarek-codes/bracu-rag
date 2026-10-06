@@ -102,7 +102,14 @@ export function MessageItem({
         <div className={`prose-chat break-words ${message.fallback ? "text-muted" : ""}`}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            components={{ a: (props) => <a {...props} target="_blank" rel="noreferrer" /> }}
+            components={{
+              a: (props) => <a {...props} target="_blank" rel="noreferrer" />,
+              table: (props) => (
+                <div className="table-wrap">
+                  <table {...props} />
+                </div>
+              ),
+            }}
           >
             {message.content}
           </ReactMarkdown>
@@ -121,6 +128,13 @@ export function MessageItem({
       )}
 
       {message.status === "done" && !message.fallback && <CitationChips citations={message.citations} />}
+
+      {message.status === "done" && message.model && (
+        <p className="font-sub mt-2 text-xs text-muted" title="Model that generated this answer">
+          Answered by {message.model}
+          {message.provider ? ` via ${message.provider}` : ""}
+        </p>
+      )}
 
       {message.status === "done" && message.content && (
         <div className="mt-2 flex items-center gap-0.5 opacity-100 transition md:opacity-0 md:group-hover:opacity-100 md:focus-within:opacity-100">
