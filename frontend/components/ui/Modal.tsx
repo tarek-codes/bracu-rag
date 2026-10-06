@@ -31,19 +31,19 @@ export function Modal({
       ref={ref}
       onClose={onClose}
       onClick={(e) => e.target === ref.current && onClose()}
-      className="m-auto w-[calc(100%-2rem)] max-w-md rounded-2xl border border-border bg-background p-0 text-text backdrop:bg-black/40 backdrop:backdrop-blur-[2px]"
+      className="m-auto w-[calc(100%-1.5rem)] max-w-lg rounded-2xl border border-border bg-background p-0 text-text shadow-2xl backdrop:bg-black/50 backdrop:backdrop-blur-xs"
     >
-      <div className="p-6">
-        <div className="flex items-start justify-between gap-4">
+      <div className="p-4 sm:p-6">
+        <div className="flex items-start justify-between gap-3 sm:gap-4">
           <div>
-            <h2 className="font-heading text-base font-semibold">{title}</h2>
-            {description && <p className="font-sub mt-1 text-[15px] text-muted">{description}</p>}
+            <h2 className="font-heading text-sm sm:text-base font-semibold">{title}</h2>
+            {description && <p className="font-sub mt-1 text-xs sm:text-[14px] text-muted">{description}</p>}
           </div>
-          <button onClick={onClose} className="rounded-lg p-1 text-muted hover:bg-surface hover:text-text" aria-label="Close">
+          <button onClick={onClose} className="rounded-lg p-1 text-muted hover:bg-surface hover:text-text active:scale-95 transition" aria-label="Close">
             <X className="size-4" />
           </button>
         </div>
-        <div className="mt-5">{children}</div>
+        <div className="mt-4 sm:mt-5">{children}</div>
       </div>
     </dialog>
   );

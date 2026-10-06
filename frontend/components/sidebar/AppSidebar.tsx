@@ -265,9 +265,15 @@ export function AppSidebar({
 
   return (
     <>
-      {mobileOpen && <div className="fixed inset-0 z-30 bg-black/40 md:hidden" onClick={onCloseMobile} aria-hidden />}
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-black/50 backdrop-blur-xs transition-opacity duration-200 md:hidden animate-fade-in"
+          onClick={onCloseMobile}
+          aria-hidden
+        />
+      )}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 flex w-[272px] flex-col border-r border-border bg-surface transition-transform duration-200 md:static md:z-auto md:w-[260px] md:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-40 flex w-[285px] max-w-[85vw] flex-col border-r border-border bg-surface shadow-2xl transition-transform duration-200 ease-out md:static md:z-auto md:w-[260px] md:shadow-none md:translate-x-0 ${
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Conversations"

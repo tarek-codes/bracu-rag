@@ -91,19 +91,19 @@ export default function KnowledgeBasePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-6">
       {/* Top Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="font-heading text-2xl font-bold tracking-tight">Knowledge Base</h1>
-          <p className="font-sub mt-1 text-sm text-muted">
+          <h1 className="font-heading text-xl font-bold tracking-tight sm:text-2xl">Knowledge Base</h1>
+          <p className="font-sub mt-1 text-xs text-muted sm:text-sm">
             Manage university documents, crawl institutional pages, and inspect vector chunks.
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5">
-          <Button variant="ghost" onClick={() => setUrlOpen(true)} className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <Button variant="ghost" onClick={() => setUrlOpen(true)} className="flex flex-1 sm:flex-initial items-center justify-center gap-2 text-xs sm:text-sm py-2">
             <Globe className="size-4" /> Index URL
           </Button>
-          <Button onClick={() => setUploadOpen(true)} className="flex items-center gap-2">
+          <Button onClick={() => setUploadOpen(true)} className="flex flex-1 sm:flex-initial items-center justify-center gap-2 text-xs sm:text-sm py-2">
             <Upload className="size-4" /> Upload Document
           </Button>
         </div>
@@ -113,8 +113,8 @@ export default function KnowledgeBasePage() {
       <JobsSection onJobFinished={loadDocuments} />
 
       {/* Filter and Search Bar */}
-      <div className="flex items-center justify-between gap-4">
-        <div className="relative flex-1 max-w-md">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="relative w-full sm:max-w-md">
           <Search className="absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted" />
           <input
             type="text"
@@ -124,7 +124,7 @@ export default function KnowledgeBasePage() {
             className="font-sub w-full rounded-xl border border-border bg-background py-2 pl-10 pr-4 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/20"
           />
         </div>
-        <span className="font-sub text-xs text-muted">
+        <span className="font-sub text-xs text-muted self-end sm:self-auto">
           Total: <strong className="text-text">{total}</strong> documents
         </span>
       </div>

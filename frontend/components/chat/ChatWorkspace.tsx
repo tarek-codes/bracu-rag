@@ -23,12 +23,14 @@ export function ChatWorkspace({
   onSessionCreated,
   onTurnComplete,
   onOpenSidebar,
+  onNewChat,
 }: {
   sessionId: string | null;
   signedIn: boolean;
   onSessionCreated: (id: string) => void;
   onTurnComplete: () => void;
   onOpenSidebar: () => void;
+  onNewChat?: () => void;
 }) {
   const createdRef = useRef<string | null>(null);
   const [loading, setLoading] = useState(!!sessionId);
@@ -90,11 +92,30 @@ export function ChatWorkspace({
   return (
     <div className="flex h-full min-w-0 flex-1 flex-col">
       {/* Mobile top bar */}
-      <div className="flex items-center gap-2 border-b border-border px-3 py-2.5 md:hidden">
-        <button onClick={onOpenSidebar} className="rounded-lg p-2 hover:bg-surface" aria-label="Open sidebar">
-          <Menu className="size-5" />
-        </button>
-        <span className="font-heading text-[15px] font-semibold">BRACU Assistant</span>
+      <div className="flex items-center justify-between border-b border-border bg-background/95 px-3 py-2.5 backdrop-blur-md md:hidden">
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onOpenSidebar}
+            className="rounded-lg p-2 text-muted hover:bg-surface hover:text-text active:scale-95 transition"
+            aria-label="Open sidebar"
+          >
+            <Menu className="size-5" />
+          </button>
+          <div className="flex items-center gap-2">
+            <BrandMark size={24} />
+            <span className="font-heading text-[15px] font-semibold tracking-tight">BRACU Assistant</span>
+          </div>
+        </div>
+        {onNewChat && (
+          <button
+            onClick={onNewChat}
+            className="rounded-lg p-2 text-muted hover:bg-surface hover:text-text active:scale-95 transition"
+            aria-label="New conversation"
+          >
+            <ArrowUpRight className="hidden" />
+            <span className="font-sub text-xs font-medium text-accent">New Chat</span>
+          </button>
+        )}
       </div>
 
       <div
@@ -103,7 +124,7 @@ export function ChatWorkspace({
           const el = e.currentTarget;
           stickRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80;
         }}
-        className="flex-1 overflow-y-auto"
+        className="flex-1 overflow-y-auto px-1 sm:px-0"
       >
         {empty ? (
           <div className="mx-auto flex min-h-full max-w-[768px] flex-col items-center justify-center px-5 py-12 text-center">

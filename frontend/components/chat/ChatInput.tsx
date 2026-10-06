@@ -57,14 +57,14 @@ export function ChatInput({
             }
           }}
           placeholder="Ask about BRAC University"
-          className="max-h-[168px] flex-1 resize-none bg-transparent py-2 text-[15.5px] leading-6 outline-none placeholder:font-sub placeholder:text-muted"
+          className="max-h-[168px] flex-1 resize-none bg-transparent py-2 text-[16px] sm:text-[15.5px] leading-6 outline-none placeholder:font-sub placeholder:text-muted"
         />
         {streaming ? (
           <button
             id="stop-button"
             onClick={onStop}
             aria-label="Stop generating"
-            className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-text text-background transition hover:opacity-85"
+            className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-text text-background transition hover:opacity-85 active:scale-95"
           >
             <Square className="size-3.5" fill="currentColor" />
           </button>
@@ -74,16 +74,16 @@ export function ChatInput({
             onClick={submit}
             disabled={!value.trim()}
             aria-label="Send message"
-            className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-fg transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:bg-surface-hover disabled:text-muted"
+            className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-fg transition hover:bg-accent-hover active:scale-95 disabled:cursor-not-allowed disabled:bg-surface-hover disabled:text-muted"
           >
             <ArrowUp className="size-4.5" strokeWidth={2.25} />
           </button>
         )}
       </div>
-      <div className="font-sub mt-2 flex justify-between gap-4 px-1 text-[12px] text-muted">
-        <span>Answers come only from official BRAC University records. Verify critical deadlines.</span>
+      <div className="font-sub mt-2 flex items-center justify-between gap-2 px-1 text-[11px] sm:text-[12px] text-muted">
+        <span className="truncate">Answers from official BRAC University records.</span>
         {value.length > 3800 && (
-          <span className={value.length >= MAX ? "text-error" : ""}>
+          <span className={`shrink-0 ${value.length >= MAX ? "text-error" : ""}`}>
             {value.length}/{MAX}
           </span>
         )}

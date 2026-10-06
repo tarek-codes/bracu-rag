@@ -136,6 +136,7 @@ export default function ChatLayout({ children }: { children: React.ReactNode }) 
           onSessionCreated={onSessionCreated}
           onTurnComplete={refreshSessions}
           onOpenSidebar={() => setMobileOpen(true)}
+          onNewChat={newChat}
         />
         {children}
       </main>
