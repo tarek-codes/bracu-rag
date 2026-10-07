@@ -63,7 +63,7 @@ class Settings(BaseSettings):
     CHROMA_COLLECTION_NAME: str = "rag"
 
     # Security & Auth
-    JWT_SECRET: str = "insecure_dev_secret_key_change_in_production"
+    JWT_SECRET: str = ""
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_MINUTES: int = 15
     REFRESH_TOKEN_DAYS: int = 7

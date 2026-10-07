@@ -74,7 +74,7 @@ DOCUMENTS_TO_INGEST = [
 
 async def main():
     start_total = time.time()
-    base_dir = Path(r"c:\Users\tarek\Desktop\brac-rag\output\pages")
+    base_dir = Path(os.getenv("KB_PAGES_DIR", "output/pages"))
     print(f"Starting ingestion of {len(DOCUMENTS_TO_INGEST)} official documents...")
     print(f"Source directory: {base_dir}\n")
 
