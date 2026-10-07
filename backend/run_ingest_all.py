@@ -3,6 +3,7 @@
 
 import asyncio
 from pathlib import Path
+import os
 import time
 from sqlalchemy import text
 
@@ -105,7 +106,7 @@ ALL_DOCUMENTS = [
 
 async def main():
     start_total = time.time()
-    base_dir = Path(r"c:\Users\tarek\Desktop\brac-rag\output\pages")
+    base_dir = Path(os.getenv("KB_PAGES_DIR", "output/pages"))
     print(f"Starting ingestion of {len(ALL_DOCUMENTS)} clean official documents...")
     print(f"Source directory: {base_dir}\n")
 
